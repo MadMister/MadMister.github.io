@@ -1,5 +1,5 @@
 html,body {
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
 }
 * {
     padding: 0px;
@@ -17,12 +17,23 @@ html,body {
   }
 }
 
-div.left > div{
-    
+div.left > .big {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1.2 em;
+    font-weight: bold;
 }
 
-div.right {
-    
+div.right > .tiny{
+    background-color: #972973;
+    margin-left: 5%;
+    padding: 5px;
+    font-size: 1em;
+}
+
+.tiny:hover {
+    color: #ffffff;
+    background-color: #a78e49;
 }
 
 div > div.theme1 {
@@ -37,6 +48,14 @@ div > div.theme3 {
     background-color: #84f699;
 }
 
+.image{
+    height: 40%;
+    width: 20%;
+    margin-left: 5%;
+    margin-top: 5%
+}
+
 img {
-    
+    width: 100%
+    height: 100%
 }
