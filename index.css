@@ -11,8 +11,10 @@ html {
 
 div.left {
     background-color: blue;
+    height: 400 px;
 }
 
 div.right {
     background-color: red;
+    height: 400 px;
 }
