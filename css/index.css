@@ -1,0 +1,18 @@
+html {
+    font-family: sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    
+}
+
+div.left {
+    background-color: blue;
+}
+
+div.right {
+    background-color: red;
+}
