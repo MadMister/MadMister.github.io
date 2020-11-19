@@ -73,8 +73,9 @@ div > div.theme3 {
 }
 
 .image{
+    padding: 20px;
     background-color: #758764;
-    width: 300px;
+    width: 250px;
 }
 
 img {
