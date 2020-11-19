@@ -9,7 +9,7 @@ html,body {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 800px;
+    grid-auto-rows: minmax(120px, auto);
 }
 @media screen and (min-width: 800px) {
   .container {
@@ -17,12 +17,26 @@ html,body {
   }
 }
 
-div.left {
-    background-color: blue;
+div.left > div{
+    
 }
 
 div.right {
-    background-color: red;
+    
 }
 
+div > div.theme1 {
+    background-color: #20c4c4;
+}
 
+div > div.theme2 {
+    background-color: #0045d9;
+}
+
+div > div.theme3 {
+    background-color: #84f699;
+}
+
+img {
+    
+}
