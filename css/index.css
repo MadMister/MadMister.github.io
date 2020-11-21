@@ -20,8 +20,8 @@ h1 > span {
 
 .gridcontainer {
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 400px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px;
 }
 
 div.brandidentity {
@@ -60,11 +60,11 @@ p.button {
     color: #000000;
 }
 
-.button:hover {
+p.button:hover {
     color: #ffffff;
 }
 
-.button:active {
+p.button:active {
     background-color: #000000;
 }
 
@@ -73,7 +73,7 @@ p.button {
 
 @media screen and (max-width: 800px) {
     .gridcontainer {
-        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
     }
 }
 
