@@ -24,12 +24,8 @@ h1 > span {
     grid-template-rows: 400px;
 }
 
-.gridcontainer > div {
-    border: 2px;
-    border-style: solid;
-    border-color: black;
-}
 .textarea {
+    border: 2px solid black;
     margin-top: 50px;
     margin-left: 50px;
     max-width: 300px;
@@ -37,6 +33,7 @@ h1 > span {
 }
 
 .imagearea {
+    border: 2px solid black;
     overflow: hidden;
     margin-top: 50px;
     margin-left: auto;
