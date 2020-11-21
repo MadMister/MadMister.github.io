@@ -25,7 +25,8 @@ h1 > span {
 }
 
 .gridcontainer > div {
-    border : 2px;
+    border: 2px;
+    border-style: solid;
     border-color: black;
 }
 .textarea {
