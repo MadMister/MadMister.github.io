@@ -40,7 +40,7 @@ h1 > span {
     margin-bottom: 50PX;
     margin-left: auto;
     margin-right: auto;
-    max-width: 80%;
+    max-width: calc(100% - 100px);
     max-height: 300px;
 }
 
@@ -99,6 +99,7 @@ p.button:active {
     .textarea{
         margin-left: auto;
         margin-right:auto;
+        max-width: calc(100% - 100px)s
     }
 }
 
