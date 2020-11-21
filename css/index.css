@@ -22,12 +22,14 @@ h1 > span {
 .gridcontainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2,400px);
+    /*grid-template-rows: repeat(2,400px);*/
+    grid-auto-rows: auto;
 }
 
 .textarea {
     margin-top: 50px;
     margin-left: 50px;
+    margin-bottom: 50px
     max-width: 300px;
     height: 300px;
 }
@@ -35,6 +37,7 @@ h1 > span {
 .imagearea {
     overflow: hidden;
     margin-top: 50px;
+    mRGIN-BOTTOM: 50PX;
     margin-left: auto;
     margin-right: auto;
     max-width: 80%;
