@@ -18,13 +18,10 @@ h1 > span {
     color: #ffc600;
 }
 
-.container > div {
-    width: 50vw;
-    height: 400px;
-}
-
-.container > div:nth-of-type(2n) {
-    display: inline-block;
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px;
 }
 
 .brandidentity {
@@ -43,7 +40,7 @@ h1 > span {
     color: #ffffff;
 }
 
-.textfarea: {
+.textarea: {
     margin-top: 50px;
     margin-left: 50px;
     height: 300px;
@@ -75,12 +72,8 @@ h1 > span {
 
 
 @media screen and (max-width: 800px) {
-    .container > div {
-        width: 100vw;
-    }
-    .container > div:nth-of-type(2n) {
-        display: block;
-      
+    .gridcontainer {
+        grid-template-rows: 1fr;
     }
 }
 
