@@ -24,6 +24,10 @@ h1 > span {
     grid-template-rows: 400px;
 }
 
+.gridcontainer > div {
+    border : 2px;
+    border-color: black;
+}
 .textarea {
     margin-top: 50px;
     margin-left: 50px;
