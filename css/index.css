@@ -29,7 +29,7 @@ h1 > span {
 .textarea {
     margin-top: 50px;
     margin-left: 50px;
-    margin-bottom: 50px
+    margin-bottom: 50px;
     max-width: 300px;
     /*height: 300px;*/
 }
@@ -37,7 +37,7 @@ h1 > span {
 .imagearea {
     overflow: hidden;
     margin-top: 50px;
-    mRGIN-BOTTOM: 50PX;
+    margin-bottom: 50PX;
     margin-left: auto;
     margin-right: auto;
     max-width: 80%;
