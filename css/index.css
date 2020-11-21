@@ -24,29 +24,29 @@ h1 > span {
     grid-template-rows: 400px;
 }
 
-.brandidentity {
+div.brandidentity {
     background-color: #ffffff;
 }
 
-.brandidentity p {
+div.brandidentity p {
     color: #0a2938;
 }
 
-.brochure {
+div.brochure {
     background-color: #598392;
 }
 
-.brochure p {
+div.brochure p {
     color: #ffffff;
 }
 
-.textarea: {
+div.textarea: {
     margin-top: 50px;
     margin-left: 50px;
     height: 300px;
 }
 
-.imagearea {
+div.imagearea {
     overflow: hidden;
     margin-top: 50px;
     margin-left: 50px;
@@ -54,7 +54,7 @@ h1 > span {
     height: 300px;
 }
 
-.botton {
+p.button {
     padding: 10px 20px 10px 20px;
     background-color: #ffc600;
     color: #000000;
