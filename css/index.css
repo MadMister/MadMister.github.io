@@ -25,7 +25,6 @@ h1 > span {
 
 .container > div:nth-of-type(2n) {
     display: inline-block;
-    
 }
 
 .brandidentity {
@@ -44,7 +43,7 @@ h1 > span {
     color: #ffffff;
 }
 
-.textfarea {
+.textfarea: {
     margin-top: 50px;
     margin-left: 50px;
     height: 300px;
@@ -64,6 +63,13 @@ h1 > span {
     color: #000000;
 }
 
+.button:hover {
+    color: #ffffff;
+}
+
+.button:active {
+    background-color: #000000;
+}
 
 
 
