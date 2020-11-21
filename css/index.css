@@ -2,6 +2,7 @@ html,body {
     font-family: Arial, sans-serif;
 }
 * {
+    border: 2px solid black;
     padding: 0px;
     margin: 0px;
 }
@@ -21,11 +22,10 @@ h1 > span {
 .gridcontainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 400px;
+    grid-template-rows: repeat(2,400px);
 }
 
 .textarea {
-    border: 2px solid black;
     margin-top: 50px;
     margin-left: 50px;
     max-width: 300px;
@@ -33,7 +33,6 @@ h1 > span {
 }
 
 .imagearea {
-    border: 2px solid black;
     overflow: hidden;
     margin-top: 50px;
     margin-left: auto;
@@ -91,6 +90,7 @@ p.button:active {
 @media screen and (max-width: 800px) {
     .gridcontainer {
         grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,400px);
     }
 }
 
