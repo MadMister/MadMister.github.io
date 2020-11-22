@@ -40,8 +40,9 @@ h1 > span {
     margin-bottom: 50PX;
     margin-left: auto;
     margin-right: auto;
-    width: min(auto,calc(100% - 100px));
-    height: min(auto,300px);
+    max-width: calc(100% - 100px);
+    max-height: 300px;
+    
 }
 
 img {
