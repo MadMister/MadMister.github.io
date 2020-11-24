@@ -62,7 +62,7 @@ img {
     font-size: 10px;
 }
 
-p.button {
+.button {
     height: 30 px;
     margin-top: 5px;
     padding: 5 px;
@@ -71,11 +71,11 @@ p.button {
     color: #000000;
 }
 
-p.button:hover {
+.button:hover {
     color: #ffffff;
 }
 
-p.button:active {
+.button:active {
     background-color: #000000;
 }
 
