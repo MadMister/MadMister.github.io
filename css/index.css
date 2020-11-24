@@ -58,13 +58,13 @@ img {
 }
 
 .tiny {
-    height: 150;
+    height: 130px;
     font-size: 10px;
 }
 
 .button {
     width: 200px;
-    height: 30 px;
+    height: 40 px;
     margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
