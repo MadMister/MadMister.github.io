@@ -146,6 +146,7 @@ img {
 }
 
 .button p {
+    margin: auto;
     text-align: center;
 }
 
