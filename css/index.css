@@ -1,5 +1,69 @@
+@font-face {
+font-family: 'D-DIN';
+font-style: normal;
+font-weight: normal;
+src: local('D-DIN Regular'), url('../fonts/D-DIN.woff'), url('../fonts/D-DIN.eot');
+}
+
+
+@font-face {
+font-family: 'D-DIN';
+font-style: italic;
+font-weight: normal;
+src: local('D-DIN DIN-Italic'), url('../fonts/D-DIN-Italic.woff') format('woff'),url('../fonts/D-DIN-Italic.eot');
+}
+
+
+@font-face {
+font-family: 'D-DIN';
+font-style: normal;
+font-weight: bold;
+src: local('D-DIN DIN-Bold'), url('../fonts/D-DIN-Bold.woff') format('woff'),url('../fonts/D-DIN-Bold.eot');
+}
+
+
+@font-face {
+font-family: 'D-DIN Condensed Regular';
+font-style: normal;
+font-weight: normal;
+src: local('D-DIN Condensed Regular'), url('D-DINCondensed.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'D-DIN Exp Regular';
+font-style: normal;
+font-weight: normal;
+src: local('D-DIN Exp Regular'), url('D-DINExp.woff') format('woff');
+}
+
+/*
+@font-face {
+font-family: 'D-DIN Exp DINExp-Italic';
+font-style: normal;
+font-weight: normal;
+src: local('D-DIN Exp DINExp-Italic'), url('D-DINExp-Italic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'D-DIN Condensed DINCondensed-Bold';
+font-style: normal;
+font-weight: normal;
+src: local('D-DIN Condensed DINCondensed-Bold'), url('D-DINCondensed-Bold.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'D-DIN Exp DINExp-Bold';
+font-style: normal;
+font-weight: normal;
+src: local('D-DIN Exp DINExp-Bold'), url('D-DINExp-Bold.woff') format('woff');
+}
+*/
+
 html,body {
-    font-family: Arial, sans-serif;
+    font-family: 'D-Din',Arial, sans-serif;
 }
 * {
     border: 1px solid black;
