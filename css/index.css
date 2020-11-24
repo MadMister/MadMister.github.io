@@ -81,6 +81,10 @@ img {
     background-color: #000000;
 }
 
+.button p {
+    text-align: center;
+}
+
 
 /* brand identity section */
 .brandidentity {
