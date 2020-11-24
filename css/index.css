@@ -176,3 +176,15 @@ img {
     }
 }
 
+@media screen and (max-width: 400px) {
+    .textarea {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    
+    .imagearea {
+        width: 80%
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
