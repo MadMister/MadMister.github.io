@@ -99,7 +99,7 @@ h1 > span {
 }
 
 .imagearea {
-    overflow: hidden;
+    border: 1px solid black;
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: auto;
@@ -162,8 +162,6 @@ img {
     background-color: #598392;
     color: #ffffff;
 }
-
-
 
 @media screen and (max-width: 800px) {
     .gridcontainer {
