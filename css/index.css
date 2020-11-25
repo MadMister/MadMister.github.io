@@ -194,7 +194,7 @@ a:hover {
 
 @media screen and (max-width: 1220px) {
     .gridcontainer {
-        grid-template-columns: 610px auto;
+        grid-auto-columns: 610px auto;
     }
     
     .imagearea {
@@ -205,7 +205,7 @@ a:hover {
 @media screen and (max-width: 800px) {
     .gridcontainer {
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        grid-auto-rows: auto;
     }
     
     .imagearea {
