@@ -194,11 +194,15 @@ a:hover {
 
 @media screen and (max-width: 1220px) {
     .gridcontainer {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 610px 1fr;
     }
     
     .imagearea {
-        width: min(100%,494px);
+        width: 200px;
+    }
+    
+    .special {
+        margin-left: 0px;
     }
 }
 
