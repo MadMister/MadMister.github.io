@@ -87,7 +87,7 @@ h1 > span {
 }*/
 }
 
-h1 > logo {
+h1 > .logo {
     max-width: 500px;
     margin: auto;
 }
