@@ -197,7 +197,7 @@ a:hover {
     }
     
     .imagearea {
-        width: max(100%,494px);
+        width: min(100%,494px);
     }
 }
 
