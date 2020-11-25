@@ -198,11 +198,12 @@ a:hover {
     }
     
     .imagearea {
-        width: 200px;
+        max-width: 100%;
     }
     
     .special {
         margin-left: 0px;
+        max-width:100%;
     }
 }
 
