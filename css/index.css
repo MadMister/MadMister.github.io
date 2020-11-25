@@ -72,9 +72,6 @@ html,body {
 }
 
 h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 250px;
     padding: 20px;
     background-color: #0a2938;
@@ -91,7 +88,9 @@ h1 > span {
 }
 
 h1 > .logo {
-    max-width: 500px;
+    height: calc(250/3);
+    margin-top: calc(250/3);
+    margin-top: calc(250/3);
     margin: auto;
 }
 
@@ -113,8 +112,8 @@ h1 > .logo {
     margin-top: 50px;
     margin-right: auto;
     margin-left: auto;
-    width: 617px;
-    height: 400px;
+    width: 494px;
+    height: 320px;
     
 }
 
