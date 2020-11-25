@@ -66,7 +66,7 @@ html,body {
     font-family: 'D-Din', Arial, sans-serif;
 }
 * {
-    /*border: 1px solid black;*/
+    border: 1px solid black;
     padding: 0px;
     margin: 0px;
 }
@@ -98,7 +98,6 @@ h1 > span {
 }
 
 .imagearea {
-    border: 1px solid black;
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: auto;
@@ -126,13 +125,13 @@ img {
 }
 
 .massive {
-    height: 80;
+    margin-bottom: 10px;
     font-weight: bold;
     font-size: 35px;
 }
 
 .tiny {
-    height: 100px;
+    margin-bottom: 30px;
     font-size: 15px;
 }
 
