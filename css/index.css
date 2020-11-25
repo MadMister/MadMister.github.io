@@ -191,7 +191,7 @@ img {
         grid-template-rows: max-content;
     }
     
-    textarea {
+    .textarea {
         width: 73.8%;
         margin-right: auto;
         margin-left: auto;
