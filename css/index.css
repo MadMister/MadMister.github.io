@@ -185,17 +185,26 @@ img {
     color: #ffffff;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1220px) {
     .gridcontainer {
         grid-template-columns: 1fr;
         grid-template-rows: max-content;
     }
     
+    textarea {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
     .imagearea {
-        margin-left: 70px;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
 
+/*
 @media screen and (max-width: 700px) {
     .textarea {
         width: 80%;
@@ -209,3 +218,4 @@ img {
         margin-left: auto;
     }
 }
+*/
