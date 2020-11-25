@@ -73,6 +73,7 @@ html,body {
 
 h1 {
     height: 250px;
+    padding: 20px;
     background-color: #0a2938;
     /*
     color: #ffffff;
