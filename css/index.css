@@ -107,7 +107,9 @@ h1 > logo {
 }
 
 .imagearea {
-    margin: auto;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
     width: 617px;
     height: 400px;
     
