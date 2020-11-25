@@ -86,8 +86,7 @@ h1 > span {
 .gridcontainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /*grid-template-rows: repeat(2,400px);*/
-    grid-auto-rows: 500;
+    grid-auto-rows: 500px;
 }
 
 .textarea {
@@ -104,8 +103,8 @@ h1 > span {
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
-    width: 300px;
-    height: 200px;
+    width: 460px;
+    height: 300px;
     
 }
 
@@ -139,11 +138,8 @@ img {
 
 .button {
     width: 200px;
-    height: 50px;
+    height: 35px;
     margin-top: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5 px;
     background-color: #ffc600;
     color: #000000;
 }
@@ -157,7 +153,7 @@ img {
 }
 
 .button p {
-    line-height: 50px;
+    line-height: 35px;
     text-align: center;
 }
 
