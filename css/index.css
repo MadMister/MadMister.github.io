@@ -74,6 +74,7 @@ html,body {
 h1 {
     height: 249px;
     background-color: #0a2938;
+    padding: 83px;
     /*
     color: #ffffff;
     font-size: 50px;
@@ -86,11 +87,10 @@ h1 > span {
 }*/
 }
 
+
 h1 > div.logo {
     border: 1px solid white;
     height: 83px;
-    margin-top: 83px;
-    margin-top: 83px;
 }
 
 img.logosgv{
