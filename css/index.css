@@ -86,7 +86,8 @@ h1 > span {
 }*/
 }
 
-h1 > .logo {
+h1 > div.logo {
+    border: 1px solid white;
     height: 83;
     margin-top: 83;
     margin-top: 83;
