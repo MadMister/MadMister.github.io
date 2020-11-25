@@ -72,11 +72,13 @@ html,body {
 }
 
 h1 {
-    height: 150px;
+    height: 250px;
     background-color: #0a2938;
+    /*
     color: #ffffff;
     font-size: 50px;
     text-align: center;
+    */
 }
 
 h1 > span {
