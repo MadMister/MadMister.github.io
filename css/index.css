@@ -72,9 +72,9 @@ html,body {
 }
 
 h1 {
-    height: 83px;
+    height: 90px;
     background-color: #0a2938;
-    padding: 83px;
+    padding: 80px;
     /*
     color: #ffffff;
     font-size: 50px;
@@ -90,7 +90,7 @@ h1 > span {
 
 h1 > div.logo {
     border: 1px solid white;
-    height: 83px;
+    height: 100%;
 }
 
 img.logosgv{
@@ -108,7 +108,7 @@ img.logosgv{
     margin-top: 100px;
     margin-left: 80px;
     margin-bottom: 50px;
-    width: 400px;
+    width: 500px;
     /*height: 300px;*/
 }
 
