@@ -72,7 +72,7 @@ html,body {
 }
 
 h1 {
-    height: 250px;
+    height: 249px;
     padding: 20px;
     background-color: #0a2938;
     /*
@@ -88,9 +88,9 @@ h1 > span {
 }
 
 h1 > .logo {
-    height: calc(250/3);
-    margin-top: calc(250/3);
-    margin-top: calc(250/3);
+    height: 83;
+    margin-top: 83;
+    margin-top: 83;
     margin: auto;
 }
 
