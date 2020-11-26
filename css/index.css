@@ -222,7 +222,8 @@ a:hover {
 @media screen and (max-width: 800px) {
     
     h1 {
-        height: calc(-44.73px + 7vw / 19vw);
+        height: calc(-24.2px + 10.5vw);
+        padding: calc(-24.2px + 10.5vw);
     }
     
     .gridcontainer {
@@ -246,8 +247,10 @@ a:hover {
 @media screen and (max-width: 610px) {
     
     h1 {
-        height: 180px;
+        height: 60px;
+        padding: 60px;
     }
+    
     .textarea {
         width: 73.8%;
         margin-right: auto;
