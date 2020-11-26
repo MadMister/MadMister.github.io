@@ -203,12 +203,19 @@ a:hover {
     }
     
     .special {
+        margin-left: 13.1%;
+        width: min(100%,530px);
+    }
+    
+    /*
+    .special {
         margin-left: calc(-1140px + 100vw);
     }
     
     .backgroundarea {
         width: calc(-610px + 100vw);
     }
+    */
 }
 
 @media screen and (max-width: 800px) {
