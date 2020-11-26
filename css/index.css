@@ -203,12 +203,12 @@ a:hover {
     }
     
     .special {
-        margin-left: calc(-164 + 20vw);
+        margin-left: calc(-164px + 20vw);
         max-width:100%;
     }
     
     .backgroundarea {
-        width: calc(366 + 20vw);
+        width: calc(366px + 20vw);
     }
 }
 
