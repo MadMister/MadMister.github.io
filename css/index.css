@@ -200,7 +200,7 @@ a:hover {
     }
     
     .special {
-        max-width: calc(100%- 80px);
+        width: min(auto,450px);
     }
     
     /*
@@ -216,8 +216,7 @@ a:hover {
 
 @media screen and (max-width: 988px) {
     .textarea {
-        margin-left: 32vw;
-        width: auto;
+        width: min(auto,450px);
     }
 }
 
