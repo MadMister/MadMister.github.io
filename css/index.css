@@ -201,14 +201,15 @@ a:hover {
     .imagearea {
         max-width: 100%;
     }
-    
+    /*
     .special {
         margin-left: calc(-164px + 20vw);
         max-width:100%;
     }
+     */
     
     .backgroundarea {
-        width: calc(366px + 20vw);
+        width: calc(-610px + 100vw);
     }
 }
 
