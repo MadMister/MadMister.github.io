@@ -193,17 +193,9 @@ a:hover {
     color: #ffffff;
 }
 
-@media screen and (max-width: 1220px) {
+/*@media screen and (max-width: 1220px) {
     
-    .imagearea {
-        width: min(100%,494px);
-    }
     
-    .textarea {
-        width: auto;
-    }
-    
-    /*
     .special {
         margin-left: calc(-1140px + 100vw);
     }
@@ -211,7 +203,18 @@ a:hover {
     .backgroundarea {
         width: calc(-610px + 100vw);
     }
-    */
+    
+}*/
+
+@media screen and (max-width: 1060px) {
+    
+    .textarea {
+        width: auto;
+    }
+    
+    .imagearea {
+        width: min(100%,494px);
+    }
 }
 
 
