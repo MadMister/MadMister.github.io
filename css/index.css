@@ -213,6 +213,7 @@ a:hover {
     
     .imagearea {
         width: min(100%,494px);
+        height: auto;
     }
 }
 
@@ -231,6 +232,7 @@ a:hover {
         margin-left: 80px;
         margin-bottom: 80px;
         width: 494px;
+        height: 320px;
     }
 }
 
@@ -244,6 +246,7 @@ a:hover {
     
     .imagearea {
         width: 73.8%;
+        height: auto;
         margin-right: auto;
         margin-left: auto;
     }
