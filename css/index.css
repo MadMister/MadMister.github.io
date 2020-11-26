@@ -221,9 +221,14 @@ a:hover {
         grid-auto-rows: auto;
     }
     
+    .textarea {
+        width: 450px;
+    }
+    
     .imagearea {
         margin-left: 80px;
         margin-bottom: 80px;
+        width: 494px;
     }
 }
 
