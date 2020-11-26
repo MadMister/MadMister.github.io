@@ -103,6 +103,7 @@ img.logosgv{
 }
 
 .textarea {
+    border: 1px solid black;
     margin-top: 100px;
     margin-left: 80px;
     margin-bottom: 50px;
