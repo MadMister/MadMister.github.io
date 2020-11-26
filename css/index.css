@@ -203,8 +203,7 @@ a:hover {
     }
     
     .special {
-        margin-left: 13.1%;
-        width: min(100%,530px);
+        max-width: calc(100%- 80px);
     }
     
     /*
@@ -217,6 +216,14 @@ a:hover {
     }
     */
 }
+
+@media screen and (max-width: 988px) {
+    .textarea {
+        margin-left: 32vw;
+        width: auto;
+    }
+}
+
 
 @media screen and (max-width: 800px) {
     .gridcontainer {
