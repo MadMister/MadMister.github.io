@@ -18,14 +18,14 @@ h1 {
     height: 400px;
 }
 
-.gridcontainer > div:nth-of-type(2n) {
+.gridcontainer > div:nth-child(2n) {
     display: inline-block;
     background-color: #000000;
 }
 
 .textarea, .imagearea {
     background-color: #ff0000;
-    width: 40 vw;
+    width: 40vw;
     height: 300px;
     margin-top: 50px;
     margin-left: auto;
