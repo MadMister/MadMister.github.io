@@ -1,0 +1,31 @@
+html,body {
+    font-family: Arial, sans-serif;
+}
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+h1 {
+    height: 200px;
+    font-size: 50px;
+    background-color: #000000;
+}
+
+.gridcontainer > div {
+    background-color: #ffffff;
+    height: 400px;
+}
+
+.dridcontainer > div:nth-of-type(2n) {
+    background-color: #000000;
+}
+
+.textarea, .imagearea {
+    background-color: #ff0000;
+    width: 40 vw;
+    height: 300px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
