@@ -10,13 +10,14 @@ h1 {
     text-align: center;
     line-height: 200px;
     height: 200px;
-    font-size: 50px;
+    font-size: 80px;
     color: #ffffff;
     background-color: #000000;
 }
 
 .gridcontainer > div {
     background-color: #ffffff;
+    width: 50vx;
     height: 400px;
 }
 
