@@ -18,7 +18,7 @@ h1 {
     height: 400px;
 }
 
-.dridcontainer > div:nth-of-type(2n) {
+.gridcontainer > div:nth-of-type(2n) {
     display: inline-block;
     background-color: #000000;
 }
