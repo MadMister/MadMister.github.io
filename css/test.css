@@ -16,13 +16,13 @@ h1 {
 }
 
 .gridcontainer > div {
+    display: inline-block
     background-color: #ffffff;
     width: 45vw;
     height: 400px;
 }
 
-.gridcontainer > div:nth-child(2n) {
-    display: inline-block;
+.dos {
     background-color: #000000;
 }
 
