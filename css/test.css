@@ -16,7 +16,7 @@ h1 {
 }
 
 .gridcontainer > div {
-    display: inline-block
+    display: inline-block;
     background-color: #ffffff;
     width: 45vw;
     height: 400px;
