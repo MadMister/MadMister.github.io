@@ -16,6 +16,7 @@ h1 {
 }
 
 .gridcontainer > div {
+    border: 1px solid red;
     display: inline-block;
     background-color: #ffffff;
     width: 50vw;
