@@ -22,7 +22,7 @@ h1 {
     height: 400px;
 }
 
-.dos {
+.gridcontainer > div.dos {
     background-color: #000000;
 }
 
