@@ -196,7 +196,7 @@ span {
     overflow: clip;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1800px) {
     .gridcontainer {
         grid-template-columns: 800px 800px 1fr;
     }
