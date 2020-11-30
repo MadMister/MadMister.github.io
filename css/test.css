@@ -19,6 +19,7 @@ h1 {
     border: 1px solid red;
     display: inline-block;
     background-color: #ffffff;
+    vertical-align: top;
     width: 48vw;
     height: 400px;
 }
