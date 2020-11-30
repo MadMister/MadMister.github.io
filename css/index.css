@@ -188,7 +188,9 @@ span {
 }
 
 .side {
-    font-size: 90px;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
     writing-mode: vertical-rl;
     display: none;
     overflow: clip;
