@@ -177,30 +177,21 @@ a:hover {
     color: #0a2938;
 }
 
-.theme_0 > div > span {
-    color: #ffc600;
-}
-
 /* brochure section */
 .theme_1 {
     background-color: #598392;
     color: #ffffff;
 }
 
-.theme_1 > div > span {
+span {
     color: #ffc600;
 }
 
 .side {
-    width: 50px;
-    font-size: 50px;
+    font-size: 90px;
     writing-mode: vertical-rl;
     display: none;
     overflow: clip;
-}
-
-.header {
-    background-color: #0a2938;
 }
 
 @media screen and (min-width: 1600px) {
