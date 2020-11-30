@@ -192,9 +192,15 @@ a:hover {
 }
 
 .side {
+    width: 50px;
+    font-size: 50px;
     writing-mode: vertical-rl;
     display: none;
     overflow: clip;
+}
+
+.header {
+    background-color: #0a2938;
 }
 
 @media screen and (min-width: 1600px) {
