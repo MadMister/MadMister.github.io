@@ -177,7 +177,7 @@ a:hover {
     color: #0a2938;
 }
 
-.theme_0 > span {
+.theme_0 > div > span {
     color: #ffc600;
 }
 
@@ -187,7 +187,7 @@ a:hover {
     color: #ffffff;
 }
 
-.theme_1 > span {
+.theme_1 > div > span {
     color: #ffc600;
 }
 
