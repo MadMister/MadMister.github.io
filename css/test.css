@@ -20,7 +20,7 @@ h1 {
     display: inline-block;
     background-color: #ffffff;
     vertical-align: top;
-    width: calc(50vw-2px);
+    width: calc(50vw - 2px);
     height: 400px;
 }
 
