@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/index.css">
-    <script src="javascript/index.js" defer></script>
+    <!--<script src="javascript/index.js" defer></script>-->
     <meta charset="utf-8">
     <title>glassrwx</title>
 </head>
@@ -127,5 +127,50 @@
     </div>
     
     </div>
+    <script>
+    var x = document.getElementsByClass("animated");
+
+    function expand() {
+        x.style.display = block;
+        let h = 0;
+        let i = setInterval(frame, 500);
+        function frame() {
+            if (h === 200) {
+                clearInterval(i);
+            }
+            else {
+                h++;
+                x.style.height = h + 'px';
+            }
+        }
+    }
+
+    function contract() {
+        let h = x.style.height;
+        let i = setInterval(frame, 500);
+        function frame() {
+            if (h === 0) {
+                x.style.display = none;
+                clearInterval(i);
+            }
+            else {
+                h--;
+                x.style.height = h + 'px';
+            }
+        }
+    }
+
+    x.addEventListener("mouseover", expand);
+
+    x.addEventListener("mouseout", contract);
+
+    var y = document.getElementById("toggle");
+
+    function toggle() {
+        document.getElementsByTagName("h1").style.backgroundColor = "red";
+    }
+
+    y.addEventListener("click", toggle)
+    </script>
 </body>
 </html>
