@@ -173,12 +173,14 @@ a:hover {
 
 /* brand identity section */
 .theme_0 {
+    position: relative;
     background-color: #ffffff;
     color: #0a2938;
 }
 
 /* brochure section */
 .theme_1 {
+    position: relative;
     background-color: #598392;
     color: #ffffff;
 }
@@ -194,6 +196,12 @@ span {
     writing-mode: vertical-rl;
     display: none;
     overflow: clip;
+}
+
+.animated {
+    display: none;
+    position: absolute;
+    height: 0px;
 }
 
 @media screen and (min-width: 1800px) {
