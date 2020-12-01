@@ -33,3 +33,5 @@ function contract() {
 x.addEventListener("mouseover", expand);
 
 x.addEventListener("mouseout", contract);
+
+var y = document.getElementById("toggle");
