@@ -35,3 +35,9 @@ x.addEventListener("mouseover", expand);
 x.addEventListener("mouseout", contract);
 
 var y = document.getElementById("toggle");
+
+function toggle() {
+    document.getElementsByTagName("h1").style.backgroundColor = "red";
+}
+
+y.addEventListener("click", toggle)
