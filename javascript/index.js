@@ -1,7 +1,7 @@
 var x = document.getElementsByClass("animated");
 
 function expand() {
-    x.style.display = block;
+    x.style.display = 'block';
     let h = 0;
     let i = setInterval(frame, 500);
     function frame() {
@@ -20,7 +20,7 @@ function contract() {
     let i = setInterval(frame, 500);
     function frame() {
         if (h === 0) {
-            x.style.display = none;
+            x.style.display = 'none';
             clearInterval(i);
         }
         else {
@@ -37,7 +37,7 @@ x.addEventListener("mouseout", contract);
 var y = document.getElementById("toggle");
 
 function toggle() {
-    document.getElementsByTagName("h1").style.backgroundColor = "red";
+    document.getElementsByTagName("h1").style.backgroundColor = 'red';
 }
 
 y.addEventListener("click", toggle)
