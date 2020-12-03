@@ -1,249 +1,59 @@
-@font-face {
-font-family: 'D-DIN';
-font-style: normal;
-font-weight: normal;
-src: local('D-DIN Regular'), url('../fonts/D-DIN.woff'), url('../fonts/D-DIN.eot');
-}
-
-
-@font-face {
-font-family: 'D-DIN';
-font-style: italic;
-font-weight: normal;
-src: local('D-DIN DIN-Italic'), url('../fonts/D-DIN-Italic.woff') format('woff'),url('../fonts/D-DIN-Italic.eot');
-}
-
-
-@font-face {
-font-family: 'D-DIN';
-font-style: normal;
-font-weight: bold;
-src: local('D-DIN DIN-Bold'), url('../fonts/D-DIN-Bold.woff') format('woff'),url('../fonts/D-DIN-Bold.eot');
-}
-
-
-@font-face {
-font-family: 'D-DIN Condensed Regular';
-font-style: normal;
-font-weight: normal;
-src: local('D-DIN Condensed Regular'), url('D-DINCondensed.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'D-DIN Exp Regular';
-font-style: normal;
-font-weight: normal;
-src: local('D-DIN Exp Regular'), url('D-DINExp.woff') format('woff');
-}
-
-/*
-@font-face {
-font-family: 'D-DIN Exp DINExp-Italic';
-font-style: normal;
-font-weight: normal;
-src: local('D-DIN Exp DINExp-Italic'), url('D-DINExp-Italic.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'D-DIN Condensed DINCondensed-Bold';
-font-style: normal;
-font-weight: normal;
-src: local('D-DIN Condensed DINCondensed-Bold'), url('D-DINCondensed-Bold.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'D-DIN Exp DINExp-Bold';
-font-style: normal;
-font-weight: normal;
-src: local('D-DIN Exp DINExp-Bold'), url('D-DINExp-Bold.woff') format('woff');
-}
-*/
-
-html,body {
-    font-family: 'D-Din', Arial, sans-serif;
-}
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
+    
 }
 
-/* Header */
+body {
+    font-family: 'Impact','Arial';
+    font-size: 20px
+}
+
 h1 {
-    height: 90px;
-    background-color: #0a2938;
-    padding: 80px;
-}
-
-
-h1 > div.logo {
-    height: 100%;
-}
-
-img.logosgv{
-    width: 100%;
-    height:100%;
-}
-
-/* General layout */
-.gridcontainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 500px;
-}
-
-/* Inner layout of text and image sections */
-.textarea {
-    margin-top: 100px;
-    margin-left: 80px;
-    margin-right: 20px;
-    margin-bottom: 50px;
-    width: 450px;
-}
-
-.imagearea {
-    margin-top: 90px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 494px;
-    height: 320px;
-    
-}
-
-img {
-    width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    object-position: 50% 50%;
-}
-
-.backgroundarea {
-    width: 100%;
-    height: 100%;
-}
-
-.background {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.massive {
-    margin-bottom: 30px;
-    font-weight: bold;
-    font-size: 48px;
-}
-
-.tiny {
-    line-height: 1.2;
-    margin-bottom: 30px;
-    font-size: 18px;
-}
-
-/* Behaviour of links and buttons */
-a {
-    color: #000000;
-    text-decoration: none;
-}
-
-a:visited {
-    color: #000000;
-}
-
-a:hover {
-    color: #ffffff;
-}
-
-.button:active {
-    background-color: #000000;
-}
-
-.button {
-    position: relative;
-    width: 200px;
-    height: 35px;
-    margin-top: 5px;
-    background-color: #ffc600;
-    font-size: 12px;
-    font-weight: bold;
-    color: #000000;
-}
-
-.button p {
-    line-height: 35px;
+    height: 110px;
+    font-size: 100px;
     text-align: center;
+    line-height: 110px;
+    
 }
 
-/* Theme white background dark blue text */
-.theme_0 {
-    background-color: #ffffff;
-    color: #0a2938;
-}
-
-/* Theme light blue background white text */
-.theme_1 {
-    background-color: #598392;
+.wb {
+    background-color: #000000;
     color: #ffffff;
 }
 
-/* Text and image shrink to fit and maintain margins */
-@media screen and (max-width: 1100px) {
-    
-    .textarea {
-        width: auto;
-    }
-    
-    .imagearea {
-        width: min(89.8%,494px);
-        height: auto;
-    }
+.bw {
+    background-color: #ffffff;
+    color: #000000;
 }
 
-/* Header decreases in height and columns are reduced to one */
-@media screen and (max-width: 800px) {
-    
-    h1 {
-        height: calc(5.8px + 10.5vw);
-        padding: calc(-4.2px + 10.5vw);
-    }
-    
-    .gridcontainer {
-        grid-template-columns: 1fr;
-        grid-auto-rows: auto;
-    }
-    
-    .textarea {
-        width: 450px;
-    }
-    
-    .imagearea {
-        margin-left: 80px;
-        margin-bottom: 80px;
-        width: 73.8%;
-        height: auto;
-    }
+.rw {
+    background-color: #ff0000;
+    color: #ffffff;
 }
 
-/* Text and images are shrunk to percentage of screen width */
-@media screen and (max-width: 610px) {
-    
-    h1 {
-        height: 70px;
-        padding: 60px;
-    }
-    
-    .textarea {
-        width: 73.8%;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    
-    .imagearea {
-        width: 73.8%;
-        height: auto;
-        margin-right: auto;
-        margin-left: auto;
-    }
+.wr {
+    background-color: #ffffff;
+    color: #ff0000;
 }
+
+.initialcontainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tinysquare {
+    width: 25vw;
+    height: 25vw;
+}
+
+.bigsquare {
+    width: 50vw;
+    height: 50vw;
+}
+
+.verticalrectangle {
+    width: 50vw;
+    height: 25vw;
+}
+
