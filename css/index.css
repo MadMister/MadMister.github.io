@@ -9,9 +9,9 @@ body {
     font-size: 20px
 }
 
-h1 {
+.header {
     height: 110px;
-    width: 100vw;
+    width: 100%;
     font-size: 100px;
     text-align: center;
     line-height: 110px;
@@ -43,18 +43,15 @@ h1 {
     flex-wrap: wrap;
 }
 
-.tinysquare {
-    width: 25vw;
-    height: 25vw;
-}
-
-.bigsquare {
-    width: 50vw;
-    height: 50vw;
+.square {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 50%;
 }
 
 .verticalrectangle {
-    width: 50vw;
-    height: 25vw;
+    width: 100%;
+    height: 50%;
 }
 
