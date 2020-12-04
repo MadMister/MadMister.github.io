@@ -32,7 +32,7 @@ body {
 }
 
 .wr {
-    background-color: #ffffff;
+    background-color: #ff00ff;
     color: #ff0000;
 }
 
@@ -59,4 +59,5 @@ body {
     width: 20vw;
     height: 20vh;
     font-size: 5px;
+    background-color: #00ff00;
 }
