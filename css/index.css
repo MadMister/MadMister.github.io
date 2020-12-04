@@ -49,8 +49,6 @@ body {
 .flexcon {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 }
 .minisite {
     felx-shrink: 0;
@@ -60,4 +58,8 @@ body {
     height: 20vh;
     font-size: 5px;
     background-color: #00ff00;
+}
+
+.mini {
+    justify-content: center;
 }
