@@ -1,8 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-    flex-shrink: 0;
-    flex-grow: 0;
 }
 
 body {
@@ -50,6 +48,11 @@ body {
 .flexcon {
     display: flex;
     flex-wrap: wrap;
+}
+
+.flexcon > * {
+    flex-shrink: 0;
+    flex-grow: 0;
 }
 .minisite {
     felx-shrink: 0;
