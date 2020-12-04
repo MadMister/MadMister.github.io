@@ -45,6 +45,10 @@ body {
     height: 50%;
 }
 
+.initial {
+    width: 100vw;
+}
+
 .flexcon {
     display: flex;
     flex-wrap: wrap;
