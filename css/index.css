@@ -14,8 +14,8 @@ body {
     width: 100%;
     text-align: center;
     font-size: 4em;
-    grid-column: span 101;
-    grid-row: 1/21;
+    grid-column: span 100;
+    grid-row: 1/41;
 }
 
 .bw {
