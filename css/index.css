@@ -16,7 +16,6 @@ body {
     font-size: 4em;
     grid-column: span 101;
     grid-row: 1/21;
-    min-height: 1px;
 }
 
 .bw {
