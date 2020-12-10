@@ -41,7 +41,7 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-rows: repeat(100, 1fr);
+    grid-template-rows: repeat(100, 1vw);
     grid-template-columns: repeat(100, 1vw);
 }
 
