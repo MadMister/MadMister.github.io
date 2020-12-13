@@ -7,7 +7,14 @@
         
         <link rel="stylesheet" href="css/index.css">
         <link rel="shortcut icon" href="images/image.jpg">
-        <script src="/javascipt/index.js" defer></script>
+        <script >
+            var x = document.getElementsByClassName("patch1");
+            x[0].addEventListener("click",myFun);
+            function myFun() {
+                let y =document.getElementsByClassName("patch2");
+                y[0].style.backgroundColor = "#0f0f0f";
+            }
+        </script>
     </head>
     
     <body>
