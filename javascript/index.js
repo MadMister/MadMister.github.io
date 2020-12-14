@@ -19,5 +19,5 @@ function animate(e) {
     }
 }
 
-el = document.querySelect("h1");
+el = document.querySelector("h1");
 el.addEventListener("click",animate(this));
