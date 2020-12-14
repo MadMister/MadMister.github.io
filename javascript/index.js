@@ -7,7 +7,7 @@ function myFun() {
 
 function animate(e) {
     c = 0;
-    I = setInterval(adpapt(e),5);
+    I = setInterval(adapt(e),5);
     function adapt(el) {
         if (c == 255) {
             clearInterval(I);
