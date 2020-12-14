@@ -19,5 +19,5 @@ function animate(e) {
     }
 }
 
-el = document.querySelector("h1");
-el.addEventListener("click",animate(this));
+el = document.getElementsByClassName("header");
+el[0].addEventListener("click",animate(this));
