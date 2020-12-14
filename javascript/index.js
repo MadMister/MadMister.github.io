@@ -5,19 +5,21 @@ function myFun() {
     y[0].style.backgroundColor = "red";
 }
 
-function animate(e) {
+
+var elar = document.getElementsByClassName("header");
+var el = elar[0];
+function animate() {
     c = 0;
-    I = setInterval(adapt(e),5);
-    function adapt(el) {
+    I = setInterval(adapt(),5);
+    function adapt() {
         if (c == 255) {
             clearInterval(I);
         }
         else {
-            e.style.backgroundColor = "rgb(" + 0 + "," + 0 + "," + c + ")"
+            el.style.backgroundColor = "rgb(" + 0 + "," + 0 + "," + c + ")"
             c++;
         }
     }
 }
 
-el = document.getElementsByClassName("header");
-el[0].addEventListener("click",animate(el[0]));
+el.addEventListener("click",animate);
