@@ -20,4 +20,4 @@ function animate(e) {
 }
 
 el = document.getElementsByClassName("header");
-el[0].addEventListener("click",animate(this));
+el[0].addEventListener("click",animate(el[0]));
