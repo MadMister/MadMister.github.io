@@ -10,7 +10,7 @@ var elar = document.getElementsByClassName("header");
 var el = elar[0];
 function animate() {
     c = 0;
-    I = setInterval(adapt(),5);
+    I = setInterval(adap,5);
     function adapt() {
         if (c == 255) {
             clearInterval(I);
