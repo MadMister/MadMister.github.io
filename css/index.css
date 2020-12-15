@@ -43,22 +43,22 @@ body {
 }
 
 .patch1 {
-    grid-column: 1 / 41;
+    grid-column: 6 / 46;
     grid-row: 30/61;
 }
 
 .patch2 {
-    grid-column: 61 / 101;
+    grid-column: 56 / 96;
     grid-row: 31 / 61;
 }
 
 .patch3 {
-    grid-column: 1 / 41;
+    grid-column: 6 / 46;
     grid-row: 71 / 101;
 }
 
 .patch4 {
-    grid-column: 71 / 101;
+    grid-column: 56 / 96;
     grid-row: 71 / 101;
 }
 
