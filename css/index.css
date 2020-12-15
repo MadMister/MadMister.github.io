@@ -61,3 +61,19 @@ body {
     grid-column: 91 / 101;
     grid-row: 91 / 101;
 }
+
+.patch4:hover {
+    animation-name: colorswitch;
+    animation-duration: 1s;
+    
+}
+
+@keyframes colorswitch {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: black;
+    }
+}
+
