@@ -33,7 +33,7 @@ function timer() {
             clearInterval(Int);
         }
         else{
-            el.style.backgroundColor = "rgb(" + 0 + "," + 0 + "," + c + ")"
+            el.style.backgroundColor = "rgb(" + 0 + "," + 0 + "," + c + ")";
             c++;
         }
         },100);
