@@ -40,4 +40,4 @@ function timer() {
     
 }
 
-el.addEventListener("click",animate);
+el.addEventListener("click",timer);
