@@ -32,7 +32,7 @@ function timer() {
             elem.appendChild(p);
             clearInterval(Int);
         }
-        else{
+        else {
             el.style.backgroundColor = "rgb(" + 0 + "," + 0 + "," + c + ")";
             c++;
         }
