@@ -8,7 +8,7 @@ function myFun() {
 var elem = document.getElementsByClassName("patch1")[0];
 var el = document.getElementsByClassName("header")[0];
 function animate() {
-    c = 0;
+    let c = 0;
     let d = Date.now();
     let I = setInterval(adapt,100);
     function adapt() {
