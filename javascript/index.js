@@ -30,6 +30,7 @@ function timer() {
             p = document.createElement("p");
             p.innerHTML = "cycle elapsed in" + time + "miliseconds";
             elem.appendChild(p);
+            clearInterval(Int);
         }
         else{
             c++;
