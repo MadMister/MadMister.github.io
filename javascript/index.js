@@ -25,10 +25,10 @@ function timer() {
     let c = 0;
     let d = Date.now();
     let Int = setInterval(function() {
-        if (c = 255) {
+        if (c == 255) {
             let time = Date.now() - d;
             p = document.createElement("p");
-            p.innerHTML = "cycle elapsed in" + time + "miliseconds";
+            p.innerHTML = "cycle elapsed in " + time + " miliseconds";
             elem.appendChild(p);
             clearInterval(Int);
         }
