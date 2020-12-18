@@ -25,7 +25,7 @@ function timer() {
     let c = 0;
     let d = Date.now();
     let Int = setInterval(function() {
-        if (c = 100) {
+        if (c = 255) {
             let time = Date.now() - d;
             p = document.createElement("p");
             p.innerHTML = "cycle elapsed in" + time + "miliseconds";
@@ -33,9 +33,10 @@ function timer() {
             clearInterval(Int);
         }
         else{
+            el.style.backgroundColor = "rgb(" + 0 + "," + 0 + "," + c + ")"
             c++;
         }
-        },1000);
+        },100);
     
 }
 
