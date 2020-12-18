@@ -5,9 +5,8 @@ function myFun() {
     y[0].style.backgroundColor = "red";
 }
 
-
-var elar = document.getElementsByClassName("header");
-var el = elar[0];
+var elem = document.getElementsByClassName("patch1")[0];
+var el = document.getElementsByClassName("header")[0];
 function animate() {
     c = 0;
     I = setInterval(adapt,100);
@@ -22,4 +21,21 @@ function animate() {
     }
 }
 
-el.addEventListener("click",animate);
+function timer() {
+    let c = 0;
+    let d = Date.now();
+    let Int = setInterval(function() {
+        if (c = 100) {
+            let time = Date.now() - d;
+            p = document.createElement("p");
+            p.innerHTML = "cycle elapsed in" + time + "miliseconds";
+            elem.appendChild(p);
+        }
+        else{
+            c++;
+        }
+        },10);
+    
+}
+
+el.addEventListener("click",timer);
