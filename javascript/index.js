@@ -35,7 +35,7 @@ function timer() {
         else{
             c++;
         }
-        },100);
+        },1000);
     
 }
 
