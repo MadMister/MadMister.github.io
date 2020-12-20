@@ -12,7 +12,7 @@ function toggle(a,b) {
     let r2 = "row"+r;
     let c2 = "column"+s;
     
-    let tile1 = document.gtElementsByClassName("r1 c1");
+    let tile1 = document.getElementsByClassName("r1 c1");
     if (tile1.backgroundColor == "black") {
         tile.backgroundColor = "white";
     }
@@ -20,7 +20,7 @@ function toggle(a,b) {
         tile1.backgroundColor = "black";
     }
     
-    let tile2 = document.gtElementsByClassName("r1 c2");
+    let tile2 = document.getElementsByClassName("r1 c2");
     if (tile2.backgroundColor == "black") {
         tile2.backgroundColor = "white";
     }
@@ -28,7 +28,7 @@ function toggle(a,b) {
         tile2.backgroundColor = "black";
     }
     
-    let tile3 = document.gtElementsByClassName("r2 c1");
+    let tile3 = document.getElementsByClassName("r2 c1");
     if (tile3.backgroundColor == "black") {
         tile3.backgroundColor = "white";
     }
@@ -36,7 +36,7 @@ function toggle(a,b) {
         tile3.backgroundColor = "black";
     }
     
-    let tile4 = document.gtElementsByClassName("r2 c2");
+    let tile4 = document.getElementsByClassName("r2 c2");
     if (tile4.backgroundColor == "black") {
         tile4.backgroundColor = "white";
     }
