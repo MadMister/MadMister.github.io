@@ -12,7 +12,7 @@ function toggle(a,b) {
     for (let j = 0; j<5; j++) {
         let r = "row" + coor[j][0];
         let c = "column" + coor[j][1];
-        let el = document.getElementsByClassName(r c)[0];
+        let el = document.getElementsByClassName("r c")[0];
         if (el.backgroundColor == "white") {
             el.backgroundColor = "black";
         }
