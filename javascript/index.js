@@ -1,4 +1,4 @@
-let tiles = document.querySelectAll("i.initial > div");
+let tiles = document.querySelectorAll("i.initial > div");
 
 function toggle(a,b) {
     let r = a - 1;
