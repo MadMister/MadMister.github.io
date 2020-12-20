@@ -1,44 +1,53 @@
-var x = document.getElementsByClassName("patch1");
-x[0].addEventListener("click",myFun);
-function myFun() {
-    let y =document.getElementsByClassName("patch2");
-    y[0].style.backgroundColor = "red";
-}
+let tiles = document.querySelectAll("i.initial > div");
 
-var elem = document.getElementsByClassName("patch1")[0];
-var el = document.getElementsByClassName("header")[0];
-function animate() {
-    let c = 0;
-    let d = Date.now();
-    let I = setInterval(adapt,100);
-    function adapt() {
-        if (c == 255) {
-            clearInterval(I);
-        }
-        else {
-            el.style.backgroundColor = "rgb(" + 0 + "," + 0 + "," + c + ")"
-            c++;
-        }
+function toggle(a,b) {
+    let r = a - 1;
+    let c = b - 1;
+    let s = a + 1;
+    let d = b + 1;
+    
+    let r1 = "row"+r;
+    let c1 = "column"+c;
+    
+    let r2 = "row"+r;
+    let c2 = "column"+s;
+    
+    let tile1 = document.gtElementsByClassName("r1 c1");
+    if (tile1.backgroundColor == "black") {
+        tile.backgroundColor = "white";
     }
-}
-
-function timer() {
-    let c = 0;
-    let d = Date.now();
-    let Int = setInterval(function() {
-        if (c == 255) {
-            let time = Date.now() - d;
-            p = document.createElement("p");
-            p.innerHTML = "cycle elapsed in " + time + " miliseconds";
-            elem.appendChild(p);
-            clearInterval(Int);
-        }
-        else {
-            el.style.backgroundColor = "rgb(" + 0 + "," + 0 + "," + c + ")";
-            c++;
-        }
-        },100);
+    else {
+        tile1.backgroundColor = "black";
+    }
+    
+    let tile2 = document.gtElementsByClassName("r1 c2");
+    if (tile2.backgroundColor == "black") {
+        tile2.backgroundColor = "white";
+    }
+    else {
+        tile2.backgroundColor = "black";
+    }
+    
+    let tile3 = document.gtElementsByClassName("r2 c1");
+    if (tile3.backgroundColor == "black") {
+        tile3.backgroundColor = "white";
+    }
+    else {
+        tile3.backgroundColor = "black";
+    }
+    
+    let tile4 = document.gtElementsByClassName("r2 c2");
+    if (tile4.backgroundColor == "black") {
+        tile4.backgroundColor = "white";
+    }
+    else {
+        tile4.backgroundColor = "black";
+    }
     
 }
 
-el.addEventListener("click",animate);
+for (let i = 0; i < tiles.length; i++) {
+    let m = Math.floor(i / 10);
+    let n = i % 10;
+    tiles[i].addEventListener("click", toggle, m,n);
+}
