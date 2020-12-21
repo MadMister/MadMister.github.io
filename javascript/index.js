@@ -13,11 +13,11 @@ function toggle(a,b) {
         let r = "row" + coor[j][0];
         let c = "column" + coor[j][1];
         let el = document.getElementsByClassName(r + " " + c)[0];
-        if (getComputedStyle(e).backgroundColor == "white") {
-            el.style.backgroundColor = "black";
+        if (getComputedStyle(e).backgroundColor == "rgb(255, 255, 255)") {
+            el.style.backgroundColor = "rgb(0, 0, 0)";
         }
         else {
-            el.style.backgroundColor = "white";
+            el.style.backgroundColor = "rgb(255, 255, 255)";
         }
     }
 }
