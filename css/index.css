@@ -19,6 +19,7 @@ body {
 .nav-strip {
     position: fixed;
     height: 120px;
+    width: 100vw;
     top: 0;
     background-color: rgb(255,255,255);
 }
