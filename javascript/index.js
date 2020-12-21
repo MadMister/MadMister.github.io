@@ -27,5 +27,5 @@ for (let i = 0; i < tiles.length; i++) {
     let n = i % 10;
     tiles[i].addEventListener("click", function() {
         toggle(m+1 ,n+1);
-    }
+    });
 }
