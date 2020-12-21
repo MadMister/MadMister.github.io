@@ -4,12 +4,23 @@ function toggle(a,b) {
     
     let coor = [[a,b]];
     
-    coor.push([a,b-1]);
-    coor.push([a,b+1]);
-    coor.push([a-1,b]);
-    coor.push([a+1,b]);
+    if (b !== 1) {
+        coor.push([a,b-1]);
+    }
     
-    for (let j = 0; j<5; j++) {
+    if (b!== 10) {
+        coor.push([a,b+1]);
+    }
+    
+    if (a !== 1) {
+        coor.push([a,b+1]);
+    }
+    
+    if (a!== 10) {
+        coor.push([a+1,b]);
+    }
+    
+    for (let j = 0; j<coor.length; j++) {
         let r = "row" + coor[j][0];
         let c = "column" + coor[j][1];
         let el = document.getElementsByClassName(r + " " + c)[0];
