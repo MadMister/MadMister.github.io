@@ -12,17 +12,17 @@ function toggle(a,b) {
     for (let j = 0; j<5; j++) {
         let r = "row" + coor[j][0];
         let c = "column" + coor[j][1];
-        let el = document.getElementsByClassName("r c")[0];
-        if (el.backgroundColor == "white") {
-            el.backgroundColor = "black";
+        let el = document.getElementsByClassName(r + " " + c)[0];
+        if (el.style.backgroundColor == "white") {
+            el.style.backgroundColor = "black";
         }
         else {
-            el.backgroundColor = "black";
+            el.style.backgroundColor = "white";
         }
     }
 }
 for (let i = 0; i < tiles.length; i++) {
     let m = Math.floor(i / 10);
     let n = i % 10;
-    tiles[i].addEventListener("click", toggle, m,n);
+    tiles[i].addEventListener("click", toggle, m+1 ,n+1);
 }
