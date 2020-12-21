@@ -16,23 +16,38 @@ body {
 
 /* upper strip with logo */
 
-.nav-container {
+.nav-strip {
     position: fixed;
     height: 120px;
+    top: 0;
 }
 
 .logo-container {
     width: 100px;
     height: 100px;
     background-color: rgb(30,45,80);
-    color: rgb(0,0,0);
+    color: rgb(255,255,255);
     margin-top: 10px;
 }
 
 /* large strip with image */
 
-.image-container {
+.main-strip {
     height: 500px;
+    margin-top: 120px;
     color: rgb(0,0,0);
     background-color: rgb(30,45,80);
+}
+
+/* strip with some text */
+
+.text-strip {
+    height: 400px;
+}
+
+/* footer */
+
+footer {
+    height: 300px;
+    background-color: rgb(205, 202, 199);
 }
