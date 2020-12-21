@@ -8,15 +8,15 @@ function toggle(a,b) {
         coor.push([a,b-1]);
     }
     
-    if (b!== 10) {
+    if (b !== 10) {
         coor.push([a,b+1]);
     }
     
     if (a !== 1) {
-        coor.push([a,b+1]);
+        coor.push([a-1,b]);
     }
     
-    if (a!== 10) {
+    if (a !== 10) {
         coor.push([a+1,b]);
     }
     
