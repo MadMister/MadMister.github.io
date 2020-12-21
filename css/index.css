@@ -4,26 +4,23 @@
 }
 
 body {
-    font-family: 'Impact','Arial';
-    font-size: 25px;
-    background-color: #00ffff;
+    font-family: 'Arial';
+    font-size: 14px;
+}
+.nav-container {
+    position: fixed;
+    height: 70px;
 }
 
-.header {
-    text-align: center;
-    color: #ffffff;
-    grid-column: 1/-1;
-    grid-rows: 1/3;
+.margin-box{
+    width: 400px;
+    margin: 5px auto 5px auto;
+    border: 1px solid black;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(10, 8vw);
-    grid-auto-rows: 8vw;
-    grid-gap: 1.8vw;
-    justify-content: space-evenly;
-}
-
-.initial > div {
-    background-color: black;
+.logo-container {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(30,45,80);
+    margin-top: 10px;
 }
