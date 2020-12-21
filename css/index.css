@@ -7,20 +7,32 @@ body {
     font-family: 'Arial';
     font-size: 14px;
 }
-.nav-container {
-    position: fixed;
-    height: 70px;
-}
 
-.margin-box{
-    width: 400px;
+.margin-box {
+    width: 800px;
     margin: 5px auto 5px auto;
     border: 1px solid black;
 }
 
+/* upper strip with logo */
+
+.nav-container {
+    position: fixed;
+    height: 120px;
+}
+
 .logo-container {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     background-color: rgb(30,45,80);
+    color: rgb(0,0,0);
     margin-top: 10px;
+}
+
+/* large strip with image */
+
+.image-container {
+    height: 500px;
+    color: rgb(0,0,0);
+    background-color: rgb(30,45,80);
 }
