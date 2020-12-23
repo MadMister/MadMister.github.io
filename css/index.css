@@ -10,7 +10,6 @@ body {
 
 .margin-box {
     width: 800px;
-    min-height: 200px;
     margin: 10px auto;
     border: 1px solid black;
 }
@@ -51,6 +50,10 @@ body {
 
 .text-strip {
     height: 400px;
+}
+
+.text-strip:nth-of-type(2) {
+    background-color: green;
 }
 
 /* footer */
