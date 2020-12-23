@@ -52,7 +52,7 @@ body {
     height: 400px;
 }
 
-.text-strip:nth-of-type(2) {
+.text-strip:nth-child(2) {
     background-color: green;
 }
 
