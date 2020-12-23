@@ -54,7 +54,7 @@ body {
 
 /* footer */
 
-footer {
+.footer-strip {
     height: 300px;
     background-color: rgb(205, 202, 199);
 }
