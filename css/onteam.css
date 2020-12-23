@@ -19,26 +19,6 @@ body {
     width: 80px;
     background-color: rgb(255,0,0);
 }
-
-/* link behaviour */
-
-a {
-    text-decoration: none;
-    color: rgb(0,0,0);
-}
-
-a:hover {
-    color: rgb(228, 48, 28);
-}
-
-a:active {
-    
-}
-
-a:visited {
-    color: rgb(0,0,0);
-}
-
 /* upper strip with logo */
 
 .nav-strip {
@@ -54,41 +34,6 @@ a:visited {
     height: 100px;
     background-color: rgb(30,45,80);
     color: rgb(255,255,255);
-}
-
-.navigation-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 5px;
-}
-
-.icons-container {
-    height: 100%;
-    width: 50px;
-    font-size: 10px;
-}
-
-.login-button {
-    height: 14px;
-    padding: 3px;
-    border: 1px solid rgb(30, 45, 80);
-    color: rgb(30, 45, 80);
-    margin-bottom: 17px;
-}
-
-.language-button {
-    height: 14px;
-    padding: 3px;
-    border: 1px solid rgb(30, 45, 80);
-    background-color: rgb(30, 45, 80);
-    margin-bottom: 17px;
-}
-
-.jobs-button {
-    height: 14px;
-    padding: 3px;
-    border: 1px solid rgb(30, 45, 80);
-    color: rgb(30, 45, 80);
 }
 
 /* large strip with image */
@@ -121,6 +66,6 @@ footer {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
 }
+
