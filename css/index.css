@@ -112,8 +112,9 @@ nav {
     height: 400px;
 }
 
-.text-strip2 {
-    background-color: green;
+.text-grid {
+    dispay: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
 /* footer */
