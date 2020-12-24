@@ -1,5 +1,13 @@
 /* strip with affiliates */
 
+.legend-grid {
+    height: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 120px);
+    grid-gap: 20px;
+    justify-content: center;
+    overflow: hidden;
+}
 .affiliates-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, 120px);
