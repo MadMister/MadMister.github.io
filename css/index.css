@@ -107,6 +107,7 @@ nav {
 .burger-menu:hover {
     animation-name: expand;
     animation-duration: 2s;
+    background-color: black;
 }
 
 .burger-slice {
