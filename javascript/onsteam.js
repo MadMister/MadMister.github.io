@@ -1,4 +1,4 @@
-let elarr = document.getElemensByClassName("affiliate");
+let elarr = document.getElementsByClassName("affiliate");
 let cover = documnet.getElementsByClassName("covering-screen")[0];
 
 for (let i= 0; i<elarr.length; i++) {
