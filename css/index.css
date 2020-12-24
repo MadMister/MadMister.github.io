@@ -133,7 +133,7 @@ footer {
 
 @media screen and (max-width: 700px) {
     
-    .navigation-grid .icons-container: {
+    .navigation-grid, .icons-container: {
         display: none;
     }
     
