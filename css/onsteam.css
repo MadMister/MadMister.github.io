@@ -131,6 +131,10 @@ nav {
     height: 120px;
 }
 
+img[src^="images/im"] {
+    object-fit: contain;
+}
+
 /* footer */
 
 footer {
