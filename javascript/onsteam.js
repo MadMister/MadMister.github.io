@@ -1,7 +1,7 @@
 let elarr = document.getElemensByClassName("affiliate");
 let cover = documnet.getElementsByClassName("covering-screen")[0];
 
-fro(let i= 0; i<elarr.length; i++) {
+for (let i= 0; i<elarr.length; i++) {
     elarr[i].addEventlistener("click", function() {
         cover.style.display = "block";
     })
