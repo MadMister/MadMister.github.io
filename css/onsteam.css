@@ -7,6 +7,10 @@
     justify-content: center;
 }
 
+.affiliate {
+    position: relative;
+}
+
 .affiliate-picture {
     width: 100%;
     height: 120px;
@@ -15,6 +19,7 @@
 }
 
 .affiliate-picture:hover {
+    position: absolute;
     background-color: none;
     z-index: 2;
 }
