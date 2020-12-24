@@ -16,6 +16,7 @@
 
 .affiliate-picture:hover {
     background-color: none;
+    z-index: 2;
 }
 
 
