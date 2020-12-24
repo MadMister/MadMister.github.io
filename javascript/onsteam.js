@@ -1,5 +1,5 @@
 let elarr = document.getElementsByClassName("affiliate");
-let cover = document.getElementsByClassName("covering-screen")[0];
+let cover = document.getElementsByClassName("covering-sheet")[0];
 
 for (let i= 0; i<elarr.length; i++) {
     elarr[i].addEventListener("click", function() {
