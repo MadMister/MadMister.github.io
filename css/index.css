@@ -106,7 +106,6 @@ nav {
 .burger-menu:hover {
     animation-name: expand;
     animation-duration: 2s;
-    background-color: black;
 }
 
 .burger-slice {
@@ -175,10 +174,12 @@ footer {
 
 @keyframes expand {
     from {
+        background-color: white;
         grid-gap: 10px;
     }
     
     to {
+        background-color: black;
         grid-gap: 35px;
     }
 }
