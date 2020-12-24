@@ -142,7 +142,7 @@ nav {
     background-color: rgba(210, 215, 220, 0);
 }
 
-img[src^="images/im"] {
+img[src^="images/ob"] {
     object-fit: contain;
     border-radius: 50%;
     width: 100%;
