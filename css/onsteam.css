@@ -138,9 +138,6 @@ nav {
     background-color: none;
 }
 
-.color-distortion:hover {
-    background-color: rgba(210, 215, 220, 0);
-}
 
 img[src^="images/ob"] {
     object-fit: contain;
