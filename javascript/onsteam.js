@@ -40,7 +40,8 @@ for (let i= 0; i<elarr.length; i++) {
 }
 
 window.onclick = function(event) {
-  if (event.target == cover) {
-    cover.style.display = "none";
-  }
+    if (event.target == cover) {
+        cover.style.display = "none";
+        display.innerHTML = '';
+    }
 }
