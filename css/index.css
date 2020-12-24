@@ -114,7 +114,7 @@ nav {
 
 .text-grid {
     dispay: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 /* footer */
