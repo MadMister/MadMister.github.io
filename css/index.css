@@ -109,7 +109,7 @@ nav {
 /* strip with some text */
 
 .text-strip {
-    height: 400px;
+    margin-bottom: 100px;
 }
 
 .text-grid {
