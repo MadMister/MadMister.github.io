@@ -145,6 +145,11 @@ footer {
 
 @media screen and (max-width: 700px) {
     
+    nav {
+        grid-template-columns: 100px 1fr;
+        justify-content: space-between;
+    }
+    
     .navigation-grid, .icons-container {
         display: none;
     }
@@ -155,6 +160,5 @@ footer {
     
     .burger-menu {
         display: block;
-        float: right;
     }
 }
