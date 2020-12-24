@@ -30,6 +30,10 @@ a:hover {
     color: rgb(228, 48, 28);
 }
 
+* a:hover {
+    color: rgb(228, 48, 28);
+}
+
 a:active {
     
 }
