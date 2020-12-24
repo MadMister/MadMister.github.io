@@ -5,14 +5,14 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, 120px);
     grid-gap: 20px;
-    justify-content: center;
+    justify-content: space-between;
     overflow: hidden;
 }
 .affiliates-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, 120px);
     grid-gap: 20px;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .affiliate-picture {
