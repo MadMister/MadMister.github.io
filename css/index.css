@@ -26,20 +26,16 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    color: rgb(228, 48, 28);
+a:visited {
+    color: inherit;
 }
 
-* a:hover {
+a:hover {
     color: rgb(228, 48, 28);
 }
 
 a:active {
     
-}
-
-a:visited {
-    color: inherit;
 }
 
 /* upper strip with logo */
