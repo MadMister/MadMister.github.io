@@ -20,7 +20,7 @@
 
 .affiliate-picture:hover {
     position: absolute;
-    background-color: none;
+    background-color: rgba(210, 215, 220, 0);
     z-index: 2;
 }
 
