@@ -95,6 +95,18 @@ nav {
     color: rgb(30, 45, 80);
 }
 
+.burger-menu {
+    display: none;
+    width: 50px;
+    height: 50px;
+}
+
+.burger-slice {
+    height: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(30, 45, 80);
+}
+
 /* large strip with image */
 
 .main-strip {
@@ -133,11 +145,16 @@ footer {
 
 @media screen and (max-width: 700px) {
     
-    .navigation-grid, .icons-container: {
+    .navigation-grid, .icons-container {
         display: none;
     }
     
     .text-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .burger-menu {
+        display: block;
+        float: left;
     }
 }
