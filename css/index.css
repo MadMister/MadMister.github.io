@@ -35,6 +35,7 @@ a:active {
 }
 
 a:visited {
+    color: inherit;
 }
 
 /* upper strip with logo */
