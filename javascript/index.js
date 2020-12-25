@@ -1,4 +1,4 @@
-let slices = document.getElementsByClassName("burger-silce");
+let slices = document.getElementsByClassName("burger-slice");
 let menu = document.getElementsByClassName("burger-menu");
 menu[0].addEventListener("mouseover", function() {
     slices[0].style.animatonPlayState = "running";
