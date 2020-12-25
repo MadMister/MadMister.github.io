@@ -100,16 +100,15 @@ nav {
     width: 50px;
 }
 
-.burger-slice:hover {
-    animation-name: expand;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
 
 .burger-slice {
     height: 10px;
     margin-bottom: 10px;
     background-color: rgb(30, 45, 80);
+    animation-name: expand;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
 }
 
 /* large strip with image */
