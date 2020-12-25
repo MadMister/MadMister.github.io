@@ -23,11 +23,16 @@
 
 .affiliate-info {
     display: none;
+    overflow: hidden;
     position: relative;
-    top: -2em;
+    top: -2.4em;
     left: -40px;
     width: 200px;
     background-color: rgb(255, 255, 255)
+    animation-name: dissapear;
+    animation-direction: reverse;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 .covering-sheet {
@@ -52,12 +57,12 @@
 
 /* cv animation */
 
-@keyframes appear {
+@keyframes disappear {
     from {
-        rgba(0,0,0,1)
+        height: 0px;
     }
     
     to {
-        rgba(0,0,0,0.5)
+        height: 500px;
     }
 }

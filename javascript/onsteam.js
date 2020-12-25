@@ -8,10 +8,12 @@ const placeholder = {
 
 
 
-let elarr = document.getElementsByClassName("affiliate");
+let elarr = document.getElementsByClassName("affiliate-info");
 let cover = document.getElementsByClassName("covering-sheet")[0];
 let display = document.getElementsByClassName("cv-display")[0];
+let j = -1;
 
+/*
 for (let i= 0; i<elarr.length; i++) {
     elarr[i].addEventListener("click", function() {
         let name = document.createElement("p");
@@ -36,6 +38,19 @@ for (let i= 0; i<elarr.length; i++) {
         display.appendChild(bio);
         
         cover.style.display = "block";
+    })
+}
+*/
+for (let i= 0; i<elarr.length; i++) {
+    elarr[i].addEventListener("click", function() {
+        if (j != -1) {
+            elarr[j].style.animationDirection = "normal";
+        }
+        elarr[i].style.animationDirection = "reverse";
+        elarr[i].style.display = "block";
+        
+        
+        j = i;
     })
 }
 
