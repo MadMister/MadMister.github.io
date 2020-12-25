@@ -24,7 +24,7 @@
 .affiliate-info {
     display: none;
     position: relative;
-    top: 0;
+    top: -2em;
     left: -40px;
     width: 200px;
 }
