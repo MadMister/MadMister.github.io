@@ -1,8 +1,8 @@
 let slices = document.getElementsByClassName("burger-slice");
 let menu = document.getElementsByClassName("burger-menu")[0];
 let contracted = true;
-menu.addEventListener("mouseover", function() {
-    if(expanded) {
+menu.addEventListener("click", function() {
+    if(contracted) {
         slices[0].style.animationName = "expand";
         slices[1].style.animationName = "expand";
         
