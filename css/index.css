@@ -180,6 +180,10 @@ footer {
         display: none;
     }
     
+    .main-strip{
+        margin-top: 0;
+    }
+    
     .text-grid {
         grid-template-columns: 1fr;
     }
