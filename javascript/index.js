@@ -30,3 +30,12 @@ menu.addEventListener("click", function() {
     }
 });
 
+let widthMatch = window.matchMedia("(max-width: 700px)");
+widthMatch.addEventListener('change', function(mm) {
+    if (mm.matches) {
+        contracted = true;
+        slices[0].style.animationPlayState = "paused";
+        slices[1].style.animationPlayState = "paused";
+        pane.style.animationPlayState = "paused";
+    }
+});
