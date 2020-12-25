@@ -118,10 +118,12 @@ nav {
     height: 0;
     width: 70vw;
     position: fixed;
-    top: 120px;
+    top: 0;
     left: 15vw;
     margin-top: 120px;
     overflow: hidden;
+    background-color: rgb(255,255,255);
+    color: rgb(30, 45, 80);
     animation-name: dropdown;
     animation-duration: 1s;
     animation-fill-mode: forwards;
