@@ -70,7 +70,7 @@ elarr[0].addEventListener("click", function() {
     
     
     j = i;
-})
+});
 
 window.onclick = function(event) {
     if (event.target != document.getElementsByClassName("afiliat")[0]) {
