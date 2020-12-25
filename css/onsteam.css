@@ -29,7 +29,7 @@
     left: -40px;
     width: 200px;
     background-color: rgb(255, 255, 255);
-    animation-name: disapear;
+    animation-name: disappear;
     animation-direction: reverse;
     animation-duration: 1s;
     animation-fill-mode: forwards;
