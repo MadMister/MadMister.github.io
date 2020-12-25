@@ -32,14 +32,12 @@ menu.addEventListener("click", function() {
 
 let widthMatch = window.matchMedia("(max-width: 700px)");
 widthMatch.addEventListener('change', function(mm) {
-    if (mm.matches) {
-        slices[0].style.marginBottom = "10px";
-        slices[1].style.marginBottom = "10px";
-        pane.style.height = "0";
-        
+    if (mm.matches && !contracted) {
+        slices[0].style.animationName = "contract";
+        slices[1].style.animationName = "contract";
+                      
+        pane.style.animationName = "rollup";
+                      
         contracted = true;
-        slices[0].style.animationPlayState = "paused";
-        slices[1].style.animationPlayState = "paused";
-        pane.style.animationPlayState = "paused";
     }
 });
