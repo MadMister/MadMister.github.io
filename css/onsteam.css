@@ -23,6 +23,7 @@
 
 .affiliate-info {
     display: none;
+    position: relative;
 }
 
 .covering-sheet {
