@@ -147,6 +147,8 @@ footer {
     grid-gap: 5px;
 }
 
+/* breakpoints */
+
 @media screen and (max-width: 700px) {
     
     nav {
@@ -176,5 +178,15 @@ footer {
     
     to {
         margin-bottom: 35px;
+    }
+}
+
+@keyframes contract {
+    from {
+        margin-bottom: 30px;
+    }
+    
+    to {
+        margin-bottom: 10px;
     }
 }
