@@ -6,6 +6,12 @@ let contracted = true;
 
 
 menu.addEventListener("click", function() {
+                      
+    slices[0].style.animationFillMode = "forwards";
+    slices[1].style.animationFillMode = "forwards";
+    
+    pane.style.animationFillMode = "forwards";
+                      
     if(contracted) {
         slices[0].style.animationName = "expand";
         slices[1].style.animationName = "expand";
@@ -32,11 +38,16 @@ menu.addEventListener("click", function() {
 
 let widthMatch = window.matchMedia("(max-width: 700px)");
 widthMatch.addEventListener('change', function(mm) {
-    if (mm.matches && !contracted) {
-        slices[0].style.animationName = "contract";
-        slices[1].style.animationName = "contract";
+    if (mm.matches) {
+        slices[0].style.animationFillMode = "none";
+        slices[1].style.animationFillMode = "none";
+        
+        slices[0].style.animationPlayState = "paused";
+        slices[1].style.animationPlayState = "paused";
                       
-        pane.style.animationName = "rollup";
+        pane.style.animationFillMode = "none";
+        
+        pane.style.animationPlayState = "paused";
                       
         contracted = true;
     }
