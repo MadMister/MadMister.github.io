@@ -121,7 +121,7 @@ nav {
     margin-right: auto;
     overflow: hidden;
     animation-name: dropdown;
-    animatio-duration: 1s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-play-state: paused;
 }
