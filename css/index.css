@@ -117,8 +117,9 @@ nav {
     display: none;
     height: 0;
     width: 70vw;
-    margin-left: auto;
-    margin-right: auto;
+    position: fixed;
+    top: 120px;
+    left: 15vw;
     margin-top: 120px;
     overflow: hidden;
     animation-name: dropdown;
@@ -178,10 +179,6 @@ footer {
     
     .navigation-grid, .icons-container {
         display: none;
-    }
-    
-    .main-strip{
-        margin-top: 0;
     }
     
     .text-grid {
