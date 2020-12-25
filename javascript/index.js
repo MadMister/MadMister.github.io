@@ -9,5 +9,5 @@ menu.addEventListener("mouseover", function() {
 });
 menu.addEventListener("mouseout", function() {
     slices[0].style.animationDirection = "reverse";
-    slices[1].style.animationPlayState = "reverse";
+    slices[1].style.animationDirection = "reverse";
 });
