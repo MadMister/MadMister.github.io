@@ -45,3 +45,9 @@ window.onclick = function(event) {
         display.innerHTML = '';
     }
 }
+
+let info = document.getElementsByClassName("affiliate-info")[0];
+elarr[0].addEventListener("click", function() {
+    info.style.display = "block";
+    
+}

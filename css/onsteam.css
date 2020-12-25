@@ -21,6 +21,10 @@
     background-image: url(../images/obama.png);
 }
 
+.affiliate-info {
+    display: none;
+}
+
 .covering-sheet {
   display: none;
   position: fixed;
@@ -31,7 +35,7 @@
   width: 100vw;
   height: 100vh;
   background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+  background-color: rgba(0,0,0,0.5);
 }
 
 .cv-display {
@@ -39,4 +43,16 @@
     margin: 20vh auto;
     background-color: rgb(30,45,80);
     color: rgb(255,255,255);
+}
+
+/* cv animation */
+
+@keyframes appear {
+    from {
+        rgba(0,0,0,1)
+    }
+    
+    to {
+        rgba(0,0,0,0.5)
+    }
 }
