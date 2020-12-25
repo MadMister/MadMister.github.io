@@ -111,6 +111,25 @@ nav {
     animation-play-state: paused;
 }
 
+/* navigatio strip for narrower screens */
+
+.navigation-strip {
+    display: none;
+    height: 0;
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    animation-name: dropdown;
+    animatio-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+}
+
+.navigation-strip > div {
+    height: 20px;
+}
+
 /* large strip with image */
 
 .main-strip {
@@ -167,6 +186,10 @@ footer {
     .burger-menu {
         display: block;
     }
+    
+    .navigation-strip {
+        display: block;
+    }
 }
 
 /* animations */
@@ -188,5 +211,25 @@ footer {
     
     to {
         margin-bottom: 10px;
+    }
+}
+
+@keyframes dropdown {
+    from {
+        height: 0px;
+    }
+    
+    to {
+        height: 180px;
+    }
+}
+
+@keyframes rollup {
+    from {
+        height: 180px;
+    }
+    
+    to {
+        height: 0px;
     }
 }

@@ -1,6 +1,10 @@
 let slices = document.getElementsByClassName("burger-slice");
 let menu = document.getElementsByClassName("burger-menu")[0];
+let pane = document.getElementsByClassName("navigation-strip")[0];
 let contracted = true;
+
+
+
 menu.addEventListener("click", function() {
     if(contracted) {
         slices[0].style.animationName = "expand";
@@ -8,6 +12,10 @@ menu.addEventListener("click", function() {
         
         slices[0].style.animationPlayState = "running";
         slices[1].style.animationPlayState = "running";
+                      
+        pane.style.animationName = "dropdown";
+        
+        pane.style.animationPlayState = "running";
         
         contracted = false;
     }
@@ -15,6 +23,8 @@ menu.addEventListener("click", function() {
     else {
         slices[0].style.animationName = "contract";
         slices[1].style.animationName = "contract";
+                      
+        pane.style.animationName = "rollup";
                       
         contracted = true;
     }
