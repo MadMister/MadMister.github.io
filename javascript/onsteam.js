@@ -40,7 +40,7 @@ for (let i= 0; i<elarr.length; i++) {
         cover.style.display = "block";
     })
 }
-*/
+
 for (let i= 0; i<elarr.length; i++) {
     elarr[i].addEventListener("click", function() {
         if (j != -1) {
@@ -53,16 +53,29 @@ for (let i= 0; i<elarr.length; i++) {
         j = i;
     })
 }
+ 
+ window.onclick = function(event) {
+     if (event.target == cover) {
+         cover.style.display = "none";
+         display.innerHTML = '';
+     }
+ }
+ */
+elarr[0].addEventListener("click", function() {
+    if (j != -1) {
+        elarr[0].style.animationDirection = "normal";
+    }
+    elarr[0].style.animationDirection = "reverse";
+    elarr[0].style.display = "block";
+    
+    
+    j = i;
+})
 
 window.onclick = function(event) {
-    if (event.target == cover) {
-        cover.style.display = "none";
-        display.innerHTML = '';
+    if (event.target != document.getElementsByClassName("afiliat")[0]) {
+        elarr[0].style.animationDirection = "normal";
     }
 }
 
-let info = document.getElementsByClassName("affiliate-info")[0];
-elarr[0].addEventListener("click", function() {
-    info.style.display = "block";
-    
-});
+
