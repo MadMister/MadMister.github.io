@@ -33,14 +33,6 @@ menu.addEventListener("click", function() {
 let widthMatch = window.matchMedia("(max-width: 700px)");
 widthMatch.addEventListener('change', function(mm) {
     if (mm.matches) {
-        slices[0].style.animationName = "contract";
-            slices[1].style.animationName = "contract";
-                          
-            pane.style.animationName = "rollup";
-                          
-            contracted = true;
-        }
-        
         contracted = true;
         slices[0].style.animationPlayState = "paused";
         slices[1].style.animationPlayState = "paused";
