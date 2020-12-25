@@ -119,7 +119,7 @@ nav {
     width: 70vw;
     margin-left: auto;
     margin-right: auto;
-    overflow: hidden;
+    overflow: auto;
     animation-name: dropdown;
     animation-duration: 1s;
     animation-fill-mode: forwards;
