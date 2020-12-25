@@ -24,6 +24,8 @@
 .affiliate-info {
     display: none;
     position: relative;
+    top: 0;
+    left: 10px;
 }
 
 .covering-sheet {
