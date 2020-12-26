@@ -55,9 +55,6 @@ function showInfo(e) {
     if (c == null) {
         c = e.currentTarget;
         c.nextElementSibling.style.animationName = "appear";
-        if (c.nextElementSibling.style.animationPlayState = "paused") {
-            c.nextElementSibling.style.animationPlayState = "running";
-        }
     }
     
     else if (c == e.currentTarget) {
@@ -69,9 +66,6 @@ function showInfo(e) {
         c.nextElementSibling.style.animationName = "disappear";
         c = e.currentTarget;
         c.nextElementSibling.style.animationName = "appear";
-        if (c.nextElementSibling.style.animationPlayState = "paused") {
-            c.nextElementSibling.style.animationPlayState = "running";
-        }
     }
 }
 

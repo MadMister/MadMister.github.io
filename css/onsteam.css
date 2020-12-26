@@ -34,7 +34,6 @@
     z-index: 1;
     width: 200px;
     background-color: rgb(255, 255, 255);
-    animation-name: appear;
     animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-play-state: paused;
