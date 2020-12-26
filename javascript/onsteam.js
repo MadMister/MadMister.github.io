@@ -51,7 +51,7 @@ let affiliatesar = document.getElementsByClassName("affiliate");
 let j = -1;
 
 affiliatesar[0].addEventListener("click", showInfo);
-infoar[0].addEventListener("animationend", stopDisplay);
+//infoar[0].addEventListener("animationend", stopDisplay);
 //infoar[0].style.animationDirection = "normal";
 
 function showInfo(e) {
