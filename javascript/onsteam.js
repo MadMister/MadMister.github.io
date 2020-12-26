@@ -55,11 +55,6 @@ for (let i = 0; i < affiliatesar.length; i++) {
     affiliatesar[i].addEventListener("click", showInfo);
 }
 
-
-
-infoar[0].addEventListener("animationend", stopDisplay);
-//infoar[0].style.animationDirection = "normal";
-
 function showInfo(e) {
     if (c != null) {
         if (e.currentTarget != c) {
