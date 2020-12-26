@@ -53,20 +53,20 @@ let c = null;
 function showInfo(e) {
     if (c == null) {
         c = e.currentTarget;
-        c.nextSibling.nextSibling.style.animationDirection = "normal";
-        c.nextSibling.nextSibling.style.animationPlayState = "running";
+        c.nextElementSibling.style.animationDirection = "normal";
+        c.nextElementSibling.style.animationPlayState = "running";
     }
     
     else if (c == e.currentTarget) {
-        c.nextSibling.nextSibling.style.animationDirection = "reverse";
+        c.nextElementSibling.style.animationDirection = "reverse";
         c = null;
     }
     
     else {
-        c.nextSibling.nextSibling.style.animationDirection = "reverse";
+        c.nextElementSibling.style.animationDirection = "reverse";
         c = e.currentTarget;
-        c.nextSibling.nextSibling.style.animationDirection = "normal";
-        c.nextSibling.nextSibling.style.animationPlayState = "running";
+        c.nextElementSibling.style.animationDirection = "normal";
+        c.nextElementSibling.style.animationPlayState = "running";
     }
 }
 
