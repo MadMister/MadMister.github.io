@@ -51,9 +51,8 @@ let affiliatesar = document.getElementsByClassName("affiliate-click-region");
 let c = null;
 let p = null;
 
-for (let i = 0; i < affilatesar.length; i++) {
+for (let i = 0; i < affiliatesar.length; i++) {
     affiliatesar[i].addEventListener("click", showInfo);
-
 }
 
 
