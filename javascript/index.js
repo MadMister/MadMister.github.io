@@ -26,7 +26,7 @@ menu.addEventListener("click", function() {
 });
 
 
-let widthMatch = window.matchMedia("(max-width: 700px)");
+let widthMatch = window.matchMedia("(max-width: 600px)");
 widthMatch.addEventListener('change', function(mm) {
     if (mm.matches) {
         
@@ -38,8 +38,7 @@ widthMatch.addEventListener('change', function(mm) {
         
         pane.style.animationName = "";
         
-        pane.style.animationFillMode = "none";
-        pane.style.animationFillMode = "forwards";
+        pane.style.height = "0";
                       
         contracted = true;
     }
