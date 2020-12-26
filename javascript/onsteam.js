@@ -56,13 +56,13 @@ affiliatesar[0].addEventListener("click", toggleInfo);
 
 function toggleInfo(e) {
     e.stopPropagation();
-    let k = e.target;
     if (j >= 0) {
         infoar[j].style.animationName = "disappear";
     }
     
     j=0;
     infoar[0].style.display = "block";
+    return e.target;
 }
 
 /*
