@@ -52,6 +52,7 @@ let c = null;
 let hasPlayed = [];
 
 function showInfo(e) {
+    e.stopPropagation();
     if (c == null) {
         c = e.currentTarget;
         c.nextElementSibling.style.animationName = "appear";
@@ -74,14 +75,14 @@ for (let i = 0; i < affiliatesar.length; i++) {
     hasPlayed[i] = false;
 }
 
-/*
+
 document.body.addEventListener("click", function(e) {
     console.log(e.target);
-    if (c != null && e.target.parentNode.previousSibling.previousSibling != c &&
-        e.target.previousSibling.previousSibling != c) {
+    if (c != null && e.target.parentNode.previousElementSibling != c &&
+        e.target.previousElementSibling != c) {
         console.log("reversed");
-        c.nextSibling.nextSibling.style.animationDirection = "reverse";
+        c.nextElementSibling.style.animationName = "disappear";
         c = null;
     }
 });
-*/
+
