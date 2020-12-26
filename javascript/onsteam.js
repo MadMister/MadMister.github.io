@@ -51,18 +51,20 @@ let j = -1;
 
 elarr[0].addEventListener("click", showInfo);
 elarr[0].addEventListener("animationend", stopDisplay);
+elarr[0].style.animatioDirection = "normal"
 
 function showInfo(e) {
     if (j != -1) {
-        elarr[j].style.animationDirection = "reverse";
+        e.style.animationDirection = "reverse";
     }
-    elarr[0].style.display = "block";
+    e.style.display = "block";
     j = 0;
 }
 
 function stopDisplay(e) {
     if (e.style.animatioDirection == "reverse") {
         e.style.display = "none";
+        elarr[0].style.animatioDirection = "normal"
     }
 }
 
@@ -73,5 +75,4 @@ window.onclick = function(event) {
         elarr[0].style.animationDirection = "reverse";
     }
 }
-
 
