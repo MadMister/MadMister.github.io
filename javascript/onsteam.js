@@ -74,6 +74,7 @@ for (let i = 0; i < affiliatesar.length; i++) {
     affiliatesar[i].addEventListener("click", showInfo);
 }
 
+/*
 document.body.addEventListener("click", function(e) {
     console.log(e.target);
     if (c != null && e.target.parentNode.previousSibling.previousSibling != c &&
@@ -83,4 +84,4 @@ document.body.addEventListener("click", function(e) {
         c = null;
     }
 });
-
+*/
