@@ -55,7 +55,8 @@ affiliatesar[0].addEventListener("click", showInfo);
 infoar[0].addEventListener("animationend", stopDisplay);
 infoar[0].style.animationDirection = "normal";
 
-function showInfo() {
+function showInfo(e) {
+    e.stopPropagation();
     if (j >= 0) {
         infoar[j].style.animationDirection = "reverse";
     }
@@ -71,12 +72,12 @@ function stopDisplay() {
     }
 }
 
-
-
-window.onclick = function(e) {
-    if (e.target != affiliatesar[0] && j >= 0) {
-        infoar[j].style.animationDirection = "reverse";
-        j = -1;
+document.body.addEventListener("click", function(e) {
+    if (j >= 0) {
+        if (e.target != infoar[j]) {
+            infoar[j].style.animationDirection = "reverse";
+            j = -1;
+        }
     }
-}
+});
 
