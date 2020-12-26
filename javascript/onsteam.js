@@ -48,7 +48,6 @@ window.onclick = function(event) {
 
 let infoar = document.getElementsByClassName("affiliate-info");
 let affiliatesar = document.getElementsByClassName("affiliate");
-let grid = document.getElementsByClassName("affiliates-grid")[0];
 let j = -1;
 
 affiliatesar[0].addEventListener("click", showInfo);
@@ -65,6 +64,7 @@ function showInfo(e) {
     infoar[0].style.display = "block";
 }
 
+/*
 function stopDisplay() {
     if (infoar[j].style.animationDirection == "reverse") {
         infoar[j].style.display = "none";
@@ -80,4 +80,4 @@ document.body.addEventListener("click", function(e) {
         }
     }
 });
-
+*/
