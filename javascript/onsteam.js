@@ -53,7 +53,7 @@ let j = -1;
 
 affiliatesar[0].addEventListener("click", showInfo);
 infoar[0].addEventListener("animationend", stopDisplay);
-//elarr[0].style.animationDirection = "normal";
+infoar[0].style.animationDirection = "normal";
 
 function showInfo() {
     if (j >= 0) {
@@ -64,7 +64,7 @@ function showInfo() {
 }
 
 function stopDisplay() {
-    if (infoar[j].style.animationDirection == "reverse" && j >= 1) {
+    if (infoar[j].style.animationDirection == "reverse") {
         infoar[j].style.display = "none";
         infoar[j].style.animatioDirection = "normal"
     }
@@ -73,9 +73,10 @@ function stopDisplay() {
 
 
 window.onclick = function(e) {
-    if (e.target != grid && j >= 0) {
+    if (e.target != affiliatesar[0] && j >= 0) {
         infoar[j].style.animationDirection = "reverse";
         j = -1;
+        log("invoked");
     }
 }
 
