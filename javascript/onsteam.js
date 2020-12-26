@@ -50,10 +50,6 @@ let infoar = document.getElementsByClassName("affiliate-info");
 let affiliatesar = document.getElementsByClassName("affiliate-click-region");
 let c = null;
 
-funtion replay(e) {
-    e.animation = "none";
-    e.animation = "";
-}
 
 function showInfo(e) {
     if (c == null) {
