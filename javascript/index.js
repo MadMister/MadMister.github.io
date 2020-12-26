@@ -28,7 +28,7 @@ menu.addEventListener("click", function() {
 
 let widthMatch = window.matchMedia("(max-width: 700px)");
 widthMatch.addEventListener('change', function(mm) {
-    if (mm.matches && !contracted) {
+    if (mm.matches) {
         
         slices[0].style.animationName = "";
         slices[1].style.animationName = "";
