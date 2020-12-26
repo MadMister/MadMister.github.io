@@ -38,7 +38,8 @@ widthMatch.addEventListener('change', function(mm) {
         
         pane.style.animationName = "";
         
-        pane.style.height = "0px";
+        pane.style.animationFillMode = "none";
+        pane.style.animationFillMode = "forwards";
                       
         contracted = true;
     }
