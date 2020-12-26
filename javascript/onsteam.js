@@ -57,6 +57,9 @@ affiliatesar[0].addEventListener("click", toggleInfo);
 function toggleInfo(e) {
     e.stopPropagation();
     if (j >= 0 && e.target != infoar[j]) {
+        let k =10;
+    }
+    if (j >= 0) {
         infoar[j].style.animationName = "disappear";
     }
     
