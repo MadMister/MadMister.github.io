@@ -76,7 +76,10 @@ for (let i = 0; i < affiliatesar.length; i++) {
 }
 
 document.body.addEventListener("click", function(e) {
-    if (c != null && e.target.parentNode.previousSibling.previousSibling != c && e.target.previousSibling.previousSibling != c) {
+    console.log(e.Target);
+    if (c != null && e.target.parentNode.previousSibling.previousSibling != c &&
+        e.target.previousSibling.previousSibling != c) {
+        console.log(reversed);
         c.nextSibling.nextSibling.style.animationDirection = "reverse";
     }
 });
