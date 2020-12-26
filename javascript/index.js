@@ -36,6 +36,7 @@ menu.addEventListener("click", function() {
     }
 });
 
+
 let widthMatch = window.matchMedia("(max-width: 700px)");
 widthMatch.addEventListener('change', function(mm) {
     if (mm.matches) {

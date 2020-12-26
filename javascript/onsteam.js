@@ -1,3 +1,5 @@
+/*
+
 const placeholder = {
     firstName: "Place",
     lastName: "Holder",
@@ -6,14 +8,9 @@ const placeholder = {
     bio: "Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum. Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum."
 }
 
-
-
-let elarr = document.getElementsByClassName("affiliate-info");
 let cover = document.getElementsByClassName("covering-sheet")[0];
 let display = document.getElementsByClassName("cv-display")[0];
-let j = -1;
 
-/*
 for (let i= 0; i<elarr.length; i++) {
     elarr[i].addEventListener("click", function() {
         let name = document.createElement("p");
@@ -41,40 +38,39 @@ for (let i= 0; i<elarr.length; i++) {
     })
 }
 
-for (let i= 0; i<elarr.length; i++) {
-    elarr[i].addEventListener("click", function() {
-        if (j != -1) {
-            elarr[j].style.animationDirection = "normal";
-        }
-        elarr[i].style.animationDirection = "reverse";
-        elarr[i].style.display = "block";
-        
-        
-        j = i;
-    })
-}
- 
- window.onclick = function(event) {
+window.onclick = function(event) {
      if (event.target == cover) {
          cover.style.display = "none";
          display.innerHTML = '';
      }
- }
- */
-elarr[0].addEventListener("click", function() {
+}
+*/
+
+let elarr = document.getElementsByClassName("affiliate-info");
+let j = -1;
+
+elarr[0].addEventListener("click", showInfo);
+elarr[0].addEventListener("animationend", hide);
+
+function showInfo(e) {
     if (j != -1) {
-        elarr[0].style.animationDirection = "normal";
+        elarr[j].style.animationDirection = "reverse";
     }
-    elarr[0].style.animationDirection = "reverse";
     elarr[0].style.display = "block";
-    
-    
-    j = i;
-});
+    j = 0;
+}
+
+function stopDisplay(e) {
+    if (e.style.animatioDirection == "reverse") {
+        e.style.display = "none";
+    }
+}
+
+
 
 window.onclick = function(event) {
-    if (event.target != document.getElementsByClassName("afiliat")[0]) {
-        elarr[0].style.animationDirection = "normal";
+    if (event.target != elarr[0] && j >= 0) {
+        elarr[0].style.animationDirection = "reverse";
     }
 }
 

@@ -29,12 +29,12 @@
     left: -40px;
     width: 200px;
     background-color: rgb(255, 255, 255);
-    animation-name: disappear;
-    animation-direction: reverse;
+    animation-name: appear;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
 
+/*
 .covering-sheet {
   display: none;
   position: fixed;
@@ -54,15 +54,16 @@
     background-color: rgb(30,45,80);
     color: rgb(255,255,255);
 }
+*/
 
 /* cv animation */
 
-@keyframes disappear {
+@keyframes appear {
     from {
-        height: 100px;
+        height: 0px;
     }
     
     to {
-        height: 0px;
+        height: 500px;
     }
 }
