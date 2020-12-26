@@ -72,8 +72,8 @@ function stopDisplay() {
 
 
 window.onclick = function(e) {
-    if (e.target != infoarr[j] && j >= 0) {
-        elarr[0].style.animationDirection = "reverse";
+    if (e.target != infoar[j] && j >= 0) {
+        infoar[0].style.animationDirection = "reverse";
     }
 }
 
