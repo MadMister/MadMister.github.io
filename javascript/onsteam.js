@@ -56,8 +56,8 @@ affiliatesar[0].addEventListener("click", showInfo);
 
 function showInfo(e) {
     e.stopPropagation();
-    if (j >= 0) {
-        infoar[j].style.animationDirection = "reverse";
+    if (j >= 0 && e.target != infoar[j]) {
+        infoar[j].style.animationNmae = "disappear";
     }
     
     j=0;

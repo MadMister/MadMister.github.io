@@ -72,3 +72,13 @@
         height: 400px;
     }
 }
+
+@keyframes disappear {
+    from {
+        height: 400px;
+    }
+    
+    to {
+        height: 0px;
+    }
+}
