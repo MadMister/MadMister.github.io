@@ -26,10 +26,10 @@
 }
 
 .affiliate-info {
-    display: none;
+    height: 0;
     overflow: hidden;
     position: absolute;
-    top: 120px;
+    top: 160px;
     left: -40px;
     z-index: 1;
     width: 200px;
@@ -37,6 +37,7 @@
     animation-name: appear;
     animation-duration: 1s;
     animation-fill-mode: forwards;
+    animation-play-state: paused;
 }
 
 /*

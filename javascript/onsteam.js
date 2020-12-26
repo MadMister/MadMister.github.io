@@ -47,38 +47,37 @@ window.onclick = function(event) {
 */
 
 let infoar = document.getElementsByClassName("affiliate-info");
-let affiliatesar = document.getElementsByClassName("affiliate");
-let j = -1;
+let affiliatesar = document.getElementsByClassName("affiliate-click-region");
+let c = null;
+let p = null;
 
-affiliatesar[0].addEventListener("click", toggleInfo);
-//infoar[0].addEventListener("animationend", stopDisplay);
-//infoar[0].style.animationDirection = "normal";
+for (let i = 0; i < affilatesar.length; i++) {
+    affiliatesar[i].addEventListener("click", showInfo);
 
-function toggleInfo(e) {
-    e.stopPropagation();
-    if (j >= 0) {
-        infoar[j].style.animationName = "disappear";
-    }
-    
-    j=0;
-    infoar[0].style.display = "block";
-    console.log(e.target);
 }
 
-/*
-function stopDisplay() {
-    if (infoar[j].style.animationDirection == "reverse") {
-        infoar[j].style.display = "none";
-        infoar[j].style.animatioDirection = "normal"
+
+
+infoar[0].addEventListener("animationend", stopDisplay);
+//infoar[0].style.animationDirection = "normal";
+
+function showInfo(e) {
+    if (c != null) {
+        if (e.currentTarget != c) {
+            c.nextSibling.style.animationDirection = "reverse";
+        }
     }
+    c = e.currentTarget
+    c.nextSibling.style.animationDirection = "normal":
+    c.nextSibling.style.animationPlayState = "running";
 }
 
 document.body.addEventListener("click", function(e) {
-    if (j >= 0) {
-        if (e.target != infoar[j]) {
-            infoar[j].style.animationDirection = "reverse";
-            j = -1;
+    if (c != null) {
+        if (e.target != c.nextSibling && e.target.parentNode != c.nextSibling) {
+            c.nextSibling.style.animationDirection = "reverse";
+            p = c;
         }
     }
 });
-*/
+
