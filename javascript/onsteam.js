@@ -59,8 +59,9 @@ function showInfo() {
     if (j >= 0) {
         infoar[j].style.animationDirection = "reverse";
     }
+    
+    j=0;
     infoar[0].style.display = "block";
-    j = 0;
 }
 
 function stopDisplay() {
@@ -76,7 +77,6 @@ window.onclick = function(e) {
     if (e.target != affiliatesar[0] && j >= 0) {
         infoar[j].style.animationDirection = "reverse";
         j = -1;
-        log("invoked");
     }
 }
 
