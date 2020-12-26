@@ -51,7 +51,6 @@ let affiliatesar = document.getElementsByClassName("affiliate-click-region");
 let c = null;
 
 function showInfo(e) {
-    console.log(e.currentTarget.nextSibling.nextSibling);
     if (c == null) {
         c = e.currentTarget;
         c.nextSibling.nextSibling.style.animationDirection = "normal";
@@ -76,11 +75,12 @@ for (let i = 0; i < affiliatesar.length; i++) {
 }
 
 document.body.addEventListener("click", function(e) {
-    console.log(e.Target);
+    console.log(e.target);
     if (c != null && e.target.parentNode.previousSibling.previousSibling != c &&
         e.target.previousSibling.previousSibling != c) {
         console.log("reversed");
         c.nextSibling.nextSibling.style.animationDirection = "reverse";
+        c = null;
     }
 });
 
