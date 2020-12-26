@@ -51,15 +51,15 @@ let affiliatesar = document.getElementsByClassName("affiliate-click-region");
 let c = null;
 
 function showInfo(e) {
-    console.log(e.currentTarget.nextSibling);
+    console.log(e.currentTarget.nextSibling.nextSibling);
     if (c != null) {
         if (e.currentTarget != c) {
-            c.nextSibling.style.animationDirection = "reverse";
+            c.nextSibling.nextSibling.style.animationDirection = "reverse";
         }
     }
     c = e.currentTarget;
-    c.nextSibling.style.animationDirection = "normal";
-    c.nextSibling.style.animationPlayState = "running";
+    c.nextSibling.nextSibling.style.animationDirection = "normal";
+    c.nextSibling.nextSibling.style.animationPlayState = "running";
 }
 
 for (let i = 0; i < affiliatesar.length; i++) {
@@ -68,8 +68,8 @@ for (let i = 0; i < affiliatesar.length; i++) {
 
 document.body.addEventListener("click", function(e) {
     if (c != null) {
-        if (e.target != c.nextSibling && e.target.parentNode != c.nextSibling) {
-            c.nextSibling.style.animationDirection = "reverse";
+        if (e.target != c.nextSibling.nextSibling && e.target.parentNode != c.nextSibling.nextSibling) {
+            c.nextSibling.nextSibling.style.animationDirection = "reverse";
             p = c;
         }
     }
