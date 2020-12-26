@@ -50,7 +50,7 @@ let elarr = document.getElementsByClassName("affiliate-info");
 let j = -1;
 
 elarr[0].addEventListener("click", showInfo);
-elarr[0].addEventListener("animationend", hide);
+elarr[0].addEventListener("animationend", stopDisplay);
 
 function showInfo(e) {
     if (j != -1) {
