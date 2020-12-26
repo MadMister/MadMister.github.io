@@ -49,13 +49,15 @@ window.onclick = function(event) {
 let infoar = document.getElementsByClassName("affiliate-info");
 let affiliatesar = document.getElementsByClassName("affiliate-click-region");
 let c = null;
-
+let hasPlayed = [];
 
 function showInfo(e) {
     if (c == null) {
         c = e.currentTarget;
         c.nextElementSibling.style.animationName = "appear";
-        c.nextElementSibling.style.animationPlayState = "running";
+        if (c.nextElementSibling.style.animationPlayState = "paused") {
+            c.nextElementSibling.style.animationPlayState = "running";
+        }
     }
     
     else if (c == e.currentTarget) {
@@ -67,11 +69,15 @@ function showInfo(e) {
         c.nextElementSibling.style.animationName = "disappear";
         c = e.currentTarget;
         c.nextElementSibling.style.animationName = "appear";
+        if (c.nextElementSibling.style.animationPlayState = "paused") {
+            c.nextElementSibling.style.animationPlayState = "running";
+        }
     }
 }
 
 for (let i = 0; i < affiliatesar.length; i++) {
     affiliatesar[i].addEventListener("click", showInfo);
+    hasPlayed[i] = false;
 }
 
 /*
