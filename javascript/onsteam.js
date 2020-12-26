@@ -61,7 +61,7 @@ function showInfo(e) {
             c.nextSibling.style.animationDirection = "reverse";
         }
     }
-    c = e.currentTarget
+    c = e.currentTarget;
     c.nextSibling.style.animationDirection = "normal";
     c.nextSibling.style.animationPlayState = "running";
 }
