@@ -51,7 +51,7 @@ let affiliatesar = document.getElementsByClassName("affiliate-click-region");
 let c = null;
 
 function showInfo(e) {
-    console.log(e.currentTarget);
+    console.log(e.currentTarget.nextSibling);
     if (c != null) {
         if (e.currentTarget != c) {
             c.nextSibling.style.animationDirection = "reverse";
