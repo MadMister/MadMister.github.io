@@ -114,6 +114,7 @@ nav {
 /* navigatio strip for narrower screens */
 
 .navigation-strip {
+    display: none;
     height: 0;
     width: 70vw;
     position: fixed;
@@ -179,6 +180,10 @@ footer {
     
     .navigation-grid, .icons-container {
         display: none;
+    }
+    
+    .navigation-strip {
+        display: block;
     }
     
     .text-grid {
