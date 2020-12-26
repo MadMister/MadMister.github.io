@@ -68,7 +68,7 @@ function showInfo(e) {
         }
     }
     c = e.currentTarget
-    c.nextSibling.style.animationDirection = "normal":
+    c.nextSibling.style.animationDirection = "normal";
     c.nextSibling.style.animationPlayState = "running";
 }
 
