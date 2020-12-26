@@ -107,16 +107,13 @@ nav {
     height: 10px;
     margin-bottom: 10px;
     background-color: rgb(30, 45, 80);
-    animation-name: expand;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    animation-play-state: paused;
 }
 
 /* navigatio strip for narrower screens */
 
 .navigation-strip {
-    display: none;
     height: 0;
     width: 70vw;
     position: fixed;

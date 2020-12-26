@@ -77,7 +77,6 @@ for (let i = 0; i < affiliatesar.length; i++) {
 
 
 document.body.addEventListener("click", function(e) {
-    console.log(e.target);
     if (c != null && e.target.parentNode.previousElementSibling != c &&
         e.target.previousElementSibling != c) {
         console.log("reversed");
