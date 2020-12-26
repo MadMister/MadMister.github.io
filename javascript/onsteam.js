@@ -50,14 +50,14 @@ let infoar = document.getElementsByClassName("affiliate-info");
 let affiliatesar = document.getElementsByClassName("affiliate");
 let j = -1;
 
-affiliatesar[0].addEventListener("click", showInfo);
+affiliatesar[0].addEventListener("click", toggleInfo);
 //infoar[0].addEventListener("animationend", stopDisplay);
 //infoar[0].style.animationDirection = "normal";
 
-function showInfo(e) {
+function toggleInfo(e) {
     e.stopPropagation();
     if (j >= 0 && e.target != infoar[j]) {
-        infoar[j].style.animationNmae = "disappear";
+        infoar[j].style.animationName = "disappear";
     }
     
     j=0;
