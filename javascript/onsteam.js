@@ -50,40 +50,32 @@ let infoar = document.getElementsByClassName("affiliate-info");
 let affiliatesar = document.getElementsByClassName("affiliate-click-region");
 let c = null;
 
+funtion replay(e) {
+    e.animation = "none";
+    e.animation = "";
+}
+
 function showInfo(e) {
     if (c == null) {
         c = e.currentTarget;
-        c.nextElementSibling.style.animationDirection = "normal";
+        c.nextElementSibling.style.animationName = "appear";
         c.nextElementSibling.style.animationPlayState = "running";
     }
     
     else if (c == e.currentTarget) {
-        c.nextElementSibling.style.animationDirection = "reverse";
-        c.nextElementSibling.style.animationPlayState = "running";
+        c.nextElementSibling.style.animationName = "disappear";
         c = null;
     }
     
     else {
-        c.nextElementSibling.style.animationDirection = "reverse";
-        c.nextElementSibling.style.animationPlayState = "running";
+        c.nextElementSibling.style.animationName = "disappear";
         c = e.currentTarget;
-        c.nextElementSibling.style.animationDirection = "normal";
-        c.nextElementSibling.style.animationPlayState = "running";
-    }
-}
-
-function pause(e) {
-    console.log(e.target);
-    e.target.style.animationPlayState = "paused";
-    if (e.target.style.animationDirection == "reverse") {
-        e.target.style.animationDirection = "normal"
+        c.nextElementSibling.style.animationName = "appear";
     }
 }
 
 for (let i = 0; i < affiliatesar.length; i++) {
     affiliatesar[i].addEventListener("click", showInfo);
-    affiliatesar[i].nextElementSibling.addEventListener("animationend", pause);
-    
 }
 
 /*
