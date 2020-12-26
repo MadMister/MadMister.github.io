@@ -124,10 +124,8 @@ nav {
     overflow: hidden;
     background-color: rgb(255,255,255);
     color: rgb(30, 45, 80);
-    animation-name: dropdown;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    animation-play-state: paused;
 }
 
 .navigation-strip > div {
