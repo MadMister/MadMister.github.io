@@ -46,32 +46,33 @@ window.onclick = function(event) {
 }
 */
 
-let elarr = document.getElementsByClassName("affiliate-info");
+let infoar = document.getElementsByClassName("affiliate-info");
+let affiliatesar = document.getElementsByClassName("affiliate");
 let j = -1;
 
-elarr[0].addEventListener("click", showInfo);
-elarr[0].addEventListener("animationend", stopDisplay);
+affiliatesar[0].addEventListener("click", showInfo);
+infoar[0].addEventListener("animationend", stopDisplay);
 //elarr[0].style.animationDirection = "normal";
 
-function showInfo(e) {
+function showInfo() {
     if (j != -1) {
-        e.style.animationDirection = "reverse";
+        infoar[j].style.animationDirection = "reverse";
     }
-    elarr[0].style.display = "block";
+    infoar[0].style.display = "block";
     j = 0;
 }
 
-function stopDisplay(e) {
-    if (e.style.animationDirection == "reverse") {
-        e.style.display = "none";
-        elarr[0].style.animatioDirection = "normal"
+function stopDisplay() {
+    if (infoar[j].style.animationDirection == "reverse" && j >= 1) {
+        infoar[j].style.display = "none";
+        infoar[j].style.animatioDirection = "normal"
     }
 }
 
 
 
-window.onclick = function(event) {
-    if (event.target != elarr[0] && j >= 0) {
+window.onclick = function(e) {
+    if (e.target != infoarr[j] && j >= 0) {
         elarr[0].style.animationDirection = "reverse";
     }
 }
