@@ -49,11 +49,6 @@ window.onclick = function(event) {
 let infoar = document.getElementsByClassName("affiliate-info");
 let affiliatesar = document.getElementsByClassName("affiliate-click-region");
 let c = null;
-let p = null;
-
-for (let i = 0; i < affiliatesar.length; i++) {
-    affiliatesar[i].addEventListener("click", showInfo);
-}
 
 function showInfo(e) {
     if (c != null) {
@@ -64,6 +59,10 @@ function showInfo(e) {
     c = e.currentTarget;
     c.nextSibling.style.animationDirection = "normal";
     c.nextSibling.style.animationPlayState = "running";
+}
+
+for (let i = 0; i < affiliatesar.length; i++) {
+    affiliatesar[i].addEventListener("click", showInfo);
 }
 
 document.body.addEventListener("click", function(e) {
