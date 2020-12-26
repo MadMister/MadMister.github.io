@@ -62,7 +62,7 @@ function toggleInfo(e) {
     
     j=0;
     infoar[0].style.display = "block";
-    return e.target;
+    console.log(e.target);
 }
 
 /*
