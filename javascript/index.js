@@ -38,7 +38,7 @@ widthMatch.addEventListener('change', function(mm) {
         
         pane.style.animationName = "";
         
-        pane.style.height = "0";
+        pane.style.height = "0px";
                       
         contracted = true;
     }
