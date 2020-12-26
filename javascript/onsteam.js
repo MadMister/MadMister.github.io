@@ -50,7 +50,7 @@ let infoar = document.getElementsByClassName("affiliate-info");
 let affiliatesar = document.getElementsByClassName("affiliate");
 let j = -1;
 
-affiliatesar[0].addEventListener("click", toggleInfo(e));
+affiliatesar[0].addEventListener("click", toggleInfo);
 //infoar[0].addEventListener("animationend", stopDisplay);
 //infoar[0].style.animationDirection = "normal";
 
