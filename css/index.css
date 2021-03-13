@@ -4,27 +4,15 @@
 }
 
 body {
-    font-family: 'Arial';
-    font-size: 14px;
+    font-family: 'Impact','Arial';
+    font-size: 12px;
+    background-color: #ffffff;
 }
 
-.margin-box {
-    width: 70vw;
-    margin: 10px auto;
-    /*border: 1px solid black;*/
-}
-
-.red-bar {
-    height: 8px;
-    width: 80px;
-    background-color: rgb(255,0,0);
-}
-
-/* link behaviour */
-
+/* Behaviour of links and buttons */
 a {
-    text-decoration: none;
     color: inherit;
+    text-decoration: none;
 }
 
 a:visited {
@@ -32,213 +20,149 @@ a:visited {
 }
 
 a:hover {
-    color: rgb(228, 48, 28);
+    color: #000000;
 }
 
-a:active {
+/* global layout*/
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    justify-content: center;
+}
+
+/* header layout */
+
+.header {
+    height: 100px;
+    color: #000000;
+    font-size: 2em;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+h1 {
     
 }
 
-/* upper strip with logo */
-
 nav {
     display: grid;
-    grid-template-columns: 100px 1fr 50px;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
-.nav-strip {
-    position: fixed;
-    height: 120px;
-    width: 100vw;
+.navitem {
+    text-align: right;
+    font-size: 20px;
+}
+
+/* card behaviour */
+
+.griditem {
+    perspective: 800px;
+}
+
+.card {
+    color: #ffffff;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.card:hover {
+    
+}
+
+.card.flipped {
+    transform: rotateY(-180deg);
+}
+
+.face {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.front {
+    position: relative;
+    background-color: #f020c4;
+    text-align: center;
+    line-height: 300px;
+}
+
+.back {
+    position: absolute;
     top: 0;
-    z-index: 2;
-    background-color: rgb(255,255,255);
-    color: rgb(30,45,80);
-}
-
-.logo-container {
-    width: 100px;
-    height: 100px;
-    background-color: rgb(30,45,80);
-    color: rgb(255,255,255);
-}
-
-.navigation-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 5px;
-}
-
-.icons-container {
     height: 100%;
-    font-size: 10px;
+    width: 100%;
+    background-color: #c420f0;
+    text-align: center;
+    transform: rotateY(180deg);
 }
 
-.login-button {
-    height: 14px;
-    padding: 3px;
-    border: 1px solid rgb(30, 45, 80);
-    color: rgb(30, 45, 80);
-    margin-bottom: 17px;
+.infotext {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right:20px;
 }
 
-.language-button {
-    height: 14px;
-    padding: 3px;
-    border: 1px solid rgb(30, 45, 80);
-    background-color: rgb(30, 45, 80);
-    margin-bottom: 17px;
+img {
+    width: 100%;
+    object-fit: cover;
 }
 
-.jobs-button {
-    height: 14px;
-    padding: 3px;
-    border: 1px solid rgb(30, 45, 80);
-    color: rgb(30, 45, 80);
-}
-
-.burger-menu {
-    display: none;
-    width: 50px;
-}
-
-
-.burger-slice {
-    height: 10px;
-    margin-bottom: 10px;
-    background-color: rgb(30, 45, 80);
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-/* navigatio strip for narrower screens */
-
-.navigation-strip {
-    display: none;
-    height: 0;
-    width: 70vw;
-    position: fixed;
-    top: 0;
-    left: 15vw;
-    z-index: 2;
-    margin-top: 120px;
-    overflow: hidden;
-    background-color: rgb(255,255,255);
-    color: rgb(30, 45, 80);
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-.navigation-strip > div {
-    height: 20px;
-}
-
-/* large strip with image */
-
-.main-strip {
-    /*border-top: 1px solid rgb(30,45,80);*/
-    height: 500px;
-    margin-top: 120px;
-    color: rgb(255,255,255);
-    font-size: 30px;
-    background-color: rgb(30,45,80);
-    background-image: url("../images/background.jpg");
-    background-size: cover;
-}
-
-/* strip with some text */
-
-.text-strip {
-    margin-bottom: 100px;
-}
-
-.text-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 50px;
+.clickable {
+    background-color: #ff0000;
+    height: 50px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    text-align: center;
+    line-height: 50px;
 }
 
 /* footer */
 
 footer {
-    height: 300px;
-    background-color: rgb(205, 202, 199);
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
 }
 
-.footer-grid {
+footer ul {
+    list-style-type: none;
+}
+
+.socialmediabuttons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 5px;
+    grid-template-rows: 1fr;
 }
 
-/* breakpoints */
+.socialmediabutton {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
 
-@media screen and (max-width: 700px) {
+
+@media screen and (max-width: 600px) {
+    .header {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
     
     nav {
-        grid-template-columns: 100px 50px;
-        justify-content: space-between;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
     }
     
-    .navigation-grid, .icons-container {
-        display: none;
-    }
-    
-    .navigation-strip {
-        display: block;
-    }
-    
-    .text-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .burger-menu {
-        display: block;
-    }
-    
-    .navigation-strip {
-        display: block;
-    }
-}
-
-/* animations */
-
-@keyframes expand {
-    from {
-        margin-bottom: 10px;
-    }
-    
-    to {
-        margin-bottom: 35px;
-    }
-}
-
-@keyframes contract {
-    from {
-        margin-bottom: 30px;
-    }
-    
-    to {
-        margin-bottom: 10px;
-    }
-}
-
-@keyframes dropdown {
-    from {
-        height: 0px;
-    }
-    
-    to {
-        height: 180px;
-    }
-}
-
-@keyframes rollup {
-    from {
-        height: 180px;
-    }
-    
-    to {
-        height: 0px;
+    .navitem {
+        text-align: left;
     }
 }
