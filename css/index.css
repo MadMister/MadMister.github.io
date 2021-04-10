@@ -10,13 +10,14 @@ body {
 
 .marginBox {
     width: 80vw;
-    margin: 10px auto;
+    margin: 0 auto;
 }
 
 .redBar {
     height: 8px;
     width: 80px;
     background-color: rgb(255,0,0);
+    margin-bottom: 8px;
 }
 
 .gohstText {
@@ -54,6 +55,7 @@ a:hover {
 nav {
     display: grid;
     grid-template-columns: 100px 1fr 50px;
+    padding: 10px 0;
 }
 
 .logoContainer {
@@ -99,28 +101,28 @@ nav {
 
 .burgerMenu {
     display: none;
-    width: 50px;
+    width: 30px;
 }
 
 .burgerSlice {
-    height: 5px;
-    width: 50px;
-    margin-bottom: 10px;
+    height: 2px;
+    width: 30px;
+    margin-bottom: 5px;
     background-color: rgb(30, 45, 80);
     transition: transform 1s;
 }
 
 
 .burgerMenu.expanded > .burgerSlice:nth-of-type(1) {
-    transform: translateY(22.5px) rotate(45deg) scale(1.4,1);
+    transform: translateY(14px) rotate(45deg) scale(1.4,1);
 }
 
 .burgerMenu.expanded > .burgerSlice:nth-of-type(2) {
-    transform: translateY(7.5px) rotate(-45deg) scale(1.4,1) ;
+    transform: translateY(7px) rotate(-45deg) scale(1.4,1) ;
 }
 
 .burgerMenu.expanded > .burgerSlice:nth-of-type(3) {
-    transform: translate(0,30px);
+    transform: translateY(21px);
 }
 
 /* navigation strip for narrower screens */
@@ -149,8 +151,8 @@ nav {
 /* large strip with image */
 
 .headerStrip {
-    height: 500px;
     margin-top: 120px;
+    padding: 250px 0;
     color: rgb(255,255,255);
     font-size: 30px;
     background-color: rgb(30,45,80);
@@ -160,6 +162,10 @@ nav {
 }
 
 /* strips with content */
+.contentStrip {
+    min-height: 300px;
+    padding: 50px 0;
+}
 
 .contentStrip:nth-of-type(2n) {
     background-color: rgb(30, 45, 80);
@@ -205,10 +211,11 @@ nav {
 .footerGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
 }
 
 .footerGrid > div {
-    padding: 10px;
+    padding: 10px 0;
 }
 
 /* breakpoints */
@@ -216,8 +223,7 @@ nav {
 @media screen and (max-width: 700px) {
     
     nav {
-        grid-template-columns: 100px 1fr 50px;
-        justify-content: space-between;
+        grid-template-columns: 100px 1fr 30px;
     }
     
     .navigationGrid {
@@ -239,5 +245,15 @@ nav {
     
     .contentGrid.twoCols, .contentGrid.threeCols {
         grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .marginBox {
+        width: 1200px;
+    }
+
+    .contentImage > img {
+        height: 300px;
     }
 }
