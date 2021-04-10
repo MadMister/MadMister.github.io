@@ -1,11 +1,20 @@
+@font-face {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: normal;
+    src: local('D-DIN Regular'), url('../fonts/AvenirFamily/AvenirLTBla.afm');
+}
+
+
+
 * {
     padding: 0;
     margin: 0;
 }
 
 body {
-    font-family: 'Arial';
-    font-size: 14px;
+    font-family: 'Avenir', serif;
+    font-size: 16px;
 }
 
 .marginBox {
@@ -56,6 +65,7 @@ nav {
     display: grid;
     grid-template-columns: 100px 1fr 50px;
     padding: 10px 0;
+    font-size: 14px;
 }
 
 .logoContainer {
@@ -154,7 +164,7 @@ nav {
     margin-top: 120px;
     padding: 250px 0;
     color: rgb(255,255,255);
-    font-size: 30px;
+    font-size: 48px;
     background-color: rgb(30,45,80);
     background-image: url("../images/background.jpg");
     background-size: cover;
@@ -192,7 +202,7 @@ nav {
 
 
 .contentHeader {
-    font-size: 25px;
+    font-size: 30px;
     margin-bottom: 30px;
 }
 
@@ -211,6 +221,10 @@ nav {
 
 .footerStrip {
     background-color: rgb(205, 202, 199);
+}
+
+footer {
+    font-size: 14px;
 }
 
 .footerGrid {
