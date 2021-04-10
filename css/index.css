@@ -103,17 +103,24 @@ nav {
 }
 
 .burgerSlice {
-    height: 10px;
-    background-color: rgb(30, 45, 80);
-}
-
-.burgerSlice.marginGrowth {
+    height: 5px;
+    width: 50px;
     margin-bottom: 10px;
-    transition: margin-bottom 1s;
+    background-color: rgb(30, 45, 80);
+    transition: transform 1s;
 }
 
-.burgerMenu.expanded > .marginGrowth {
-    margin-bottom: 35px;
+
+.burgerMenu.expanded > .burgerSlice:nth-of-type(1) {
+    transform: translateY(22.5px) rotate(45deg) scale(1.4,1);
+}
+
+.burgerMenu.expanded > .burgerSlice:nth-of-type(2) {
+    transform: translateY(7.5px) rotate(-45deg) scale(1.4,1) ;
+}
+
+.burgerMenu.expanded > .burgerSlice:nth-of-type(3) {
+    transform: translate(0,30px);
 }
 
 /* navigation strip for narrower screens */
