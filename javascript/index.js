@@ -1,7 +1,8 @@
-let cards = document.getElementsByClassName("card");
+let burgerMenu = document.getElementsByClassName("burgerMenu")[0];
+let growers = document.getElementsByClassName("marginGrowth");
+let expandableMenu = document.getElementsByClassName("expandableMenu")[0];
 
-for (let i = 0; i < cards.length; i++) {
-    cards[i].addEventListener("click", function() {
-        cards[i].classList.toggle("flipped");
-    });
-}
+burgerMenu.addEventListener("click", function() {
+    expandableMenu.classList.toggle("expanded");
+    burgerMenu.classList.toggle("expanded");
+});
