@@ -1,0 +1,281 @@
+@font-face {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: normal;
+    src: local('D-DIN Regular'), url('../fonts/AvenirFamily/AvenirLTBla.afm');
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Avenir', Arial, sans-serif;
+    font-size: 16px;
+}
+
+.marginBox {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.redBar {
+    height: 8px;
+    width: 80px;
+    background-color: rgb(255,0,0);
+    margin-bottom: 8px;
+}
+
+.gohstText {
+    color: rgba(0,0,0,0)
+}
+
+/* link behaviour */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:hover {
+    color: rgb(228, 48, 28);
+}
+
+
+/* upper strip with logo */
+
+.navStrip {
+    position: fixed;
+    height: 120px;
+    width: 100vw;
+    top: 0;
+    z-index: 2;
+    background-color: rgb(255,255,255);
+    color: rgb(30,45,80);
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 100px 1fr 50px;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.logoContainer {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(30,45,80);
+    color: rgb(255,255,255);
+}
+
+.navigationGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.navigationGrid > div {
+    padding: 5px 20px;
+}
+
+.iconsContainer {
+    height: 100px;
+    font-size: 10px;
+}
+
+.iconButton {
+    height: 14px;
+    padding: 3px;
+}
+
+.loginIcon {
+    border: 1px solid rgb(30, 45, 80);
+    margin-bottom: 17px;
+}
+
+.languageIcon {
+    border: 1px solid rgb(30, 45, 80);
+    margin-bottom: 17px;
+}
+
+.jobsIcon {
+    border: 1px solid rgb(30, 45, 80);
+}
+
+.burgerMenu {
+    display: none;
+    width: 30px;
+}
+
+.burgerSlice {
+    height: 2px;
+    width: 30px;
+    margin-bottom: 5px;
+    background-color: rgb(30, 45, 80);
+    transition: transform 1s;
+}
+
+
+.burgerMenu.expanded > .burgerSlice:nth-of-type(1) {
+    transform: translateY(14px) rotate(45deg) scale(1.4,1);
+}
+
+.burgerMenu.expanded > .burgerSlice:nth-of-type(2) {
+    transform: translateY(7px) rotate(-45deg) scale(1.4,1) ;
+}
+
+.burgerMenu.expanded > .burgerSlice:nth-of-type(3) {
+    transform: translateY(21px);
+}
+
+/* navigation strip for narrower screens */
+
+.expandableMenu {
+    display: none;
+    height: 0;
+    width: 80vw;
+    margin: 0 auto;
+    z-index: 2;
+    overflow: hidden;
+    background-color: rgb(255,255,255);
+    color: rgb(30, 45, 80);
+    transition: height 1s;
+}
+
+.expandableMenu.expanded {
+    height: 270px;
+}
+
+.expandableNavigationGrid > div {
+    height: 20px;
+    padding: 5px;
+}
+
+.expandableIconsContainer {
+    height: 100px;
+    font-size: 10px;
+    padding: 0 5px;
+}
+
+/* large strip with image */
+
+.headerStrip {
+    min-height: 0vw; /* safari scalable font fix */
+    margin-top: 120px;
+    padding: 250px 0;
+    color: rgb(255,255,255);
+    font-size: calc(30px + 5vw);
+    line-height: 1em;
+    background-color: rgb(30,45,80);
+    background-image: url("../images/image_vermogensbeheer_large.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+/* strips with content */
+.contentStrip {
+    min-height: 300px;
+    padding: 50px 0 20px 0;
+}
+
+.contentGrid {
+    display: grid;
+    gap: 30px;
+}
+
+.contentGrid.threeCols {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.contentGrid.twoCols {
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.contentHeader {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.contentImage > img {
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.contentText {
+    margin-bottom: 30px;
+    line-height: 1.6em;
+}
+
+/* footer */
+
+.footerStrip {
+    background-color: rgb(205, 202, 199);
+}
+
+footer {
+    font-size: 14px;
+}
+
+.footerGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-content: space-between;
+}
+
+.footerGrid > div {
+    padding: 10px 0;
+}
+
+/* breakpoints */
+
+@media screen and (max-width: 700px) {
+    
+    nav {
+        grid-template-columns: 100px 30px;
+        justify-content: space-between;
+    }
+    
+    .navigationGrid {
+        display: none;
+    }
+
+    .iconsContainer {
+        display: none;
+    }
+
+    .burgerMenu {
+        display: block;
+    }
+    
+    .expandableMenu {
+        display: grid;
+        grid-template-columns: 1fr 50px;
+    }
+    
+    .contentGrid.twoCols, .contentGrid.threeCols {
+        grid-template-columns: 1fr;
+    }
+
+    .gohstText {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .marginBox {
+        width: 1200px;
+    }
+
+    .contentImage > img {
+        height: 300px;
+    }
+}
