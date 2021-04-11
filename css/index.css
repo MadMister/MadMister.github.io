@@ -161,10 +161,11 @@ nav {
 /* large strip with image */
 
 .headerStrip {
+    min-height: 0vw; /* safari scalable font fix */
     margin-top: 120px;
     padding: 250px 0;
     color: rgb(255,255,255);
-    font-size: 48px;
+    font-size: calc(30px + 5vw);
     line-height: 1em;
     background-color: rgb(30,45,80);
     background-image: url("../images/background.jpg");
