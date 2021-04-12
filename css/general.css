@@ -103,9 +103,31 @@ nav {
     line-height: 14px;
 }
 
+.loginIcon:hover {
+    border-color: rgb(228, 48, 28);
+}
+
 .languageIcon {
     margin-bottom: 17px;
 }
+
+.languageIcon:hover > svg .cls-1, .languageIcon:hover > svg .cls-3 {
+    stroke: rgb(228, 48, 28);
+}
+
+.languageIcon:hover > svg .cls-2, .languageIcon:hover > svg .cls-3 {
+    fill: none;
+    stroke: rgb(228, 48, 28);
+}
+
+.jobsIcon:hover > svg .jcls-1 {
+    fill: rgb(228, 48, 28);
+}
+
+.jobsIcon:hover > svg .jcls-2 {
+    stroke: rgb(228, 48, 28);
+}
+
 
 .burgerMenu {
     display: none;
