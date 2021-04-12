@@ -63,7 +63,7 @@ a:hover {
 
 nav {
     display: grid;
-    grid-template-columns: 100px 1fr 50px;
+    grid-template-columns: 100px 1fr 33px;
     padding: 10px 0;
     font-size: 14px;
 }
@@ -86,26 +86,25 @@ nav {
 
 .iconsContainer {
     height: 100px;
-    font-size: 10px;
 }
 
 .iconButton {
-    height: 14px;
-    padding: 3px;
+    height: 22px;
+    
 }
 
 .loginIcon {
-    border: 1px solid rgb(30, 45, 80);
+    height: 14px;
+    padding: 3px;
     margin-bottom: 17px;
+    border: 1px solid rgb(30, 45, 80);
+    font-size: 8px;
+    text-align: center;
+    line-height: 14px;
 }
 
 .languageIcon {
-    border: 1px solid rgb(30, 45, 80);
     margin-bottom: 17px;
-}
-
-.jobsIcon {
-    border: 1px solid rgb(30, 45, 80);
 }
 
 .burgerMenu {
@@ -138,6 +137,7 @@ nav {
 
 .expandableMenu {
     display: none;
+    grid-template-columns: 1fr 43px;
     height: 0;
     width: 80vw;
     margin: 0 auto;
@@ -173,7 +173,6 @@ nav {
     font-size: calc(30px + 5vw);
     line-height: 1em;
     background-color: rgb(30,45,80);
-    background-image: url("../images/image_vermogensbeheer_large.jpg");
     background-size: cover;
     background-position: center center;
 }
@@ -258,7 +257,6 @@ footer {
     
     .expandableMenu {
         display: grid;
-        grid-template-columns: 1fr 50px;
     }
     
     .contentGrid.twoCols, .contentGrid.threeCols {

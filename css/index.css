@@ -1,3 +1,7 @@
+.headerStrip {
+    background-image: url("../images/image_vermogensbeheer_large.jpg");
+}
+
 .contentStrip:nth-of-type(2n) {
     background-color: rgb(30, 45, 80);
     color: rgb(255,255,255);
