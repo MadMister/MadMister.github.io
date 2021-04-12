@@ -136,11 +136,11 @@ nav {
     margin-bottom: 17px;
 }
 
-.languageIcon:hover > svg .cls-1, .languageIcon:hover > svg .cls-3 {
+.languageIcon:hover > svg .fcls-1, .languageIcon:hover > svg .fcls-3 {
     stroke: rgb(228, 48, 28);
 }
 
-.languageIcon:hover > svg .cls-2, .languageIcon:hover > svg .cls-3 {
+.languageIcon:hover > svg .fcls-2, .languageIcon:hover > svg .fcls-3 {
     fill: none;
     stroke: rgb(228, 48, 28);
 }
