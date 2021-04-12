@@ -255,21 +255,21 @@ nav {
     font-size: 18px;
 }
 
-.contentImage > img {
+.contentImage > a > img {
     width: 100%;
     object-fit: cover;
     margin-bottom: 30px;
 }
 
-.contentGrid.threeCols > div > .contentImage > img {
+.contentGrid.threeCols > div > .contentImage > a > img {
     height: 17vw;
 }
 
-.contentGrid.twoCols > div > .contentImage > img {
+.contentGrid.twoCols > div > .contentImage > a > img {
     height: 22vw;
 }
 
-.contentImage > img:hover {
+.contentImage > a > img:hover {
     opacity: 0.8;
 }
 
@@ -337,6 +337,14 @@ footer {
     
     .contentGrid.twoCols, .contentGrid.threeCols {
         grid-template-columns: 1fr;
+    }
+
+    .contentGrid.threeCols > div > .contentImage > a > img {
+        height: 30vw;
+    }
+    
+    .contentGrid.twoCols > div > .contentImage > a > img {
+        height: 30vw;
     }
 
     .gohstText {
