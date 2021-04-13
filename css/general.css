@@ -83,7 +83,7 @@ a:hover {
     width: 100vw;
     top: 0;
     z-index: 2;
-    background-color: rgb(255,255,255);
+    background-color: rgb(238,238,238);
     color: rgb(30,45,80);
 }
 
@@ -191,13 +191,17 @@ nav {
     margin: 0 auto;
     z-index: 2;
     overflow: hidden;
-    background-color: rgb(255,255,255);
+    background-color: rgb(238,238,238);
     color: rgb(30, 45, 80);
     transition: height 1s;
 }
 
 .expandableMenu.expanded {
-    height: 360px;
+    height: 400px;
+}
+
+.expandableNavigationGrid {
+    margin-left: 15px;
 }
 
 .expandableNavigationGrid > div {
@@ -214,11 +218,11 @@ nav {
 /* large strip with image */
 
 .headerStrip {
-    min-height: 0vw; /* safari scalable font fix */
     margin-top: 120px;
-    padding: 100px 0;
+    height: calc(500vw/39 + 600px - 1200px/13);
+    padding-top: 200px;
     color: rgb(255,255,255);
-    font-size: calc(15px + 5vw);
+    font-size: calc(43vw/39 + 43px);
     font-family: 'AvenirMassive';
     line-height: 1em;
     background-color: rgb(30,45,80);
@@ -237,14 +241,13 @@ nav {
     gap: 30px;
 }
 
-.contentGrid.threeCols {
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.contentGrid.twoCols {
+.contentGrid {
     grid-template-columns: 1fr 1fr;
 }
 
+.contentGrid.threeCols {
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
 .contentHeader {
     font-size: 30px;
@@ -253,7 +256,7 @@ nav {
 }
 
 .threeCols > div > .contentHeader {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .contentImage > a > img {
@@ -262,12 +265,11 @@ nav {
     margin-bottom: 30px;
 }
 
+.contentGrid > div > .contentImage > a > img {
+    height: 22vw;
+}
 .contentGrid.threeCols > div > .contentImage > a > img {
     height: 17vw;
-}
-
-.contentGrid.twoCols > div > .contentImage > a > img {
-    height: 22vw;
 }
 
 .contentImage > a > img:hover {
@@ -278,6 +280,7 @@ nav {
     font-family: 'AvenirLight';
     margin-bottom: 30px;
     line-height: 1.6em;
+    font-size: 16px;
 }
 
 /* footer */
@@ -295,6 +298,7 @@ footer {
 .footerGrid {
     display: grid;
     grid-template-columns: 1fr 50px;
+    padding: 15px 0;
 }
 
 .footerNavGrid {
@@ -309,7 +313,6 @@ footer {
 
 .wmpsToggle {
     height: 50px;
-    padding-top: 15px;
 }
 
 /* breakpoints */
@@ -336,17 +339,17 @@ footer {
     .expandableMenu {
         display: grid;
     }
+
+    .headerStrip {
+        height: calc(328px + 10vw);
+    }
     
-    .contentGrid.twoCols, .contentGrid.threeCols {
+    .contentGrid, .contentGrid.threeCols {
         grid-template-columns: 1fr;
         gap: 0;
     }
 
-    .contentGrid.threeCols > div > .contentImage > a > img {
-        height: 30vw;
-    }
-    
-    .contentGrid.twoCols > div > .contentImage > a > img {
+    .contentGrid > div > .contentImage > a > img, .contentGrid.threeCols > div > .contentImage > a > img {
         height: 30vw;
     }
 
@@ -364,6 +367,10 @@ footer {
 @media screen and (min-width: 1500px) {
     .marginBox {
         width: 1200px;
+    }
+
+    .headerStrip {
+        height: 700px;
     }
 
     .contentImage > img {
