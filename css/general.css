@@ -222,7 +222,7 @@ nav {
     height: calc(500vw/39 + 600px - 1200px/13);
     padding-top: 200px;
     color: rgb(255,255,255);
-    font-size: calc(43vw/39 + 43px);
+    font-size: calc(45vw/39 + 45px);
     font-family: 'AvenirMassive';
     line-height: 1em;
     background-color: rgb(30,45,80);
@@ -342,6 +342,7 @@ footer {
 
     .headerStrip {
         height: calc(328px + 10vw);
+        padding-top: 150px;
     }
     
     .contentGrid, .contentGrid.threeCols {
@@ -371,6 +372,7 @@ footer {
 
     .headerStrip {
         height: 700px;
+        font-size: 60px;
     }
 
     .contentImage > img {
