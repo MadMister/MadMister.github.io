@@ -123,6 +123,7 @@ nav {
     padding: 3px;
     margin-bottom: 17px;
     border: 1px solid rgb(30, 45, 80);
+    font-family: 'AvenirBold';
     font-size: 8px;
     text-align: center;
     line-height: 14px;
@@ -218,7 +219,7 @@ nav {
     padding: 100px 0;
     color: rgb(255,255,255);
     font-size: calc(15px + 5vw);
-    font-family: AvenirMassive;
+    font-family: 'AvenirMassive';
     line-height: 1em;
     background-color: rgb(30,45,80);
     background-size: cover;
@@ -247,7 +248,7 @@ nav {
 
 .contentHeader {
     font-size: 30px;
-    font-family: AvenirBold;
+    font-family: 'AvenirBold';
     margin-bottom: 30px;
 }
 
@@ -287,7 +288,8 @@ nav {
 
 footer {
     font-size: 14px;
-    font-family: AvenirLight;
+    font-family: 'AvenirLight';
+    color: rgb(32,42,79);
 }
 
 .footerGrid {
