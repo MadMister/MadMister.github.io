@@ -1,0 +1,106 @@
+.affiliatesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100px);
+    gap: 10px;
+    justify-content: space-between;
+    font-family: 'Avenir', sans-serif;
+}
+
+.affiliate {
+    height: 200px;
+}
+
+.affiliate.switzerland {
+    color: rgb(230, 50, 20);
+}
+
+.affiliateImageContainer {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.affiliateImageContainer > img {
+    width: 100px;
+    height: 150px;
+}
+
+.affiliateOverlay {
+    height: 100px;
+    width: 100px;
+    top: 0;
+    border-radius: 50px;
+    background-color: rgba(32, 42, 82, 0.1);
+    position: absolute;
+}
+
+.affiliate.switzerland > .affiliateImageContainer > .affiliateOverlay {
+    background-color: rgba(230, 50, 20, 0.1);
+}
+
+.affiliate > .affiliateImageContainer > .affiliateOverlay:hover {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.affiliateName {
+    margin-top: 20px;
+}
+
+.affiliateInfo {
+    display: none;
+}
+
+.screenOverlay {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.1);
+    color: rgb(255,255,255);
+}
+
+.screenOverlay.visable {
+    display: block;
+}
+
+.affiliateViewBox {
+    position: relative;
+    width: min(80vw, 400px);
+    min-height: min(80vw, 200px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: max(10vh, calc(50vh - 120px));
+    padding: 20px;
+    background-color:rgb(32, 42, 82);
+    color: rgb(255,255,255);
+}
+
+.affiliateViewBoxImageContainer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+.affiliateViewBoxImageContainer > img {
+    width: 100px;
+}
+
+.affiliateFullName {
+    font-family: 'AvenirBold', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.affiliateText {
+    margin-top: 20px;
+}

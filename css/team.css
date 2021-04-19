@@ -1,0 +1,11 @@
+.headerStrip {
+    background-image: url("../images/image_team_large.jpg");
+}
+
+.affiliatesLegend {
+    padding-bottom: 30px;
+}
+
+.switzerland {
+    color: rgb(230, 50, 20);
+}
