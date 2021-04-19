@@ -4,7 +4,7 @@ let affiliateViewBox = document.getElementsByClassName("affiliateViewBox")[0];
 
 for (let i= 0; i<affiliates.length; i++) {
     let affiliate = affiliates[i];
-    affiliate.addEventListener("click", function() {
+    affiliate.firstElementChild.firstElementChild.nextElementSibling.addEventListener("click", function() {
         let infoList = affiliate.children;
         
         let displayList = affiliateViewBox.children;
@@ -21,11 +21,17 @@ for (let i= 0; i<affiliates.length; i++) {
         details[4].innerHTML = infoList[2].lastElementChild.innerHTML;
         
         cover.classList.toggle("visable");
-    })
+    });
 }
 
-window.onclick = function(event) {
-     if (event.target == cover) {
+cover.addEventListener("click", function(e) {
+    if (e.target == cover) {
         cover.classList.toggle("visable");
-     }
-}
+    }
+});
+
+// window.onclick = function(event) {
+//      if (event.target == cover) {
+//         cover.classList.toggle("visable");
+//      }
+// }
