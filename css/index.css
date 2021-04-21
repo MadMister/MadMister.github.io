@@ -8,6 +8,28 @@
 }
 
 .contentStrip:nth-of-type(2n + 1) {
-    background-color: rgb(255,255,255);
-    color: rgb(30, 45, 80);
+}
+
+.contentImage > a > img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.contentImage > a > img:hover {
+    opacity: 0.8;
+}
+
+.contentBox.twoCol > div > .contentImage > a > img {
+    height: 22vw;
+}
+
+.contentBox.threeCol > div > .contentImage > a > img {
+    height: 17vw;
+}
+
+@media screen and (max-width: 720px) {
+    .headerStrip {
+        background-image: url("../images/image_vermogensbeheer_small.jpg");
+    }
 }

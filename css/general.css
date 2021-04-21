@@ -257,8 +257,9 @@ nav {
 /*------------------------------------------------------------------------------------------------------------------------------*/
 
 .contentStrip {
-    min-height: 300px;
+    min-height: 200px;
     padding: 50px 0 20px 0;
+    color: rgb(90,80,70);
 }
 
 .contentText {
@@ -268,20 +269,9 @@ nav {
     font-size: 16px;
 }
 
-.contentImage > a > img {
-    width: 100%;
-    object-fit: cover;
-    margin-bottom: 30px;
-}
-
-.contentImage > a > img:hover {
-    opacity: 0.8;
-}
-
 /* one column layout */
 
-.contentBox.oneCol {
-}
+
 
 /* two colum layout */
 
@@ -289,10 +279,6 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-}
-
-.contentBox.twoCol > div > .contentImage > a > img {
-    height: 22vw;
 }
 
 /* three column layout */
@@ -305,10 +291,6 @@ nav {
 
 .contentBox.threeCol > div > .contentHeader {
     font-size: 20px;
-}
-
-.contentBox.threeCol > div > .contentImage > a > img {
-    height: 17vw;
 }
 
 .contentHeader {

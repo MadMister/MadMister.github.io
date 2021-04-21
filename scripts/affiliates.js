@@ -29,9 +29,3 @@ cover.addEventListener("click", function(e) {
         cover.classList.toggle("visable");
     }
 });
-
-// window.onclick = function(event) {
-//      if (event.target == cover) {
-//         cover.classList.toggle("visable");
-//      }
-// }
