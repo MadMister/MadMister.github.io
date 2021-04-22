@@ -1,0 +1,9 @@
+.headerStrip {
+    background-image: url("../images/image_voor_wie_large.jpg");
+}
+
+@media screen and (max-width: 720px) {
+    .headerStrip {
+        background-image: url("../images/image_voor_wie_small.jpg");
+    }
+}

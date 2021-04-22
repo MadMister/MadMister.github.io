@@ -52,7 +52,7 @@ body {
 .redBar {
     height: 8px;
     width: 80px;
-    background-color: rgb(255,0,0);
+    background-color: rgb(230,50,20);
     margin-bottom: 12px;
 }
 
@@ -397,7 +397,7 @@ footer {
         padding-top: 150px;
     }
     
-    .contentBox.oneCol, .contentBox.twoCol {
+    .contentBox.oneCol, .contentBox.twoCol, .contentBox.threeCol {
         grid-template-columns: 1fr;
         gap: 0;
     }
