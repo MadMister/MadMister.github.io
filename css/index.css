@@ -2,12 +2,9 @@
     background-image: url("../images/image_vermogensbeheer_large.jpg");
 }
 
-.contentStrip:nth-of-type(2n) {
+.contentStrip.alt {
     background-color: rgb(32, 42, 82);
     color: rgb(255,255,255);
-}
-
-.contentStrip:nth-of-type(2n + 1) {
 }
 
 .contentImage > a > img {

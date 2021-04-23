@@ -2,19 +2,19 @@
     background-image: url("../images/image_over_ons_large.jpg");
 }
 
-.contentStrip:nth-of-type(2n) {
+.contentStrip.alt {
     padding-bottom: 50px;
     background-color: rgb(220,220,220);
     color: rgb(32, 42, 82);
 }
 
-.contentBox:nth-of-type(2n+1) > div > .contentHeader {
+.contentStrip.alt .contentHeader {
     font-size: 20px;
     height: 300px;
     line-height: 300px;
 }
 
-.contentBox:nth-of-type(2n+1) > div > .contentHeader > p {
+.contentStrip.alt .contentHeader > p {
     display: inline-block;
     vertical-align: middle;
     line-height: 1.6em;
@@ -38,7 +38,7 @@
         background-image: url("../images/image_over_ons_small.jpg");
     }
 
-    .contentBox:nth-of-type(2n+1) > div > .contentHeader {
+    .contentStrip.alt .contentHeader {
         height: auto;
         line-height: normal;
         text-align: center;

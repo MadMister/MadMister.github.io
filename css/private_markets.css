@@ -19,10 +19,13 @@
     margin: 0 auto;
 }
 
-.contentSVG.landscape {
-    width: 125px;
-    height: 95px;
-    padding: 15px 0;
+.contentSVG.portrait {
+    width: 90px;
+    height: 125px;
+}
+
+.contentBox.oneCol > div > .contentText {
+    font-size: 30px;
 }
 
 
