@@ -28,6 +28,19 @@
     height: 13px;
 }
 
+g {
+    stroke:rgb(90,80,70);
+    transform: translateY(0);
+}
+
+.downloadButton:hover g {
+    stroke: rgb(230,50,20);
+}
+
+.downloadButton:hover g.downloadArrow {
+    transform: translateY(10px);
+}
+
 
 
 
