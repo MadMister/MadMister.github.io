@@ -1,5 +1,5 @@
 .headerStrip {
-    background-image: url("../images/image_private_markets_large.jpg");
+    background-image: url("../images/image_vermogensregie_large.jpg");
 }
 
 .contentStrip.alt {
@@ -19,20 +19,17 @@
     margin: 0 auto;
 }
 
-.contentSVG.portrait {
-    width: 90px;
-    height: 125px;
-}
-
-.contentBox.oneCol > div > .contentText {
-    font-size: 30px;
+.contentSVG.landscape {
+    width: 150px;
+    height: 65px;
+    padding: 30px 0;
 }
 
 
 
 @media screen and (max-width: 720px) {
     .headerStrip {
-        background-image: url("../images/image_private_markets_small.jpg");
+        background-image: url("../images/image_vermogensregie_small.jpg");
     }
     
 }

@@ -17,7 +17,6 @@ for (let i= 0; i<affiliates.length; i++) {
         details[1].innerHTML = infoList[2].firstElementChild.innerHTML;
         details[2].innerHTML = infoList[2].firstElementChild.nextElementSibling.innerHTML;
         details[3].innerHTML = infoList[2].lastElementChild.previousElementSibling.innerHTML;
-        details[3].href = "mailto:" + infoList[2].lastElementChild.previousElementSibling.innerHTML;
         details[4].innerHTML = infoList[2].lastElementChild.innerHTML;
         
         cover.classList.toggle("visable");
