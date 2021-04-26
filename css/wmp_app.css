@@ -58,6 +58,7 @@
 }
 
 .appText {
+    height: 100px;
     color: rgb(32,42,82);
     font-family: 'AvenirSemiBold', sans-serif;
     text-align: center;

@@ -2,12 +2,26 @@
     background-image: url("../images/image_team_large.jpg");
 }
 
+.contentBox.oneCol {
+    color: rgb(32, 42, 82);
+}
+
 .affiliatesLegend {
     padding-bottom: 30px;
 }
 
 .switzerland {
     color: rgb(230, 50, 20);
+}
+
+.affiliatesLegend span {
+    color: rgba(32, 42, 82,0.1);
+    font-size: 2em;
+    vertical-align: middle;
+}
+
+.affiliatesLegend span.switzerland {
+    color: rgba(230,50,20,0.1);
 }
 
 @media screen and (max-width: 768px) {
