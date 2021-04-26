@@ -25,7 +25,7 @@
     height: 17vw;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
     .headerStrip {
         background-image: url("../images/image_vermogensbeheer_small.jpg");
     }

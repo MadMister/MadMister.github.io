@@ -30,7 +30,7 @@
 
 
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
     .headerStrip {
         background-image: url("../images/image_private_markets_small.jpg");
     }

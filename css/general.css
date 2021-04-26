@@ -290,11 +290,11 @@ nav {
 }
 
 .contentBox.threeCol > div > .contentHeader {
-    font-size: 20px;
+    font-size: 21px;
 }
 
 .contentHeader {
-    font-size: 24px;
+    font-size: 30px;
     font-family: 'AvenirBold', sans-serif;
     margin-bottom: 30px;
 }
@@ -369,7 +369,7 @@ footer {
 /*------------------------------------------------------------------------------------------------------------------------------*/
 
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
     
     nav {
         grid-template-columns: 100px 30px;

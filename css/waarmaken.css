@@ -91,7 +91,6 @@
     display: grid;
     grid-template-columns: 10px 1fr;
     gap: 20px;
-    height: 21px;
     margin-bottom: 10px;
     font-size: 16;
 }
@@ -133,7 +132,7 @@ g {
 
 
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
     .headerStrip {
         background-image: url("../images/image_waarmaken-2_small.jpg");
     }

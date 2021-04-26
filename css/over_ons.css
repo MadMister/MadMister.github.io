@@ -33,7 +33,7 @@
     padding: 100px 0;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
     .headerStrip {
         background-image: url("../images/image_over_ons_small.jpg");
     }

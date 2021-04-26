@@ -9,3 +9,10 @@
 .switzerland {
     color: rgb(230, 50, 20);
 }
+
+@media screen and (max-width: 768px) {
+    .headerStrip {
+        background-image: url("../images/image_team_small.jpg");
+    }
+    
+}
