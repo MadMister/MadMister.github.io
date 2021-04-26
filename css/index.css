@@ -29,4 +29,23 @@
     .headerStrip {
         background-image: url("../images/image_vermogensbeheer_small.jpg");
     }
+
+    .contentBox.twoCol > div > .contentImage > a > img {
+        height: 250px;
+    }
+    
+    .contentBox.threeCol > div > .contentImage > a > img {
+        height: 250px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+
+    .contentBox.twoCol > div > .contentImage > a > img {
+        height: 330px;
+    }
+    
+    .contentBox.threeCol > div > .contentImage > a > img {
+        height: 255px;
+    }
 }

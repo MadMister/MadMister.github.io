@@ -15,13 +15,13 @@
 }
 
 .affiliatesLegend span {
-    color: rgba(32, 42, 82,0.1);
+    color: rgba(32, 42, 82,0.2);
     font-size: 2em;
     vertical-align: middle;
 }
 
 .affiliatesLegend span.switzerland {
-    color: rgba(230,50,20,0.1);
+    color: rgba(230,50,20,0.2);
 }
 
 @media screen and (max-width: 768px) {
