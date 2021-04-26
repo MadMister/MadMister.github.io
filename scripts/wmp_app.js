@@ -19,12 +19,12 @@ let currentIndex = 0;
 let index = 0;
 
 function update(i) {
-    appImages[currentIndex].style.width = "100%";
-    appImages[currentIndex].style.transform = "translate(0,0)";
+    appImages[currentIndex].firstElementChild.style.width = "100%";
+    appImages[currentIndex].firstElementChild.style.transform = "translate(0,0)";
     currentIndex = i;
     appScreen.style.backgroundImage = urls[currentIndex];
-    appImages[currentIndex].style.width = "110%";
-    appImages[currentIndex].style.transform = "translate(-5%,-5%)";
+    appImages[currentIndex].firstElementChild.style.width = "110%";
+    appImages[currentIndex].firstElementChild.style.transform = "translate(-5%,-5%)";
     appText.innerHTML = texts[currentIndex];
 }
 

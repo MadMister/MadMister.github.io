@@ -2,16 +2,11 @@
     background-image: url("../images/image_app_large.jpg");
 }
 
-.contentStrip {
-    height: 954px;
-}
-
 .contentHeader {
     font-size: 30px;
 }
 
 .contentAppContainer {
-    position: relative;
     width: 371px;
     margin: 30px auto;
 }
@@ -49,22 +44,20 @@
 
 .tinyApp {
     width: 42px;
-    transition: width 1s, transform 1s;
+    height: 91px;
 }
 
 .tinyApp > img {
     width: 100%;
-    object-position: center center;
+    transition: width 1s, transform 1s;
 }
 
-.tinyApp:nth-child(1) {
+.tinyApp:nth-child(1) > img {
     width: 110%;
     transform: translate(-5%,-5%);
 }
 
 .appText {
-    position: absolute;
-    top: 628px;
     color: rgb(32,42,82);
     font-family: 'AvenirSemiBold', sans-serif;
     text-align: center;
