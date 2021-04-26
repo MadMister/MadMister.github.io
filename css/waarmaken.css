@@ -77,9 +77,14 @@
 }
 
 .contentButton {
-    width: 100px;
+    width: 120px;
     margin: 30px auto;
     color: rgb(230,50,20);
+    text-align: center;
+}
+
+.contentButton:hover {
+    font-family: 'AvenirBold', sans-serif;
 }
 
 .downloadLine {
