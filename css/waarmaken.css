@@ -21,7 +21,6 @@
     transform: translateZ(-157px);
     transform-style: preserve-3d;
     transition: transform 1s;
-    
 }
 
 .carouselItem {
@@ -30,6 +29,8 @@
     left: 15px;
     width: 100px;
     height: 186px;
+    /* backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; */
 }
 
 .carouselItem > img {
