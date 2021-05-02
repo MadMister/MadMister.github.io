@@ -4,7 +4,11 @@
 
 .contentStrip.alt {
     background-color: rgb(32, 42, 82);
-    color: rgb(255,255,255);
+    color: #ffffff;
+}
+
+.contentStrip.alt .contentText {
+    color: #ffffff;
 }
 
 .contentImage > a > img {

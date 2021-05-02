@@ -269,7 +269,7 @@ nav {
 }
 
 h1 {
-    color: rgb(255,255,255);
+    color: #ffffff;
     font-size: calc(45vw/39 + 45px);
     font-family: 'AvenirMassive', sans-serif;
     line-height: 1em;
@@ -302,6 +302,7 @@ h1 {
     margin-bottom: 30px;
     line-height: 1.6em;
     font-size: 16px;
+    color: #000000;
 }
 
 /* one column layout */
@@ -374,12 +375,9 @@ footer {
 
 .footerNavGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    justify-content: space-between;
-}
-
-.footerNavGrid > div {
-    padding: 5px 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 30px 30px 30px;
+    grid-auto-flow: column;
 }
 
 .wmpsToggle {
@@ -485,11 +483,10 @@ footer {
     .gohstText {
         display: none;
     }
-}
 
-@media screen and (min-width: 1060px) {
     .footerNavGrid {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 30px 30px 30px 30px 30px 30px;
     }
 }
 
