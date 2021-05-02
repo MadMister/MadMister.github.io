@@ -3,23 +3,30 @@
 }
 
 .contentStrip.alt .contentHeader {
-    font-size: 16px;
-    text-align: center;
     padding-top: 30px;
 }
 
+.contentStrip.alt .contentHeader > h2 {
+    font-size: 16px;
+    text-align: center;
+}
+
 .contentSVG {
-    width: 125px;
     height: 125px;
     margin: 0 auto;
 }
 
-.contentSVG.landscape {
-    width: 150px;
-    height: 65px;
-    padding: 30px 0;
+.contentSVG.dim11369x8744 {
+    width: 162.5px;
 }
 
+.contentSVG.dim8824x8824 {
+    width: 125px;
+}
+
+.contentSVG.dim11136x8521 {
+    width: 163.4px;
+}
 
 
 @media screen and (max-width: 768px) {
