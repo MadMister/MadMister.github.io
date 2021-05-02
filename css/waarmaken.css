@@ -1,5 +1,5 @@
 .headerStrip {
-    background-image: url("../images/image_waarmaken-2_large.jpg");
+    background-image: url("../images/image_waarmaken_large.jpg");
 }
 
 .contentText > p {
@@ -131,7 +131,7 @@ g {
 
 @media screen and (max-width: 768px) {
     .headerStrip {
-        background-image: url("../images/image_waarmaken-2_small.jpg");
+        background-image: url("../images/image_waarmaken_small.jpg");
     }
     
 }
