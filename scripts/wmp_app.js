@@ -9,77 +9,59 @@ let texts = ["<span>Inlog</span>: inloggen met de pincode of zo mogelijk een vin
 
 let urls = ["url(../images/app_1.png)", "url(../images/app_2.png)", "url(../images/app_3.png)", "url(../images/app_4.png)", "url(../images/app_5.png)", "url(../images/app_6.png)", "url(../images/app_7.png)", "url(../images/app_8.png)"];
 
-let appImages = document.getElementsByClassName("tinyApp");
 let left = document.querySelector(".appLeftButton");
 let right = document.querySelector(".appRightButton");
 let appScreen = document.querySelector(".appScreen");
 let appText = document.querySelector(".appText").firstElementChild;
+let intervalId = window.setInterval(autoNextImage, 3000);
+let run = true;
+let timerNotSet = true;
 
 let currentIndex = 0;
 let index = 0;
 
 function update(i) {
-    appImages[currentIndex].firstElementChild.style.width = "100%";
-    appImages[currentIndex].firstElementChild.style.transform = "translate(0,0)";
     currentIndex = i;
     appScreen.style.backgroundImage = urls[currentIndex];
-    appImages[currentIndex].firstElementChild.style.width = "110%";
-    appImages[currentIndex].firstElementChild.style.transform = "translate(-5%,-5%)";
     appText.innerHTML = texts[currentIndex];
 }
 
-left.addEventListener("click", function() {
-    if (currentIndex == 0) {
-        return;
-    }
-    index = currentIndex - 1;
+function previousImage() {
+    index = (((currentIndex - 1) % 8) + 8) % 8;
     update(index);
+}
+
+function nextImage() {
+    index = (((currentIndex + 1) % 8) + 8) % 8;
+    update(index);
+}
+
+function autoNextImage() {
+    if (run) {
+        nextImage();
+    }
+}
+
+left.addEventListener("click", function() {
+    previousImage();
+    run = false;
+    if (timerNotSet) {
+        timerNotSet = false;
+        setTimeout(function() {
+            run = true;
+            timerNotSet = true;
+        }, 3000);
+    }
 });
 
 right.addEventListener("click", function() {
-    if (currentIndex == 7) {
-        return;
+    nextImage();
+    run = false;
+    if (timerNotSet) {
+        timerNotSet = false;
+        setTimeout(function() {
+            run = true;
+            timerNotSet = true;
+        }, 3000);
     }
-    index = currentIndex + 1;
-    update(index);
-});
-
-appImages[0].addEventListener("click", function() {
-    index = 0;
-    update(index);
-});
-
-appImages[1].addEventListener("click", function() {
-    index = 1;
-    update(index);
-});
-
-appImages[2].addEventListener("click", function() {
-    index = 2;
-    update(index);
-});
-
-appImages[3].addEventListener("click", function() {
-    index = 3;
-    update(index);
-});
-
-appImages[4].addEventListener("click", function() {
-    index = 4;
-    update(index);
-});
-
-appImages[5].addEventListener("click", function() {
-    index = 5;
-    update(index);
-});
-
-appImages[6].addEventListener("click", function() {
-    index = 6;
-    update(index);
-});
-
-appImages[7].addEventListener("click", function() {
-    index = 7;
-    update(index);
 });

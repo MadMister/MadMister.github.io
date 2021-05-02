@@ -16,6 +16,7 @@
     grid-template-columns: 50px 251px 50px;
     gap: 10px;
     height: 476px;
+    padding: 50px 0;
 }
 
 .appScreen {
@@ -24,6 +25,8 @@
 }
 
 .appLeftButton {
+    background: transparent;
+    border: none;
     line-height: 476px;
     font-size: 30px;
     text-align: left;
@@ -31,34 +34,14 @@
 }
 
 .appRightButton {
+    background: transparent;
+    border: none;
     line-height: 476px;
     font-size: 30px;
     text-align: right;
     cursor: pointer;
 }
 
-.appImageSelector {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    gap: 5px;
-    padding: 30px 0;
-}
-
-.tinyApp {
-    width: 42px;
-    height: 91px;
-    cursor: pointer;
-}
-
-.tinyApp > img {
-    width: 100%;
-    transition: width 1s, transform 1s;
-}
-
-.tinyApp:nth-child(1) > img {
-    width: 110%;
-    transform: translate(-5%,-5%);
-}
 
 .appText {
     height: 100px;
