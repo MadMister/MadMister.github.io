@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.08 87.98">
+<defs>
+<style>.cls-1,.cls-2{fill:none;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px;}.cls-1{stroke:#202a52;}.cls-2{stroke:#e63214;}</style>
+</defs>
+<g>
+<ellipse class="cls-1" cx="45.69" cy="10.02" rx="7.57" ry="9.02"/>
+<line class="cls-1" x1="35.57" y1="36.25" x2="35.57" y2="86.98"/><line class="cls-1" x1="55.82" y1="36.25" x2="55.82" y2="86.98"/>
+<path class="cls-1" d="M28.72,56.32V32.43s0-9.62,17.32-9.62,17.32,9.62,17.32,9.62V56.32"/>
+<line class="cls-1" x1="45.69" y1="56.32" x2="45.69" y2="86.98"/>
+<ellipse class="cls-2" cx="76.95" cy="19.28" rx="6.06" ry="7.21"/>
+<line class="cls-2" x1="68.84" y1="40.27" x2="68.84" y2="80.84"/>
+<line class="cls-2" x1="85.05" y1="40.27" x2="85.05" y2="80.84"/>
+<path class="cls-2" d="M68.84,30.85a22.46,22.46,0,0,1,8.38-1.34c13.86,0,13.86,7.7,13.86,7.7V56.32"/>
+<line class="cls-2" x1="77.22" y1="56.32" x2="77.22" y2="80.84"/>
+<ellipse class="cls-2" cx="14.58" cy="19.28" rx="6.06" ry="7.21"/>
+<line class="cls-2" x1="6.48" y1="40.27" x2="6.48" y2="80.84"/>
+<line class="cls-2" x1="22.68" y1="40.27" x2="22.68" y2="80.84"/>
+<path class="cls-2" d="M1,56.32V37.21s0-7.7,13.86-7.7a23.29,23.29,0,0,1,7.83,1.14"/>
+<line class="cls-2" x1="14.86" y1="56.32" x2="14.86" y2="80.84"/>
+</g>
+</svg>

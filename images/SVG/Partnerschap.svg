@@ -1,1 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 152.62 55.45"><defs><style>.cls-1,.cls-2,.cls-3{fill:none;stroke-width:2px;}.cls-1{stroke:#e30613;stroke-miterlimit:10;}.cls-2,.cls-3{stroke:#20294e;stroke-linejoin:round;}.cls-2{stroke-linecap:round;}</style></defs><g id="Laag_2" data-name="Laag 2"><g id="Laag_3" data-name="Laag 3"><circle class="cls-1" cx="12.49" cy="45.49" r="3.08"/><polyline class="cls-2" points="23.97 19.41 35.55 19.41 46.48 10.05 75.66 10.05"/><path class="cls-2" d="M54.32,18.93h43a4.44,4.44,0,0,1,0,8.88h2.38a4.44,4.44,0,0,1,0,8.88H95.28a4.44,4.44,0,0,1,0,8.88l-.07,0H82.46v0a4.44,4.44,0,1,1,0,8.88h-36L36,45.49H24"/><rect class="cls-3" x="1" y="10.05" width="22.97" height="44.39"/><line class="cls-2" x1="56.63" y1="45.55" x2="71.5" y2="45.55"/><line class="cls-2" x1="64.59" y1="36.67" x2="86.73" y2="36.67"/><line class="cls-2" x1="67.1" y1="27.79" x2="91.72" y2="27.79"/><circle class="cls-1" cx="140.13" cy="36.43" r="3.08"/><polyline class="cls-2" points="128.64 10.36 117.06 10.36 106.13 1 76.95 1"/><polyline class="cls-2" points="106.13 45.4 116.59 36.43 128.64 36.43"/><rect class="cls-3" x="128.64" y="1" width="22.97" height="44.39" transform="translate(280.26 46.39) rotate(-180)"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100.04 87.74">
+<defs>
+<style>.cls-1,.cls-2,.cls-3{fill:none;stroke-miterlimit:10;stroke-width:2px;}.cls-1,.cls-2{stroke:#202a52;}.cls-2,.cls-3{stroke-linecap:round;}.cls-3{stroke:#e63214;}</style>
+</defs>
+<g>
+<path class="cls-1" d="M25,51A25.92,25.92,0,0,1,35.72,29.9"/>
+<path class="cls-1" d="M63.27,73.76A26,26,0,0,1,37.2,73"/>
+<path class="cls-1" d="M65.41,29.43A25.93,25.93,0,0,1,76.85,51"/>
+<circle class="cls-2" cx="19.3" cy="68.45" r="18.3"/>
+<circle class="cls-2" cx="80.74" cy="68.45" r="18.3"/>
+<circle class="cls-3" cx="50.64" cy="19.3" r="18.3"/>
+<ellipse class="cls-3" cx="19.15" cy="61.95" rx="3.33" ry="3.96"/>
+<path class="cls-3" d="M11.69,77.11v-3s0-4.22,7.61-4.22,7.61,4.22,7.61,4.22v3Z"/>
+<ellipse class="cls-3" cx="81.03" cy="61.95" rx="3.33" ry="3.96"/>
+<path class="cls-3" d="M73.58,77.11v-3s0-4.22,7.6-4.22,7.61,4.22,7.61,4.22v3Z"/>
+<ellipse class="cls-2" cx="50.75" cy="12.56" rx="3.33" ry="3.96"/>
+<path class="cls-2" d="M43.29,27.72v-3s0-4.22,7.61-4.22,7.61,4.22,7.61,4.22v3Z"/>
+</g>
+</svg>

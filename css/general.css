@@ -41,7 +41,6 @@
 body {
     font-family: 'Avenir', sans-serif;
     font-size: 14px;
-    color: rgb(32,42,82);
 }
 
 .marginBox {
@@ -57,7 +56,12 @@ body {
 }
 
 .gohstText {
-    color: rgba(0,0,0,0)
+    opacity: 0;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-weight: normal;
 }
 
 /* link behaviour */
@@ -94,6 +98,7 @@ a:hover {
     top: 0;
     z-index: 2;
     background-color: rgb(238,238,238);
+    color: rgb(32,42,82);
 }
 
 nav {
@@ -111,6 +116,8 @@ nav {
 .navigationGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: column;
     padding: 0 2vw;
 }
 
@@ -166,7 +173,24 @@ nav {
 
 .burgerMenu {
     display: none;
-    width: 30px;
+    padding-left: calc(100% - 30px);
+    position: relative;
+    cursor: pointer;
+}
+
+.burgerMenu > button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.burgerMenu > button:focus {
+    opacity: 1;
 }
 
 .burgerSlice {
@@ -195,17 +219,20 @@ nav {
 .expandableMenu {
     display: none;
     grid-template-columns: 1fr 43px;
+    position: absolute;
+    top: 120px;
     height: 0;
     width: 80vw;
     margin: 0 auto;
     z-index: 2;
-    overflow: hidden;
+    overflow-X: hidden;
+    overflow-Y: scroll;
     background-color: rgb(238,238,238);
     transition: height 1s;
 }
 
 .expandableMenu.expanded {
-    height: 400px;
+    height: min(400px, calc(100vh - 120px));
 }
 
 .expandableNavigationGrid {
@@ -236,13 +263,16 @@ nav {
     margin-top: 120px;
     height: calc(500vw/39 + 400px - 1200px/13);
     padding-top: 200px;
+    background-color: rgb(32,42,82);
+    background-size: cover;
+    background-position: center center;
+}
+
+h1 {
     color: rgb(255,255,255);
     font-size: calc(45vw/39 + 45px);
     font-family: 'AvenirMassive', sans-serif;
     line-height: 1em;
-    background-color: rgb(32,42,82);
-    background-size: cover;
-    background-position: center center;
 }
 
 
@@ -260,6 +290,11 @@ nav {
     min-height: 200px;
     padding: 50px 0 20px 0;
     color: rgb(90,80,70);
+}
+
+.contentStrip.alt {
+    background-color: rgb(220,220,220);
+    /* color: rgb(32, 42, 82); */
 }
 
 .contentText {
@@ -293,10 +328,11 @@ nav {
     font-size: 21px;
 }
 
-.contentHeader {
+.contentHeader > h2 {
     font-size: 30px;
     font-family: 'AvenirBold', sans-serif;
     margin-bottom: 30px;
+    color: inherit;
 }
 
 
@@ -321,19 +357,19 @@ nav {
 /*------------------------------------------------------------------------------------------------------------------------------*/
 
 .footerStrip {
-    background-color: rgb(205, 202, 199);
+    background-color: rgb(200, 200, 200);
 }
 
 footer {
     font-size: 14px;
     font-family: 'AvenirLight', sans-serif;
-    color: rgb(32,42,79);
+    color: rgb(40,40,40);
 }
 
 .footerGrid {
     display: grid;
     grid-template-columns: 1fr 50px;
-    padding: 15px 0;
+    padding: 50px 0;
 }
 
 .footerNavGrid {
@@ -353,9 +389,50 @@ footer {
 
 
 
-
-
-
+/* SVG */
+/*------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------*/
+/*WMP Logo*/
+.wcls-1{
+    fill:#202a52;
+}
+.wcls-2{
+    fill:#fff;
+}
+/*WMPS Logo*/
+.wscls-1{
+    fill:#202a52;
+}
+.wscls-2{
+    fill:#fff;
+}
+/*English flag*/
+.fcls-1{
+    fill:none;
+    stroke-linejoin:round;
+    stroke-width:2px;
+}
+.fcls-1,.fcls-3{
+    stroke:#e63214;
+}
+.fcls-2,.fcls-3{
+    fill:#202a52;
+}
+.fcls-3{
+    stroke-linecap:round;
+    stroke-miterlimit:10;
+}
+/*JOBS*/
+.jcls-1{
+    fill:#202a52;
+}
+.jcls-2{
+    fill:none;
+    stroke:#202a52;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+}
 
 
 
@@ -372,8 +449,7 @@ footer {
 @media screen and (max-width: 768px) {
     
     nav {
-        grid-template-columns: 100px 30px;
-        justify-content: space-between;
+        grid-template-columns: 100px 1fr;
     }
     
     .navigationGrid {

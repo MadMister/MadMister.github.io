@@ -27,12 +27,14 @@
     line-height: 476px;
     font-size: 30px;
     text-align: left;
+    cursor: pointer;
 }
 
 .appRightButton {
     line-height: 476px;
     font-size: 30px;
     text-align: right;
+    cursor: pointer;
 }
 
 .appImageSelector {
@@ -45,6 +47,7 @@
 .tinyApp {
     width: 42px;
     height: 91px;
+    cursor: pointer;
 }
 
 .tinyApp > img {

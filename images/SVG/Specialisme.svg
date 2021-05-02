@@ -1,1 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.72 92.05"><defs><style>.cls-1,.cls-2{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}.cls-1{stroke:#e30613;}.cls-2{stroke:#20294e;}</style></defs><g id="Laag_2" data-name="Laag 2"><g id="Laag_3" data-name="Laag 3"><path class="cls-1" d="M12.09,27.66a36.27,36.27,0,0,1,10.3-12.54"/><path class="cls-1" d="M24.65,76.71a36.38,36.38,0,0,1-11.34-12"/><path class="cls-1" d="M52.08,7.34A36.75,36.75,0,0,1,79.6,26.8"/><path class="cls-2" d="M48.8,48,87.69,29.82a42.9,42.9,0,0,1-20.75,57,41.54,41.54,0,0,1-40.87-2.5Z"/><path class="cls-2" d="M46.58,39.73,25.49,7.25A37.39,37.39,0,0,1,46.58,1Z"/><path class="cls-2" d="M41.13,46.14,4.89,63A38.59,38.59,0,0,1,4.6,29.87Z"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88.15 88.07">
+<defs>
+<style>.cls-1,.cls-2{fill:none;stroke-miterlimit:10;stroke-width:2px;}.cls-1{stroke:#202a52;}.cls-2{stroke:#e63214;}</style>
+</defs>
+<g>
+<path class="cls-1" d="M44.12,44,18.48,9.48A41.27,41.27,0,0,1,43.69,1Z"/>
+<path class="cls-1" d="M44.12,44,19.18,79.1A42.35,42.35,0,0,1,3.06,31.15Z"/>
+<path class="cls-1" d="M44.12,44,69.06,9A43,43,0,0,1,79.18,69,41.73,41.73,0,0,1,44.55,87.06Z"/>
+<path class="cls-2" d="M49.05,5.75A38.72,38.72,0,0,1,61.26,9.48"/>
+<path class="cls-2" d="M9.37,27.22a38.59,38.59,0,0,1,7.41-10.4"/>
+<path class="cls-2" d="M38.33,82.21a35.49,35.49,0,0,1-12.12-4"/>
+</g>
+</svg>

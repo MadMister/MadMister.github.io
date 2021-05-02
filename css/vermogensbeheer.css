@@ -2,27 +2,30 @@
     background-image: url("../images/image_vermogensbeheer_3_large.jpg");
 }
 
-.contentStrip.alt {
-    background-color: rgb(220,220,220);
-    color: rgb(32, 42, 82);
-}
-
 .contentStrip.alt .contentHeader {
-    font-size: 16px;
-    text-align: center;
     padding-top: 30px;
 }
 
+.contentStrip.alt .contentHeader > h2 {
+    font-size: 16px;
+    text-align: center;
+}
+
 .contentSVG {
-    width: 125px;
     height: 125px;
     margin: 0 auto;
 }
 
-.contentSVG.landscape {
-    width: 125px;
-    height: 95px;
-    padding: 15px 0;
+.contentSVG.dim8651x8851 {
+    width: 122.2px;
+}
+
+.contentSVG.dim8771x8771 {
+    width: 122.2px;
+}
+
+.contentSVG.dim10374x8771 {
+    width: 147.8px;
 }
 
 

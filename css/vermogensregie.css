@@ -2,11 +2,6 @@
     background-image: url("../images/image_vermogensregie_large.jpg");
 }
 
-.contentStrip.alt {
-    background-color: rgb(220,220,220);
-    color: rgb(32, 42, 82);
-}
-
 .contentStrip.alt .contentHeader {
     font-size: 16px;
     text-align: center;

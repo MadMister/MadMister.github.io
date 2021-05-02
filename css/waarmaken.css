@@ -2,10 +2,6 @@
     background-image: url("../images/image_waarmaken-2_large.jpg");
 }
 
-.contentStrip.alt {
-    background-color: rgb(220,220,220);
-}
-
 .contentText > p {
     margin-bottom: 30px;
 }

@@ -1,1 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 151.07 63.65"><defs><style>.cls-1,.cls-2{fill:none;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px;}.cls-1{stroke:#20294e;}.cls-2{stroke:#e30613;}</style></defs><g id="Laag_2" data-name="Laag 2"><g id="Laag_3" data-name="Laag 3"><circle class="cls-1" cx="34.32" cy="14.48" r="13.48"/><circle class="cls-1" cx="14.48" cy="49.17" r="13.48"/><circle class="cls-1" cx="53.66" cy="49.17" r="13.48"/><line class="cls-2" x1="119.52" y1="11.32" x2="119.52" y2="19.48"/><line class="cls-2" x1="104.25" y1="38.15" x2="104.25" y2="45.8"/><line class="cls-2" x1="110.39" y1="38.15" x2="110.39" y2="45.8"/><line class="cls-2" x1="127.23" y1="38.15" x2="127.23" y2="45.8"/><line class="cls-2" x1="133.37" y1="38.15" x2="133.37" y2="45.8"/><line class="cls-2" x1="139.19" y1="38.15" x2="139.19" y2="45.8"/><line class="cls-2" x1="34.9" y1="10.72" x2="34.9" y2="18.88"/><line class="cls-2" x1="11.41" y1="45.35" x2="11.41" y2="53"/><line class="cls-2" x1="17.55" y1="45.35" x2="17.55" y2="53"/><line class="cls-2" x1="47.68" y1="45.35" x2="47.68" y2="53"/><line class="cls-2" x1="53.82" y1="45.35" x2="53.82" y2="53"/><line class="cls-2" x1="59.64" y1="45.35" x2="59.64" y2="53"/><path class="cls-1" d="M119.87,32.46,146,17.36A30.2,30.2,0,0,1,135,58.61a28.83,28.83,0,0,1-15.1,4Z"/><path class="cls-1" d="M119.87,32.46,93.72,17.36A30.2,30.2,0,0,1,135,6.31,28.82,28.82,0,0,1,146,17.36Z"/><path class="cls-1" d="M119.87,32.46V62.65A30.19,30.19,0,0,1,89.68,32.46a28.94,28.94,0,0,1,4-15.1Z"/><polyline class="cls-1" points="67.92 1.04 77.7 14.48 67.92 27.92"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113.69 87.44">
+<defs>
+<style>.cls-1,.cls-2{fill:none;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px;}.cls-1{stroke:#202a52;}.cls-2{stroke:#e63214;}</style>
+</defs>
+<g>
+<g>
+<polyline class="cls-1" points="37.25 38.8 42.75 44.21 37.25 49.61"/>
+</g>
+<g>
+<circle class="cls-1" cx="36.28" cy="14.48" r="13.48"/>
+<circle class="cls-1" cx="14.48" cy="44.3" r="13.48"/>
+<circle class="cls-1" cx="36.28" cy="72.96" r="13.48"/>
+<line class="cls-2" x1="82.14" y1="23.7" x2="82.14" y2="31.86"/>
+<line class="cls-2" x1="66.87" y1="50.53" x2="66.87" y2="58.18"/>
+<line class="cls-2" x1="73.01" y1="50.53" x2="73.01" y2="58.18"/>
+<line class="cls-2" x1="89.85" y1="50.53" x2="89.85" y2="58.18"/>
+<line class="cls-2" x1="95.99" y1="50.53" x2="95.99" y2="58.18"/>
+<line class="cls-2" x1="101.81" y1="50.53" x2="101.81" y2="58.18"/>
+<line class="cls-2" x1="36.86" y1="10.72" x2="36.86" y2="18.88"/>
+<line class="cls-2" x1="11.41" y1="40.47" x2="11.41" y2="48.12"/>
+<line class="cls-2" x1="17.55" y1="40.47" x2="17.55" y2="48.12"/>
+<line class="cls-2" x1="30.3" y1="69.13" x2="30.3" y2="76.78"/>
+<line class="cls-2" x1="36.44" y1="69.13" x2="36.44" y2="76.78"/>
+<line class="cls-2" x1="42.26" y1="69.13" x2="42.26" y2="76.78"/>
+<path class="cls-1" d="M82.49,44.84l26.15-15.1A30.2,30.2,0,0,1,97.59,71a28.92,28.92,0,0,1-15.1,4Z"/>
+<path class="cls-1" d="M82.49,44.84,56.34,29.74a30.2,30.2,0,0,1,41.25-11,28.76,28.76,0,0,1,11,11Z"/>
+<path class="cls-1" d="M82.49,44.84V75A30.19,30.19,0,0,1,52.3,44.84a28.92,28.92,0,0,1,4-15.1Z"/>
+</g>
+</g>
+</svg>

@@ -4,34 +4,83 @@
 
 .contentStrip.alt {
     padding-bottom: 50px;
-    background-color: rgb(220,220,220);
-    color: rgb(32, 42, 82);
 }
 
 .contentStrip.alt .contentHeader {
-    font-size: 20px;
     height: 300px;
     line-height: 300px;
 }
 
-.contentStrip.alt .contentHeader > p {
+.contentStrip.alt .contentHeader > h2 {
+    font-size: 20px;
     display: inline-block;
     vertical-align: middle;
     line-height: 1.6em;
 }
 
 .contentSVG {
-    width: 200px;
     height: 200px;
     margin: 0 auto;
     padding: 50px 0;
 }
 
-.contentSVG.landscape {
-    width: 300px;
-    height: 100px;
-    padding: 100px 0;
+.contentSVG.dim9208x8798 {
+    width: 209.3px;
 }
+
+.contentSVG.dim8815x8807 {
+    width: 200.2px;
+}
+
+.contentSVG.dim10004x8774 {
+    width: 228px;
+}
+
+.contentSVG > img {
+    height: 100%;
+    object-position: cover;
+}
+
+/* SVG 
+.pcls-1,.pcls-2{
+    fill:none;
+    stroke-linecap:round;
+    stroke-miterlimit:10;
+    stroke-width:2px;
+}
+.pcls-1{
+    stroke:#202052;
+}
+.pcls-2{
+    stroke:#e63214;
+}
+.scls-1,.scls-2{
+    fill:none;
+    stroke-miterlimit:10;
+    stroke-width:2px;
+}
+.scls-1{
+    stroke:#202a52;
+}
+.scls-2{
+    stroke:#e63214;
+}
+.dcls-1,.dcls-2,.dcls-3{
+    fill:none;
+    stroke-miterlimit:10;
+    stroke-width:2px;
+}
+.dcls-1,.dcls-2{
+    stroke:#202a52;
+}
+.dcls-2,.dcls-3{
+    stroke-linecap:round;
+}
+.dcls-3{
+    stroke:#e63214;
+}
+
+*/
 
 @media screen and (max-width: 768px) {
     .headerStrip {
