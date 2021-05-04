@@ -2,30 +2,36 @@
     background-image: url("../images/image_vermogensregie_large.jpg");
 }
 
+.contentStrip.alt {
+    padding-bottom: 50px;
+    padding-top: 80px;
+}
+
+
 .contentStrip.alt .contentHeader {
     padding-top: 30px;
 }
 
 .contentStrip.alt .contentHeader > h2 {
-    font-size: 16px;
+    font-size: 1.14em;
     text-align: center;
 }
 
 .contentSVG {
-    height: 125px;
+    height: 80px;
     margin: 0 auto;
 }
 
 .contentSVG.dim11369x8744 {
-    width: 162.5px;
+    width: 104px;
 }
 
 .contentSVG.dim8824x8824 {
-    width: 125px;
+    width: 80px;
 }
 
 .contentSVG.dim11136x8521 {
-    width: 163.4px;
+    width: 104.5px;
 }
 
 

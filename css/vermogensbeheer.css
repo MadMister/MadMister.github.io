@@ -2,30 +2,35 @@
     background-image: url("../images/image_vermogensbeheer_3_large.jpg");
 }
 
+.contentStrip.alt {
+    padding-bottom: 50px;
+    padding-top: 80px;
+}
+
 .contentStrip.alt .contentHeader {
     padding-top: 30px;
 }
 
 .contentStrip.alt .contentHeader > h2 {
-    font-size: 16px;
+    font-size: 1.14em;
     text-align: center;
 }
 
 .contentSVG {
-    height: 125px;
+    height: 80px;
     margin: 0 auto;
 }
 
 .contentSVG.dim8651x8851 {
-    width: 122.2px;
+    width: 78.2px;
 }
 
 .contentSVG.dim8771x8771 {
-    width: 122.2px;
+    width: 80px;
 }
 
 .contentSVG.dim10374x8771 {
-    width: 147.8px;
+    width: 94.6px;
 }
 
 

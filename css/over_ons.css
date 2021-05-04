@@ -12,7 +12,7 @@
 }
 
 .contentStrip.alt .contentHeader > h2 {
-    font-size: 20px;
+    font-size: 1.6em;
     display: inline-block;
     vertical-align: middle;
     line-height: 1.6em;
@@ -40,47 +40,6 @@
     height: 100%;
     object-position: cover;
 }
-
-/* SVG 
-.pcls-1,.pcls-2{
-    fill:none;
-    stroke-linecap:round;
-    stroke-miterlimit:10;
-    stroke-width:2px;
-}
-.pcls-1{
-    stroke:#202052;
-}
-.pcls-2{
-    stroke:#e63214;
-}
-.scls-1,.scls-2{
-    fill:none;
-    stroke-miterlimit:10;
-    stroke-width:2px;
-}
-.scls-1{
-    stroke:#202a52;
-}
-.scls-2{
-    stroke:#e63214;
-}
-.dcls-1,.dcls-2,.dcls-3{
-    fill:none;
-    stroke-miterlimit:10;
-    stroke-width:2px;
-}
-.dcls-1,.dcls-2{
-    stroke:#202a52;
-}
-.dcls-2,.dcls-3{
-    stroke-linecap:round;
-}
-.dcls-3{
-    stroke:#e63214;
-}
-
-*/
 
 @media screen and (max-width: 768px) {
     .headerStrip {

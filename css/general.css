@@ -270,6 +270,7 @@ nav {
 
 h1 {
     color: #ffffff;
+    font-size: 4em;
     font-size: calc(45vw/39 + 45px);
     font-family: 'AvenirMassive', sans-serif;
     line-height: 1em;
@@ -301,7 +302,7 @@ h1 {
     font-family: 'AvenirLight', sans-serif;
     margin-bottom: 30px;
     line-height: 1.6em;
-    font-size: 16px;
+    font-size: 1.14em;
     color: #000000;
 }
 
@@ -325,12 +326,8 @@ h1 {
     gap: 30px;
 }
 
-.contentBox.threeCol > div > .contentHeader {
-    font-size: 21px;
-}
-
 .contentHeader > h2 {
-    font-size: 30px;
+    font-size: 2.14em;
     font-family: 'AvenirBold', sans-serif;
     margin-bottom: 30px;
     color: inherit;
