@@ -60,9 +60,9 @@
     background-color: transparent;
 }
 
-.affiliate > .affiliateImageContainer:focus-within {
+/* .affiliate > .affiliateImageContainer:focus-within {
     outline: 2px solid rgba(100,100,100,0.5);
-}
+} */
 
 .affiliateName {
     margin-top: 20px;

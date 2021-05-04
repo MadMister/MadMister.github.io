@@ -7,6 +7,7 @@ let details = displayList[1].children;
 
 function showAffiliate(a) {
     let infoList = a.children;
+    infoList[0].lastElementChild.blur();
 
     imageContainer.firstElementChild.src = infoList[0].firstElementChild.src;
     imageContainer.firstElementChild.alt = infoList[0].firstElementChild.alt;

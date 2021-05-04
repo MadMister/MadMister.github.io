@@ -1,5 +1,5 @@
 .headerStrip {
-    background-image: url("../images/image_vermogensbeheer_large.jpg");
+    background-image: url("../images/image_ervaren_vernieuwers_large.jpg");
 }
 
 .contentStrip.alt {
@@ -31,7 +31,7 @@
 
 @media screen and (max-width: 768px) {
     .headerStrip {
-        background-image: url("../images/image_vermogensbeheer_small.jpg");
+        background-image: url("../images/image_ervaren_verniewers_small.jpg");
     }
 
     .contentBox.twoCol > div > .contentImage > a > img {
