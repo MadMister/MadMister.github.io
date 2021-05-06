@@ -81,7 +81,7 @@
 }
 
 .contentButton:hover {
-    font-family: 'AvenirBold', sans-serif;
+    font-weight: bold;
 }
 
 .downloadLine {

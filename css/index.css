@@ -31,7 +31,7 @@
 
 @media screen and (max-width: 768px) {
     .headerStrip {
-        background-image: url("../images/image_ervaren_verniewers_small.jpg");
+        background-image: url("../images/image_ervaren_vernieuwers_small.jpg");
     }
 
     .contentBox.twoCol > div > .contentImage > a > img {
@@ -40,6 +40,12 @@
     
     .contentBox.threeCol > div > .contentImage > a > img {
         height: 250px;
+    }
+}
+
+@media screen and (max-width: 1035px) and (min-width: 769px) {
+    .contentHeader > h2 {
+        font-size: 1.5em;
     }
 }
 

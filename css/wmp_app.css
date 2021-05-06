@@ -3,7 +3,7 @@
 }
 
 .contentHeader {
-    font-size: 30px;
+    font-size: 1.14em;
 }
 
 .contentAppContainer {
@@ -21,13 +21,15 @@
 
 .appScreen {
     background-image: url("../images/app_1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     transition: background-image 1s;
 }
 
 .appLeftButton {
     background: transparent;
     border: none;
-    line-height: 476px;
+    line-height: 100%;
     font-size: 30px;
     text-align: left;
     cursor: pointer;
@@ -37,7 +39,7 @@
 .appRightButton {
     background: transparent;
     border: none;
-    line-height: 476px;
+    line-height: 100%;
     font-size: 30px;
     text-align: right;
     cursor: pointer;
@@ -48,17 +50,33 @@
 .appText {
     height: 100px;
     color: rgb(32,42,82);
-    font-family: 'AvenirSemiBold', sans-serif;
     text-align: center;
     line-height: 1.5em;
 }
 
 .appText span {
-    font-family: 'AvenirBold', sans-serif;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
     .headerStrip {
         background-image: url("../images/image_app_small.jpg");
+    }
+
+    .contentHeader {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 470px) {
+
+    .contentAppContainer {
+        width: 73vw;
+    }
+
+    .appViewPort {
+        grid-template-columns: 10vw 53vw 10vw;
+        height: 101vw;
+        gap: 0;
     }
 }

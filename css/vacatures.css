@@ -9,13 +9,13 @@
 }
 
 .contentSummary {
-    font-family: 'AvenirBold', sans-serif;
+    font-weight: bold;
     color: rgb(230,50,20);
     margin-bottom: 30px;
 }
 
 .contentParagraphHeader {
-    font-family: 'AvenirBold', sans-serif;
+    font-weight: bold;
 }
 
 .contentParagraph {

@@ -3,7 +3,6 @@
     grid-template-columns: repeat(auto-fill, 100px);
     gap: 40px;
     justify-content: space-between;
-    font-family: 'Avenir', sans-serif;
     padding-bottom: 30px;
 }
 
@@ -115,7 +114,7 @@
 }
 
 .affiliateFullName {
-    font-family: 'AvenirBold', sans-serif;
+    font-weight: bold;
     font-size: 18px;
     margin-bottom: 50px;
 }

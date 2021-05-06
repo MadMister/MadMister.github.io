@@ -1,14 +1,14 @@
 @font-face {
-    font-family: 'AvenirBold';
+    font-family: 'Avenir';
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     src: url('../fonts/2f9f83_b_0.woff') format("woff"), url('../fonts/2f9f83_b_0.svg') format("svg"), url('../fonts/2f9f83_b_0.eot') format("embedded-opentype");
 }
 
 @font-face {
     font-family: 'AvenirMassive';
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     src: url('../fonts/2f9f83_5_0.woff') format("woff"), url('../fonts/2f9f83_5_0.svg') format("svg"), url('../fonts/2f9f83_5_0.eot') format("embedded-opentype");
 }
 
@@ -105,7 +105,7 @@ nav {
     display: grid;
     grid-template-columns: 100px 1fr 33px;
     padding: 10px 0;
-    font-size: 14px;
+    font-size: 1em;
 }
 
 .logoContainer {
@@ -139,7 +139,7 @@ nav {
     padding: 3px;
     margin-bottom: 17px;
     border: 1px solid rgb(32, 42, 82);
-    font-family: 'AvenirBold',sans-serif;
+    font-weight: bold;
     font-size: 8px;
     text-align: center;
     line-height: 14px;
@@ -273,6 +273,7 @@ h1 {
     font-size: 4em;
     font-size: calc(45vw/39 + 45px);
     font-family: 'AvenirMassive', sans-serif;
+    font-weight: bold;
     line-height: 1em;
 }
 
@@ -328,7 +329,7 @@ h1 {
 
 .contentHeader > h2 {
     font-size: 2.14em;
-    font-family: 'AvenirBold', sans-serif;
+    font-weight: bold;
     margin-bottom: 30px;
     color: inherit;
 }
@@ -359,7 +360,7 @@ h1 {
 }
 
 footer {
-    font-size: 14px;
+    font-size: 1em;
     font-family: 'AvenirLight', sans-serif;
     color: rgb(40,40,40);
 }
@@ -440,6 +441,26 @@ footer {
 /*------------------------------------------------------------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------------------------------------------------------------*/
 
+@media screen and (min-width: 1500px) {
+    .marginBox {
+        width: 1200px;
+    }
+
+    .headerStrip {
+        height: 500px;
+        font-size: 60px;
+    }
+
+    .contentImage > img {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 1035px) and (min-width: 768px) {
+    .contentHeader > h2 {
+        font-size: 1.6em;
+    }
+}
 
 @media screen and (max-width: 768px) {
     
@@ -467,6 +488,10 @@ footer {
         height: calc(328px + 10vw);
         padding-top: 150px;
     }
+
+    h1 {
+        font-size: 3.6em;
+    }
     
     .contentBox.oneCol, .contentBox.twoCol, .contentBox.threeCol {
         grid-template-columns: 1fr;
@@ -483,21 +508,22 @@ footer {
 
     .footerNavGrid {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 30px 30px 30px 30px 30px 30px;
+        grid-template-rows: repeat(6, 30px);
     }
 }
 
-@media screen and (min-width: 1500px) {
-    .marginBox {
-        width: 1200px;
+@media screen and (max-width: 500px) {
+    .footerNavGrid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12, 30px);
     }
 
     .headerStrip {
-        height: 500px;
-        font-size: 60px;
+        height: 300px;
+        padding-top: 100px;
     }
 
-    .contentImage > img {
-        height: 300px;
+    h1 {
+        font-size: 2.6em;
     }
 }
