@@ -131,7 +131,6 @@ nav {
 
 .iconButton {
     height: 22px;
-    
 }
 
 .loginIcon {
@@ -157,10 +156,11 @@ nav {
     stroke: rgb(230, 50, 20);
 }
 
-.languageIcon:hover > svg .fcls-2, .languageIcon:hover > svg .fcls-3 {
+.languageIcon:hover > svg .fcls-2, .languageIcon:hover > svg .fcls-3, .languageIcon:hover > svg .vcls-1, .languageIcon:hover > svg .vcls-2, .languageIcon:hover > svg .vcls-3 {
     fill: none;
     stroke: rgb(230, 50, 20);
 }
+
 
 .jobsIcon:hover > svg .jcls-1 {
     fill: rgb(230, 50, 20);
@@ -418,6 +418,16 @@ footer {
 .fcls-3{
     stroke-linecap:round;
     stroke-miterlimit:10;
+}
+/*Dutch flag*/
+.vcls-1{
+    fill:#e63214;
+}
+.vcls-2{
+    fill:#202a52;
+}
+.vcls-3{
+    fill:none;
 }
 /*JOBS*/
 .jcls-1{
