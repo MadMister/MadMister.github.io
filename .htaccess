@@ -1,0 +1,12 @@
+<IfModule mod_headers.c>
+Header always set X-Frame-Options "SAMEORIGIN"
+Header always set X-Content-Type-Options "nosniff"
+Header set Referrer-Policy "no-referrer-when-downgrade"
+Header add Content-Security-Policy "default-src 'self';"
+Header set Permissions-Policy "autoplay 'none'; camera 'none'; encrypted-media 'self'; fullscreen 'self'; geolocation 'none'; microphone 'none'; midi 'none'; payment 'none'; vr 'none'"
+Header set Strict-Transport-Security "max-age=31536000" env=HTTPS
+</IfModule>
+
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteRule (.*) [https://%{HTTP_HOST}%{REQUEST_URI}]https://%{HTTP_HOST}%{REQUEST_URI}
