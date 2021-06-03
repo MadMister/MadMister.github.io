@@ -177,18 +177,66 @@ nav {
 
 /* Specific */
 
-.face.back.one {
-    background-color: rgba(0, 153, 184, 0.2);
+.face.back.blue {
+    background-color: rgba(219,240,245);
 }
 
-.face.one > .cross > svg > path {
+.face.blue > .cross > svg > path {
     fill: rgb(0, 153, 184);
 }
 
-.face.one > h2 {
+.face.blue > h2 {
     color: rgb(0, 153, 184);
 }
 
-.face.one > .itemButton {
+.face.blue > .itemButton {
     background-color: rgb(0, 153, 184);
+}
+
+.face.back.purple {
+    background-color: rgb(235,223,239);
+}
+
+.face.purple > .cross > svg > path {
+    fill: rgb(112,34,131);
+}
+
+.face.purple > h2 {
+    color: rgb(112,34,131);
+}
+
+.face.purple > .itemButton {
+    background-color: rgb(112,34,131);
+}
+
+.face.back.orange {
+    background-color: rgb(225,233,221);
+}
+
+.face.orange > .cross > svg > path {
+    fill: rgb(253,76,2);
+}
+
+.face.orange > h2 {
+    color: rgb(253,76,2);
+}
+
+.face.orange > .itemButton {
+    background-color: rgb(253,76,2);
+}
+
+.face.back.red {
+    background-color: rgb(251,223,236);
+}
+
+.face.red > .cross > svg > path {
+    fill: rgb(227,28,121);
+}
+
+.face.red > h2 {
+    color: rgb(227,28,121);
+}
+
+.face.red > .itemButton {
+    background-color: rgb(227,28,121);
 }
