@@ -80,7 +80,7 @@ nav {
     position: relative;
     transition: transform 1s;
     transform-style: preserve-3d;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .card:hover {
@@ -131,7 +131,7 @@ nav {
 }
 
 .back > h2 {
-    padding: 0 10% 10% 10%; 
+    padding: 0 7% 6.8% 7%; 
     font-size: 2.15em;
     font-weight: 300;
     text-align: center;
