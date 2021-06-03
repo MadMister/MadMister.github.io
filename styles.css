@@ -80,6 +80,7 @@ nav {
     position: relative;
     transition: transform 1s;
     transform-style: preserve-3d;
+    font-size: 12px;
 }
 
 .card:hover {
@@ -118,7 +119,7 @@ nav {
 }
 
 .cross {
-    height: 10%;
+    height: 7%;
     position: relative;
 }
 .cross > svg {
@@ -131,23 +132,28 @@ nav {
 
 .back > h2 {
     padding: 0 10% 10% 10%; 
-    font-size: 2em;
+    font-size: 2.15em;
     font-weight: 300;
     text-align: center;
 }
 
 .back > ul {
-    list-style-position: inside;
+    display: grid;
+    grid-template-columns: 1em 1fr;
+    list-style: none;
     font-weight: 500;
 }
+
 
 .itemButton {
     position: absolute;
     bottom: 5%;
     right: 5%;
-    width: 25%;
-    height: 5%;
+    width: 27.5%;
+    height: 7%;
     text-align: center;
+    color: #ffffff;
+    font-size: 0.75em;
 }
 
 .gridButton {
@@ -179,7 +185,7 @@ nav {
     fill: rgb(0, 153, 184);
 }
 
-.face.one > h1 {
+.face.one > h2 {
     color: rgb(0, 153, 184);
 }
 
