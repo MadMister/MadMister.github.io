@@ -147,6 +147,8 @@ nav {
 
 .itemButton {
     position: absolute;
+    display: grid;
+    align-items: center;
     bottom: 5%;
     right: 5%;
     width: 27.5%;

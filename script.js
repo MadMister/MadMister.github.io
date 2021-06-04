@@ -1,5 +1,6 @@
 let cards = document.getElementsByClassName("card");
 let buttons = document.getElementsByClassName("gridButton");
+let links = document.getElementsByClassName("itemButton");
 let j = -1;
 
 function turn(card) {
@@ -22,5 +23,8 @@ for (let i = 0; i < cards.length; i++) {
     });
     buttons[i].addEventListener("click", function() {
         turn(i);
+    });
+    links[i].addEventListener("click", function(e) {
+        e.stopPropagation();
     });
 }
