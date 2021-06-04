@@ -252,4 +252,9 @@ nav {
     .titleStrip h1 {
         font-size: 1.6em;
     }
+
+    .card {
+        font-size: 12px;
+    }
+
 }
