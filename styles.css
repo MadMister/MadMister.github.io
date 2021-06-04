@@ -249,7 +249,7 @@ nav {
 }
 
 @media (max-width: 500px) {
-    .titleStrip > h1 {
+    .titleStrip h1 {
         font-size: 1.6em;
     }
 }
