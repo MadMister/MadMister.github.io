@@ -30,12 +30,12 @@ header {
 }
 
 .logoStrip {
-    height: 100px;
+    height: min(160px, 100px + 5vw);
 }
 
 .logoContainer {
-    height: 80%;
-    padding-top: 10px;
+    height: 70%;
+    padding-top: min(24px, 15px + 0.75vw);
 }
 
 .logoContainer > img {
@@ -50,9 +50,9 @@ nav {
 }
 
 .titleStrip {
-    height: 50px;
+    height: min(74px, 50px + 2vw);
     background-color: #702283;
-    line-height: 50px;
+    line-height: min(74px, 50px + 2vw);
 }
 
 
@@ -66,7 +66,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
-    padding-top: 50px;
+    padding: 50px 0 min(10vw, 120px) 0;
 }
 
 .gridItem {
@@ -107,6 +107,11 @@ nav {
     left: 0;
     right: 0;
     transform: rotate(0);
+}
+
+.front > img {
+    width: 100%;
+    height: 100%;
 }
 
 .back {
@@ -241,4 +246,10 @@ nav {
 
 .face.red > .itemButton {
     background-color: rgb(227,28,121);
+}
+
+@media (max-width: 500px) {
+    .titleStrip > h1 {
+        font-size: 1.6em;
+    }
 }
