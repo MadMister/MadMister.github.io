@@ -20,6 +20,7 @@ window.addEventListener("resize", function() {
 rotor.addEventListener("transitionend", function(e) {
     if ( getComputedStyle(rotor).transform == "matrix(1, 0, 0, 1, 0, 0)" ) {
         rotor.classList.add("rotated");
+        console.log("rotated");
     }    
 });
 for (let i = 0; i < links.length; i++) {
@@ -28,13 +29,15 @@ for (let i = 0; i < links.length; i++) {
             getComputedStyle(links[i]).width;
             if (getComputedStyle(links[i]).width == "8px") {
                 rotor.classList.add("collapsed");
-                rotor.classList.remove("rotated");  
+                rotor.classList.remove("rotated");
+                console.log("collapsed"); 
             }
             e.stopPropagation();
         });
         links[i].firstElementChild.addEventListener("transitionstart", function(e) {
             if (getComputedStyle(links[i]).width == "8px") {
                 rotor.classList.remove("collapsed");
+                console.log("extend");
             }
             e.stopPropagation();
         });
@@ -47,6 +50,10 @@ for (let i = 0; i < links.length; i++) {
 }
 button.addEventListener("click", function() {
     rotor.classList.toggle("clicked");
+    console.log("clicked");
+});
+rotor.addEventListener("click", function() {
+    button.click();
 });
 
 // rotor.firstElementChild.firstElementChild.addEventListener("transitionend", function(e) {

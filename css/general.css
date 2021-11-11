@@ -63,19 +63,19 @@ header {
     position: relative;
 }
 #mainNavList > button {
+    display: block;
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
+    width: 100%;
+    height: 100%;
     background-color: transparent;
     color: rgba(0,0,0,0);
-    z-index: -1;
     border: none;
-
+    overflow: hidden;
 }
-#mainNavList > button:focus {
-    outline: 2px black;
+#mainNavList > button:focus ~ a li::before {
+    outline: 1px solid #000000;
 }
 #mainNavList li {
     position: relative;
@@ -111,6 +111,7 @@ header {
         grid-auto-columns: min-content;
         grid-auto-flow: column;        
         transition: transform 200ms linear;
+        height: 2em;
     }
     #mainNavList.collapsed {
         transform: rotate(90deg);
@@ -132,8 +133,9 @@ header {
         height: 2em;
         margin-bottom: 0;
     }
-    #mainNavList.rotated:hover li, #mainNavList.clicked:hover li {
+    #mainNavList.rotated:hover li, #mainNavList.rotated.clicked li {
         width: 100px;
+        height: 2em;
     }
     #mainNavList:hover, #mainNavList.clicked, #mainNavList.rotated {
         transform: rotate(0deg);
