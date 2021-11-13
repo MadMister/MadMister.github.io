@@ -13,48 +13,51 @@ window.addEventListener("resize", function() {
     }
 });
 
-
-
-
-
 rotor.addEventListener("transitionend", function(e) {
     if ( getComputedStyle(rotor).transform == "matrix(1, 0, 0, 1, 0, 0)" ) {
         rotor.classList.add("rotated");
-        console.log("rotated");
     }    
 });
 for (let i = 0; i < links.length; i++) {
-    if (i == 1) {
-        links[i].firstElementChild.addEventListener("transitionend", function(e) {
-            getComputedStyle(links[i]).width;
-            if (getComputedStyle(links[i]).width == "8px") {
+    let link = links[i];
+    if (i == 1) {    
+        link.firstElementChild.addEventListener("transitionend", function(e) {
+            if (getComputedStyle(link).width == "8px") {
                 rotor.classList.add("collapsed");
-                rotor.classList.remove("rotated");
-                console.log("collapsed"); 
+                rotor.classList.remove("rotated"); 
+            }
+            if (getComputedStyle(link.firstElementChild).height == "25px") {
+                rotor.classList.add("opened");
             }
             e.stopPropagation();
         });
-        links[i].firstElementChild.addEventListener("transitionstart", function(e) {
-            if (getComputedStyle(links[i]).width == "8px") {
+        link.firstElementChild.addEventListener("transitionstart", function(e) {
+            if (getComputedStyle(link).width == "8px") {
                 rotor.classList.remove("collapsed");
-                console.log("extend");
+            }
+            if (getComputedStyle(link.firstElementChild).height == "25px") {
+                rotor.classList.remove("opened");
             }
             e.stopPropagation();
         });
     }
     else {
-        links[i].addEventListener("transitionend", function(e) {
+        link.addEventListener("transitionend", function(e) {
             e.stopImmediatePropagation();
         });
     }
 }
 button.addEventListener("click", function() {
     rotor.classList.toggle("clicked");
-    console.log("clicked");
 });
 rotor.addEventListener("click", function() {
     button.click();
 });
+document.addEventListener("click", function(e) {
+    if (!rotor.contains(e.target)) {
+        rotor.classList.remove("clicked");
+    }
+} );
 
 // rotor.firstElementChild.firstElementChild.addEventListener("transitionend", function(e) {
 //     if (!rotor.classList.contains("reverse")) {
