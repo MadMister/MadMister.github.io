@@ -3,6 +3,15 @@
 html {
     box-sizing: border-box;
 }
+
+:root {
+    --color-1: #000000;
+    --color-2: #ffffff;
+    --color-3: #ff0000;
+    --color-4: #5e0000;
+    --wordekr-duration: 100ms;
+}
+
 body {
     font-family: monospace;
 }
@@ -22,7 +31,14 @@ body {
 header {
     display: grid;
     grid-template-columns: 1fr min(calc(100px + 20vw), 500px);
-    align-content: start;    
+    align-content: start;
+    position: fixed;
+    background-color: #ffffff;
+    z-index: 10;
+    padding: 5vw 0;
+    top: 0;
+    left: 5vw;
+    right: 5vw;
 }
 
 .scene {
@@ -97,6 +113,10 @@ header {
     transition: none;
 }
 
+.logoContainer > svg {
+    display: block;
+}
+
 @media screen and (min-width: 700px) {
     #mainNavList {
         display: grid;
@@ -137,14 +157,181 @@ header {
     }
 }
 
+/* MAIN ----------------------------------------------------------------*/
+/* ---------------------------------------------------------------------*/
+
+main {
+    padding-top: min(calc(40.16px + 13.03vw), calc(200.79px + 5vw));
+}
+
+.heroImage {
+    height: max(calc(100vw - 40.16px - 18.03vw), calc(100vw - 200.79px - 10vw));
+    /* background-image: url("../images/mmbrsnc.svg"), url("../images/placeholder.jpg");
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: center;
+    background-blend-mode: overlay; */
+    overflow: hidden;
+}
+
+@media screen and (orientation: landscape) {
+    .heroImage {
+        height: max(calc(100vh - 40.16px - 18.03vw), calc(100vh - 200.79px - 10vw));
+    }
+}
+
+.slideshow {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100% calc(170px + 17vw) 100%;
+    align-items: end;
+    position: relative;
+    left: 0;
+    transition: left 10s linear;
+}
+.slideshow.shifted {
+    left: calc(-100% - 170px - 17vw);
+}
+.slideshow > img.heroimg {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.slideshow > .workers {
+    width: 100%;
+    height: calc(77px + 7.7vw);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.slideshow > .workers.reverse {
+    transform: rotateY(180deg);
+}
+.slideshow .worker {
+    width: 100%;
+    height: 100%;
+}
+.slideshow .worker svg {
+    display: block;
+}
+.slideshow .worker svg * {
+    fill: #000000;
+}
+.worker .legs {
+    position: relative;
+    height: 35.06%;
+}
+.worker .legs div {
+    transform-origin: 0 0;  
+    animation-iteration-count: infinite;
+    animation-duration: 500ms;
+    animation-direction: alternate;
+    animation-play-state: running;
+    animation-timing-function: linear;
+}
+.worker .legs > div {
+    position: absolute;
+    height: 100%;
+    width: 23.35%;
+    inset-block: 0;
+    inset-inline: 41.18% 35.29%;
+    animation-direction: normal;
+    animation-duration: 1000ms;
+}
+.worker .legs .upper, .worker .legs .lower {
+    width: 50%;
+    height: 37.04%;
+    background-color: #000000;
+}
+.worker .legs .one .upper {
+    animation-direction: alternate-reverse;
+}
+.worker .legs .one .lower {
+    animation-direction: alternate-reverse;
+}
+.worker .legs .foot {
+    width: 75%;
+    height: 18.52%;
+    margin-block-start: 10%;
+    background-color: #000000;
+}
+.worker .legs .one .foot {
+    animation-direction: alternate-reverse;
+}
+.worker .legs > .one {
+    animation-name: legone;
+}
+.worker .legs > .two {
+    animation-name: legtwo;
+    transform: translate(50%, 0);
+}
+.worker.pushing .legs .upper {
+    transform: skewX(45deg);
+    animation-name: pushupper;
+}
+.worker.pushing .legs .lower {
+    transform: translate(100%, 0) skewX(45deg);
+    animation-name: pushlower;
+}
+.worker.pushing .legs .foot {
+    transform: translate(100%, 0);
+    animation-name: pushfoot;
+}
+.worker.pulling .legs .upper {
+    transform: skewX(45deg);
+    animation-name: pullupper;
+}
+.worker.pulling .legs .lower {
+    transform: translate(100%, 0) skewX(45deg);
+    animation-name: pulllower;
+}
+.worker.pulling .legs .foot {
+    transform: translateX(133.33%);
+    animation-name: pullfoot;
+}
+
+@keyframes legone {
+    50% {transform: translate(50%, 0);}
+    75% {transform: translate(25%, -18.52%);}
+    to {transform: translate(0, 0);}
+}
+@keyframes legtwo {
+    25% {transform: translate(25%, -18.52%);}
+    50% {transform: translate(0, 0);}
+    to {transform: translate(50%, 0);}
+}
+
+@keyframes pushupper {
+    to {transform: skewX(-45deg);}
+}
+@keyframes pushlower {
+    to {transform: translate(-100%) skewX(45deg);}
+}
+@keyframes pushfoot {
+    to {transform: translateX(-33.33%);}
+}
+@keyframes pullupper {
+    to {transform: translateX(0) skewX(45deg);}
+}
+@keyframes pulllower {
+    to {transform: translate(100%,0) skewX(-45deg);}
+}
+@keyframes pullfoot {
+    to {transform: translateX(0px);}
+}
+
+
+
+
 /* BOOKSHELF -----------------------------------------------------------*/
 /* ---------------------------------------------------------------------*/
 
 .shelfscreen {
-    perspective: 800px;
+    perspective: 3000px;
     perspective-origin: 50% 0;
     transform-style: preserve-3d;
     position: relative;
+    transform: translateZ(-200px);
 }
 
 .shelfscreen * {
@@ -167,7 +354,7 @@ header {
     padding: 4px;
     transition: transform 2s;
     transform-origin: 0 0 0;
-    transform: rotateY(-30deg);
+    transform: rotateY(-30deg) skewY(10deg);
 }
 
 .book {
@@ -212,7 +399,6 @@ header {
     width: 100%;
     background-image: repeating-linear-gradient(to right, #ffffff 0 3px, #000000 3px 6px);
 }
-
 
 .book:nth-child(1) {
     height: 200px;
@@ -310,3 +496,6 @@ header {
 .book:nth-child(7) > .top {
     height: 80px;
 }
+
+/* FOOTER --------------------------------------------------------------*/
+/* ---------------------------------------------------------------------*/

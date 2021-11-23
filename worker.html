@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        div {height: 300px; width: 300px;}
+        svg { display: block; border: 1px solid black;}
+
+        svg > .worker > g {
+            animation-name: shift;
+            animation-iteration-count: infinite;
+            animation-duration: 1000ms;
+            animation-direction: alternate;
+            animation-play-state: running;
+            animation-timing-function: linear;
+        }
+        svg > .worker > g.two {
+            /* transform: translateX(10px); */
+            animation-direction: alternate-reverse;
+        }
+
+        svg > .worker .upper {
+            animation-name: walkingupper;
+            animation-iteration-count: infinite;
+            animation-duration: 1000ms;
+            animation-direction: alternate;
+            animation-play-state: running;
+            animation-timing-function: linear;
+        }
+        
+        svg > .worker > .two .upper {
+            animation-direction: alternate-reverse;
+        }
+        svg > .worker .lower {
+            animation-name: walkinglower;
+            animation-iteration-count: infinite;
+            animation-duration: 1000ms;
+            animation-direction: alternate;
+            animation-play-state: running;
+            animation-timing-function: linear;
+        }
+        svg > .worker .two .lower {
+            animation-direction: alternate-reverse;
+        }
+        svg > .worker .foot {
+            animation-name: feetwalking;
+            animation-iteration-count: infinite;
+            animation-duration: 1000ms;
+            animation-direction: alternate;
+            animation-play-state: running;
+            animation-timing-function: linear;
+        }
+        svg > .worker .two .foot {
+            animation-direction: alternate-reverse;
+        }
+        @keyframes shift {
+            to {transform: translateX(10px);}
+        }
+        @keyframes walkingupper {
+            from {transform: skewX(-45deg);}
+            to {transform: skewX(45deg);}
+        }
+        @keyframes walkinglower {
+            from {transform: translateX(-10px);}
+            to {transform: translateX(10px);}
+        }
+        @keyframes feetwalking {
+            to {transform: translateX(20px);}
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 77">
+            <defs>
+                <style>.cls-1{fill:#4d4d4d;}</style>
+            </defs>
+            <g class="worker">
+                <circle cx="55" cy="25" r="10"/>
+                <path d="M 20 50 L 40 30 H 70 V 40 H 50 L 40 50 Z"/>
+                <path d="M 72 30 l 3 -10 v 18 h -3 Z"/>
+                <g class="one">
+                    <g transform="translate(20, 50)">
+                        <rect class="upper" x="0" y="0" width="10" height="10"/>
+                    </g>
+                    <g transform="matrix(1 0 -1 1 20 60)">
+                        <rect class="lower" x="0" y="0" width="10" height="10"/>
+                    </g> 
+                    <path class="foot" d="M 0 72 h 10 l 5 5 h -15 Z"/>
+                </g>
+                <g class="two">
+                    <g transform="translate(20, 50)">
+                        <rect class="upper" x="0" y="0" width="10" height="10"/>
+                    </g>
+                    <g transform="matrix(1 0 -1 1 20 60)">
+                        <rect class="lower" x="0" y="0" width="10" height="10"/>
+                    </g> 
+                    <path class="foot" d="M 0 72 h 10 l 5 5 h -15 Z"/>
+                </g>
+            </g>
+        </svg>
+    </div>
+    
+</body>

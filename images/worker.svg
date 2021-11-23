@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 -100 200 200">
+    <defs>
+        <style>.cls-1{fill:#4d4d4d;}</style>
+    </defs>
+    <g>
+        <circle cx="55" cy="25" r="10"/>
+        <path d="M 20 50 L 40 30 H 70 V 40 H 50 L 40 50 Z"/>
+        <g class="legone" transform="matrix(1 0 -1 1 0 0)" transform-origin="20 50">
+            <rect x="20" y="50" width="10" height="10"/>
+            <g class="lower">
+                <rect x="20" y="60" width="10" height="10"/>
+                <path d="M 20 75 H 30 L 35 80 H 20 Z"/>
+            </g>
+        </g>
+        <g class="legtwo">
+        </g>
+    </g>
+</svg>

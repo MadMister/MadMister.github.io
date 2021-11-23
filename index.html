@@ -10,10 +10,13 @@
 
         <!-- <link rel="icon" href="/favicon.ico">
         <link rel="icon" href="/icon.svg" type="image/svg+xml">
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
- -->
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png"> -->
         <link rel="stylesheet" href="css/general.css">
         <script src="scripts/navigation.js" defer>
+        </script>
+        <script src="scripts/books.js" defer>
+        </script>
+        <script src="scripts/workers.js" defer>
         </script>
 
     </head>
@@ -48,81 +51,148 @@
                     </svg>
                 </div>
             </header>
-            <div class="heroImage">
-                <img src="placeholder.png">
-            </div>
-            <section class="bab">
-                <div>
-                    <h2>BOOKS ARE BACK!</h2>
+            <main>
+                <div class="heroImage">
+                    <div class="slideshow">
+                        <img class="heroimg" src="images/placeholder1.jpg">
+                        <div class="workers">
+                            <div class="worker pushing">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85 50">
+                                    <g>
+                                        <circle cx="20" cy="25" r="10"/>
+                                        <path d="M 5 30 h 30 l 20 20 h -20 l -10 -10 h -20"/>
+                                        <path d="M 3 30 l -3 -10 v 18 h 3 Z"/>
+                                    </g>
+                                </svg>
+                                <div class="legs">
+                                    <div class="one">
+                                        <div class="upper">
+                                        </div>
+                                        <div class="lower">
+                                        </div>
+                                        <div class="foot">
+                                        </div>
+                                    </div>
+                                    <div class="two">
+                                        <div class="upper two">
+                                        </div>
+                                        <div class="lower two">
+                                        </div>
+                                        <div class="foot two">
+                                        </div>
+                                        <div class="rope">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="worker pulling">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85 50">
+                                    <g>
+                                        <circle cx="20" cy="25" r="10"/>
+                                        <path d="M 15 30 h 40 v 10 h -10 l 10 10 h -20 Z"/>
+                                        <path d="M 57 30 v 8 l 3 2 l 5 -5 Z"/>
+                                        <rect x="62" y="32" width="23" height="2"/>
+                                    </g>
+                                </svg>
+                                <div class="legs">
+                                    <div class="one">
+                                        <div class="upper">
+                                        </div>
+                                        <div class="lower">
+                                        </div>
+                                        <div class="foot">
+                                        </div>
+                                    </div>
+                                    <div class="two">
+                                        <div class="upper two">
+                                        </div>
+                                        <div class="lower two">
+                                        </div>
+                                        <div class="foot two">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img class="heroimg" src="images/placeholder0.jpg">
+                    </div>
                 </div>
-                <div class="shelfscreen">
-                    <div class="bookshelf">
-                        <div class="book">
-                            <div class="front">
+                <section class="bab">
+                    <div>
+                        <h2>BOOKS ARE BACK!</h2>
+                    </div>
+                    <div class="shelfscreen">
+                        <div class="bookshelf">
+                            <div class="book">
+                                <div class="front">
+                                </div>
+                                <div class="back">
+                                    <p>BOOK</p>
+                                </div>
+                                <div class="top">
+                                </div>
                             </div>
-                            <div class="back">
-                                <p>BOOK</p>
+                            <div class="book">
+                                <div class="front">
+                                </div>
+                                <div class="back">
+                                    <p>SOME OTHER BOOK</p>
+                                </div>
+                                <div class="top">
+                                </div>
                             </div>
-                            <div class="top">
+                            <div class="book">
+                                <div class="front">
+                                </div>
+                                <div class="back">
+                                    <p>NICE BOOK</p>
+                                </div>
+                                <div class="top">
+                                </div>
                             </div>
-                        </div>
-                        <div class="book">
-                            <div class="front">
+                            <div class="book">
+                                <div class="front">
+                                </div>
+                                <div class="back">
+                                    <p>BOOK</p>
+                                </div>
+                                <div class="top">
+                                </div>
                             </div>
-                            <div class="back">
-                                <p>SOME OTHER BOOK</p>
+                            <div class="book">
+                                <div class="front">
+                                </div>
+                                <div class="back">
+                                    <p>LOREM IPSUM</p>
+                                </div>
+                                <div class="top">
+                                </div>
                             </div>
-                            <div class="top">
+                            <div class="book">
+                                <div class="front">
+                                </div>
+                                <div class="back">
+                                    <p>DOLIR SIT</p>
+                                </div>
+                                <div class="top">
+                                </div>
                             </div>
-                        </div>
-                        <div class="book">
-                            <div class="front">
-                            </div>
-                            <div class="back">
-                                <p>NICE BOOK</p>
-                            </div>
-                            <div class="top">
-                            </div>
-                        </div>
-                        <div class="book">
-                            <div class="front">
-                            </div>
-                            <div class="back">
-                                <p>BOOK</p>
-                            </div>
-                            <div class="top">
-                            </div>
-                        </div>
-                        <div class="book">
-                            <div class="front">
-                            </div>
-                            <div class="back">
-                                <p>LOREM IPSUM</p>
-                            </div>
-                            <div class="top">
-                            </div>
-                        </div>
-                        <div class="book">
-                            <div class="front">
-                            </div>
-                            <div class="back">
-                                <p>DOLIR SIT</p>
-                            </div>
-                            <div class="top">
-                            </div>
-                        </div>
-                        <div class="book">
-                            <div class="front">
-                            </div>
-                            <div class="back">
-                                <p>SKEWED BOOK</p>
-                            </div>
-                            <div class="top">
+                            <div class="book">
+                                <div class="front">
+                                </div>
+                                <div class="back">
+                                    <p>SKEWED BOOK</p>
+                                </div>
+                                <div class="top">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </main>
+            <footer>
+                
+            </footer>
         </div>
     </body>
 </html>
