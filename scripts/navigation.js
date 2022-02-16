@@ -14,7 +14,7 @@ window.addEventListener("resize", function() {
 });
 
 rotor.addEventListener("transitionend", function(e) {
-    if ( getComputedStyle(rotor).transform == "matrix(1, 0, 0, 1, 0, 0)" ) {
+    if (getComputedStyle(rotor).transform == "matrix(1, 0, 0, 1, 0, 0)") {
         rotor.classList.add("rotated");
     }    
 });
