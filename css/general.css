@@ -1,5 +1,9 @@
 /* GENERAL -------------------------------------------------------------*/
 /* ---------------------------------------------------------------------*/
+@font-face {
+    font-family: picadilly;
+    src: url(../Picadilly.ttf);
+}
 html {
     box-sizing: border-box;
 }
@@ -341,6 +345,8 @@ main {
 
 .bab h2 {
     font-size: 3em;
+    font-family: 'picadilly';
+
 }
 
 .bookshelf {
