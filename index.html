@@ -1,198 +1,917 @@
 <!DOCTYPE HTML>
-<html lang="en">
-    <head>
+<html lang="nl">
+    <head></head>
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <meta charset="utf-8">
+        <title>IVM Jaarbeeld 2020</title>
 
-        <title>mmbrsnc</title>
+        <meta name="description" content="IVM Jaarbeeld 2020">
 
-        <meta name="description" content="mmbrsnc">
+        <link rel="apple-touch-icon" sizes="57x57" href="https://www.medicijngebruik.nl/logo/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="https://www.medicijngebruik.nl/logo/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="https://www.medicijngebruik.nl/logo/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="https://www.medicijngebruik.nl/logo/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="https://www.medicijngebruik.nl/logo/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="https://www.medicijngebruik.nl/logo/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="https://www.medicijngebruik.nl/logo/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="https://www.medicijngebruik.nl/logo/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="https://www.medicijngebruik.nl/logo/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="https://www.medicijngebruik.nl/logo/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://www.medicijngebruik.nl/logo/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="https://www.medicijngebruik.nl/logo/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://www.medicijngebruik.nl/logo/favicon/favicon-16x16.png">
 
-        <!-- <link rel="icon" href="/favicon.ico">
-        <link rel="icon" href="/icon.svg" type="image/svg+xml">
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png"> -->
-        <link rel="stylesheet" href="css/general.css">
-        <script src="scripts/navigation.js" defer>
-        </script>
-        <script src="scripts/books.js" defer>
-        </script>
-        <script src="scripts/workers.js" defer>
-        </script>
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+        <style>
+            body, * {
+                margin: 0;
+                padding: 0;
+                font-family: 'Montserrat', sans-serif;
+            }
 
+            .marginBox {
+                width: min(80vw, 1580px);
+                margin: 0 auto;
+                height: 100%;
+            }
+
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: inherit;
+                text-decoration: underline;
+            }
+
+
+
+
+            /* Header */
+
+            header {
+                color: #ffffff;
+            }
+
+            .logoStrip {
+                height: min(140px, 80px + 5vw);
+            }
+
+            .logoContainer {
+                height: 70%;
+                padding-top: min(21px, 12px + 0.75vw);
+            }
+
+            .logoContainer > img {
+                object-fit: contain;
+                height: 100%;
+            }
+
+            nav {
+                height: 45px;
+                line-height: 45px;
+                color: rgb(0, 153, 184);
+            }
+
+            .titleStrip {
+                height: min(74px, 50px + 2vw);
+                background-color: #702283;
+                line-height: min(74px, 50px + 2vw);
+            }
+
+
+
+
+
+
+            /* Grid */
+
+            .gridBox {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                gap: 20px;
+                padding: 50px 0 min(10vw, 120px) 0;
+            }
+
+            .gridItem {
+                overflow: hidden;
+                position: relative;
+                background-color: rgb(220, 240, 245);
+                perspective: 1000px;
+            }
+
+            .card {
+                position: relative;
+                transition: transform 1s;
+                transform-style: preserve-3d;
+                font-size: 14px;
+            }
+
+            .card:hover {
+                transform: translateZ(40px);
+            }
+
+            .card.flipped {
+                transform: rotateY(-180deg);
+            }
+
+            .card > svg {
+                display: block;
+            }
+
+            .face {
+                position: absolute;
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden;
+            }
+
+            .front {
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                transform: rotate(0);
+            }
+
+            .front > img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .back {
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                transform: rotateY(180deg);
+                padding: 5%;
+            }
+
+            .cross {
+                height: 7%;
+                position: relative;
+            }
+            .cross > svg {
+                display: block;
+                position: absolute;
+                height: 100%;
+                top: 0;
+                right: 0;
+            }
+
+            .back > h2 {
+                padding: 0 7% 6.8% 7%; 
+                font-size: 2.15em;
+                font-weight: 300;
+                text-align: center;
+            }
+            .back > h2.small {
+                font-size: 1.15em;
+            }
+
+            .back > ul {
+                list-style: none;
+                font-weight: 500;
+                padding-inline-start: 1em;
+            }
+
+            .back > ul li {
+                position: relative;
+            }
+            .back > ul li::before {
+                content: '●';
+                display: block;
+                position: absolute;
+                inset-inline-start: -1em;
+            }
+
+
+            .itemButton {
+                position: absolute;
+                display: grid;
+                align-items: center;
+                bottom: 5%;
+                right: 5%;
+                width: 27.5%;
+                height: 7%;
+                text-align: center;
+                color: #ffffff;
+                font-size: 0.75em;
+            }
+
+            .gridButton {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: transparent;
+                z-index: -1;
+                border: none;
+                color: rgba(0,0,0,0);
+            }
+
+
+
+
+
+
+
+
+            /* Specific */
+
+            .face.back.blue {
+                background-color: rgba(219,240,245);
+            }
+
+            .face.blue > .cross > svg > path {
+                fill: rgb(0, 153, 184);
+            }
+
+            .face.blue > h2 {
+                color: rgb(0, 153, 184);
+            }
+
+            .face.blue > .itemButton {
+                background-color: rgb(0, 153, 184);
+            }
+
+            .face.back.purple {
+                background-color: rgb(235,223,239);
+            }
+
+            .face.purple > .cross > svg > path {
+                fill: rgb(112,34,131);
+            }
+
+            .face.purple > h2 {
+                color: rgb(112,34,131);
+            }
+
+            .face.purple > .itemButton {
+                background-color: rgb(112,34,131);
+            }
+
+            .face.back.orange {
+                background-color: rgb(255,233,221);
+            }
+
+            .face.orange > .cross > svg > path {
+                fill: rgb(253,76,2);
+            }
+
+            .face.orange > h2 {
+                color: rgb(253,76,2);
+            }
+
+            .face.orange > .itemButton {
+                background-color: rgb(253,76,2);
+            }
+
+            .face.back.red {
+                background-color: rgb(251,223,236);
+            }
+
+            .face.red > .cross > svg > path {
+                fill: rgb(227,28,121);
+            }
+
+            .face.red > h2 {
+                color: rgb(227,28,121);
+            }
+
+            .face.red > .itemButton {
+                background-color: rgb(227,28,121);
+            }
+
+            @media (max-width: 500px) {
+                .titleStrip h1 {
+                    font-size: 1.6em;
+                }
+
+                .card {
+                    font-size: 12px;
+                }
+
+            }
+        </style>
     </head>
+
     <body>
-        <div class="wrapper">
-            <header>
-                <div class="scene">
-                    <nav id="mainMenu" class="mainMenu">
-                        <ul id="mainNavList" class="collapsed">
-                            <button type="button" aria-controls="mainNavList">
-                                Open main navigation
-                            </button>
-                            <a href="#"><li>HOME</li></a>
-                            <a href="#"><li>GALLERY</li></a>
-                            <a href="#"><li>CONTACT</li></a>
-                        </ul>
-                    </nav>
+        <header>
+            <div class="logoStrip">
+                <div class="marginBox">
+                    <div class="logoContainer">
+                        <img src="svgs/logo-IVM.png" alt="IVM">
+                    </div>
                 </div>
+            </div>
+            <nav>
+                <div class="marginBox">
+                    <a href="https://www.medicijngebruik.nl/over-ivm/informatiepagina/4693/jaarbeeld-2020"><p> &lt; terug</p></a>
+                </div>
+            </nav>
+            <div class="titleStrip">
+                <div class="marginBox">
+                    <h1>IVM Jaarbeeld 2020</h1>
+                </div>
+            </div>
+        </header>
+        <div class="gridStrip">
+
+            <div class="cardflipper">
+
+                <label for="frontsideall">Flip all to front</label>
+                <input type="radio" id="frontsideall" name="side">
+                <br/>
+                <label for="backsideall">Flip all to back</label>
+                <input type="radio" id="backsideall" name="side">
+                <script>
+                    function flipallfront() {
+                        for (let i = 0; i < cards.length; i++) {
+                            cards[i].classList.remove("flipped");
+                        }
+                    }
+                    function flipallback() {
+                        for (let i = 0; i < cards.length; i++) {
+                            cards[i].classList.add("flipped");
+                        }
+                    }
+                    document.getElementById("frontsideall").addEventListener("click", flipallfront);
+                    document.getElementById("backsideall").addEventListener("click", flipallback);
+    
+                </script>
+                <style>
+                    .cardflipper {margin: 0 auto; width: min(80vw,1580px)}
+                </style>
+            </div>
+
+            <div class="marginBox gridBox">
                 
-                <div class="logoContainer">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480.47 192.95">
-                        <title>mmbrsnc</title>
-                        <g>
-                            <path class="cls-1" d="M188.86,89.23h-25.5V25.49h-.25L146.85,89.23H129.42L112.64,25.49h-.26V89.23H91.83V0h35.76l12.75,47.35h.26L152.83,0h36Z"/>
-                            <path class="cls-1" d="M300.72,89.23h-25.5V25.49H275L258.7,89.23H241.27L224.5,25.49h-.26V89.23H203.68V0h35.77L252.2,47.35h.26L264.69,0h36Z"/>
-                            <path class="cls-1" d="M315.28,0h43.58c6.75,0,13.65.52,19.24,4.55a23.47,23.47,0,0,1,9.5,18.86c0,9.37-6,17.3-15.09,19.38v.26c10.27,1.82,17.3,9.63,17.3,20.29,0,7.68-2.73,16.26-9.1,20.81-6.9,4.94-16.52,5.08-24.59,5.08H315.28Zm36.16,34.21c2.6,0,5.72.13,7.67-1.69a8.12,8.12,0,0,0,2.61-5.86c0-6.63-5.47-7.54-10.67-7.54H340.38V34.21Zm.78,35.12c2.73,0,5.73.13,7.93-1.7a7.75,7.75,0,0,0-1-13.26c-2.34-1.17-5.46-1.17-7.93-1.17h-10.8V69.33Z"/>
-                            <path class="cls-1" d="M450,89.23,437,55.15h-8.58V89.23H400.73V0h45.39c7.81,0,16.4,1,23,5.46,7.42,4.68,10.92,12.62,10.92,21.34,0,11.7-5.2,18.72-15.73,23.54l16.13,38.89ZM438.45,36c6,0,13.14-.91,13.14-8.59a8.17,8.17,0,0,0-4.29-7.28C445,19,442.1,19,439.49,19H428.44V36Z"/>
-                            <path class="cls-1" d="M25.37,161.21C27.71,169.14,33.69,172,41.62,172c3.51,0,10.54-.52,10.54-5.46,0-5.46-6.89-6.5-10.93-7.29-16.77-3.25-36.68-7.79-36.68-29A27.73,27.73,0,0,1,16,107.88c7.29-5.07,16.78-6.76,25.62-6.76,15.48,0,30.44,6.37,35.9,21.85l-22.63,6.89c-2.6-6.63-7.54-9-14.43-9-3.65,0-8.85,1-8.85,5.72s6.5,5.59,9.88,6.37c8.46,1.69,17.43,3.12,25.24,7.16,8.71,4.68,13.26,13,13.26,22.76,0,21.46-21.33,30-39.8,30C21.46,193,4.81,185.14,0,165.76Z"/>
-                            <path class="cls-1" d="M145.8,191.64l-25.62-41.75-7.93-16.13L112,134l.27,1a56.86,56.86,0,0,1,1.81,15v41.61H91.83V102.42h25.88l29.92,49.81.26-.26-1.95-24.71V102.42h22.24v89.22Z"/>
-                            <path class="cls-1" d="M256.37,159.13c-1.7,20.55-16.65,33.82-37.2,33.82-26.8,0-40.85-19.38-40.85-44.75,0-25.75,12.36-47.08,40.45-47.08,22.77,0,35.77,13.52,37.6,35.77l-25.5,1.3c.26-7.55-2.6-17-11.84-17-12.09,0-12.61,18.6-12.61,27.06,0,9,.52,24.19,12.87,24.19,8.46,0,11.71-7.41,12.1-14.82Z"/>
-                        </g>
-                    </svg>
-                </div>
-            </header>
-            <main>
-                <div class="heroImage">
-                    <div class="slideshow">
-                        <img class="heroimg" src="images/placeholder1.jpg">
-                        <div class="workers">
-                            <div class="worker pushing">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85 50">
-                                    <g>
-                                        <circle cx="20" cy="25" r="10"/>
-                                        <path d="M 5 30 h 30 l 20 20 h -20 l -10 -10 h -20"/>
-                                        <path d="M 3 30 l -3 -10 v 18 h 3 Z"/>
-                                    </g>
+
+                <!-- begin item nummer 1 -->
+                <div class="griditem">
+                    <div class="card">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                            <rect x="0" y="0" width="100" height="100" fill="none"/>
+                        </svg>
+                        <button class="gridButton">
+                            De organisatie als geheel
+                        </button>
+                        <div class="face front">
+                            <!-- url van svg plaatje -->
+                            <img src="svgs/Corporate-Final.svg">
+                        </div>
+
+                        <div class="face back blue"><!-- blauw -->
+                            <div class="cross">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                                    <path d="M 10 0 L 100 90 L 90 100 L 0 10"/>
+                                    <path d="M 90 0 L 100 10 L 10 100 L 0 90"/>
                                 </svg>
-                                <div class="legs">
-                                    <div class="one">
-                                        <div class="upper">
-                                        </div>
-                                        <div class="lower">
-                                        </div>
-                                        <div class="foot">
-                                        </div>
-                                    </div>
-                                    <div class="two">
-                                        <div class="upper two">
-                                        </div>
-                                        <div class="lower two">
-                                        </div>
-                                        <div class="foot two">
-                                        </div>
-                                        <div class="rope">
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
-                            <div class="worker pulling">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85 50">
-                                    <g>
-                                        <circle cx="20" cy="25" r="10"/>
-                                        <path d="M 15 30 h 40 v 10 h -10 l 10 10 h -20 Z"/>
-                                        <path d="M 57 30 v 8 l 3 2 l 5 -5 Z"/>
-                                        <rect x="62" y="32" width="23" height="2"/>
-                                    </g>
-                                </svg>
-                                <div class="legs">
-                                    <div class="one">
-                                        <div class="upper">
-                                        </div>
-                                        <div class="lower">
-                                        </div>
-                                        <div class="foot">
-                                        </div>
-                                    </div>
-                                    <div class="two">
-                                        <div class="upper two">
-                                        </div>
-                                        <div class="lower two">
-                                        </div>
-                                        <div class="foot two">
-                                        </div>
-                                    </div>
-                                </div>
+                            <h2>De organisatie als geheel</h2>
+                            <ul>
+                                <li>2021 zowel inhoudelijk als financieel een succesvol jaar</li>
+                                <li>Interne reorganisatie afgerond</li>
+                                <li>Veel nieuwe samenwerkingsverbanden gerealiseerd</li>
+                            </ul>
+                            <div class="itemButton">
+                                <a href="https://www.medicijngebruik.nl/over-ivm/informatiepagina/4676/jaarbeeld-2020---de-organisatie-als-geheel"><p>Lees meer &gt;</p></a>
                             </div>
                         </div>
-                        <img class="heroimg" src="images/placeholder0.jpg">
-                    </div>
+                    </div>  
                 </div>
-                <section class="bab">
-                    <div>
-                        <h2>BOOKS ARE BACK!</h2>
-                    </div>
-                    <div class="shelfscreen">
-                        <div class="bookshelf">
-                            <div class="book">
-                                <div class="front">
-                                </div>
-                                <div class="back">
-                                    <p>BOOK</p>
-                                </div>
-                                <div class="top">
-                                </div>
+                <!-- einde item nummer 1 -->
+
+                <!-- begin item nummer 2 -->
+                <div class="griditem">
+                    <div class="card">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                            <rect x="0" y="0" width="100" height="100" fill="none"/>
+                        </svg>
+                        <button class="gridButton">
+                            Nieuwe geneesmiddelen: Medicijnbalans
+                        </button>
+                        <div class="face front">
+                            <!-- url van svg plaatje -->
+                            <img src="svgs/Nieuwe-Geneesmiddelen.svg">
+                        </div>
+
+                        <div class="face back purple"><!-- paars -->
+                            <div class="cross">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                                    <path d="M 10 0 L 100 90 L 90 100 L 0 10"/>
+                                    <path d="M 90 0 L 100 10 L 10 100 L 0 90"/>
+                                </svg>
                             </div>
-                            <div class="book">
-                                <div class="front">
-                                </div>
-                                <div class="back">
-                                    <p>SOME OTHER BOOK</p>
-                                </div>
-                                <div class="top">
-                                </div>
-                            </div>
-                            <div class="book">
-                                <div class="front">
-                                </div>
-                                <div class="back">
-                                    <p>NICE BOOK</p>
-                                </div>
-                                <div class="top">
-                                </div>
-                            </div>
-                            <div class="book">
-                                <div class="front">
-                                </div>
-                                <div class="back">
-                                    <p>BOOK</p>
-                                </div>
-                                <div class="top">
-                                </div>
-                            </div>
-                            <div class="book">
-                                <div class="front">
-                                </div>
-                                <div class="back">
-                                    <p>LOREM IPSUM</p>
-                                </div>
-                                <div class="top">
-                                </div>
-                            </div>
-                            <div class="book">
-                                <div class="front">
-                                </div>
-                                <div class="back">
-                                    <p>DOLIR SIT</p>
-                                </div>
-                                <div class="top">
-                                </div>
-                            </div>
-                            <div class="book">
-                                <div class="front">
-                                </div>
-                                <div class="back">
-                                    <p>SKEWED BOOK</p>
-                                </div>
-                                <div class="top">
-                                </div>
+                            <h2>Nieuwe geneesmiddelen: Medicijnbalans</h2>
+                            <ul>
+                                <li>Neutrale informatie voor zorgverleners over nieuwe (groepen) geneesmiddelen</li>
+                                <li>Project Doelmatig insulinegebruik eerste lijn</li>
+                            </ul>
+                            <div class="itemButton">
+                                <a href="https://www.medicijngebruik.nl/over-ivm/informatiepagina/4680/jaarbeeld-2020---medicijnbalans"><p>Lees meer &gt;</p></a>
                             </div>
                         </div>
-                    </div>
-                </section>
-            </main>
-            <footer>
+                    </div>  
+                </div>
+                <!-- einde item nummer 2 -->
+
+                <!-- begin item nummer 3 -->
+                <div class="griditem">
+                    <div class="card">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                            <rect x="0" y="0" width="100" height="100" fill="none"/>
+                        </svg>
+                        <button class="gridButton">
+                            Corona
+                        </button>
+                        <div class="face front">
+                            <!-- url van svg plaatje -->
+                            <img src="svgs/Corona-paars-Final.svg">
+                        </div>
+
+                        <div class="face back purple"><!-- paars -->
+                            <div class="cross">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                                    <path d="M 10 0 L 100 90 L 90 100 L 0 10"/>
+                                    <path d="M 90 0 L 100 10 L 10 100 L 0 90"/>
+                                </svg>
+                            </div>
+                            <h2>Corona</h2>
+                            <ul>
+                                <li>24 afleveringen Coronanieuws</li>
+                                <li>Adviespanel Innovatieve Behandelingen COVID-19</li>
+                                <li>Acht podcasts over desinformatie in coronatijd</li>
+                            </ul>
+                            <div class="itemButton">
+                                <a href="https://www.medicijngebruik.nl/over-ivm/informatiepagina/4677/jaarbeeld-2020---corona"><p>Lees meer &gt;</p></a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <!-- einde item nummer 3 -->
+
+                <!-- begin item nummer 4 -->
+                <div class="griditem">
+                    <div class="card">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                            <rect x="0" y="0" width="100" height="100" fill="none"/>
+                        </svg>
+                        <button class="gridButton">
+                            IVM Academie
+                        </button>
+                        <div class="face front">
+                            <!-- url van svg plaatje -->
+                            <img src="svgs/IVM-Academie-Final.svg">
+                        </div>
+
+                        <div class="face back blue"><!-- blauw -->
+                            <div class="cross">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                                    <path d="M 10 0 L 100 90 L 90 100 L 0 10"/>
+                                    <path d="M 90 0 L 100 10 L 10 100 L 0 90"/>
+                                </svg>
+                            </div>
+                            <h2>IVM Academie</h2>
+                            <ul>
+                                <li>Nieuwe doelgroep verpleegkundig specialisten</li>
+                                <li>Aandacht voor Polyfarmacie en Antibioticaresistentie</li>
+                                <li>eHealth in opmars</li>
+                            </ul>
+                            <div class="itemButton">
+                                <a href="https://www.medicijngebruik.nl/over-ivm/informatiepagina/4678/jaarbeeld-2020---ivm-academie"><p>Lees meer &gt;</p></a>
+                            </div>
+                        </div>
+                        
+                    </div>  
+                </div>
+                <!-- einde item nummer 4 -->
+
+                <!-- begin item nummer 5 -->
+                <div class="griditem">
+                    <div class="card">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                            <rect x="0" y="0" width="100" height="100" fill="none"/>
+                        </svg>
+                        <button class="gridButton">
+                            FTO
+                        </button>
+                        <div class="face front">
+                            <!-- url van svg plaatje -->
+                            <img src="svgs/FTO-Final.svg">
+                        </div>
+
+                        <div class="face back red"><!-- rood -->
+                            <div class="cross">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                                    <path d="M 10 0 L 100 90 L 90 100 L 0 10"/>
+                                    <path d="M 90 0 L 100 10 L 10 100 L 0 90"/>
+                                </svg>
+                            </div>
+                            <h2>FTO</h2>
+                            <ul>
+                                <li>23 nieuwe FTO-werkmaterialen voor 15 thema's</li>
+                                <li>13.500 downloads</li>
+                                <li>Uitbreiding aanbod werkvormen FTO waaronder een digitale remindertoets</li>
+                            </ul>
+                            <div class="itemButton">
+                                <a href="https://www.medicijngebruik.nl/over-ivm/informatiepagina/4679/jaarbeeld-2020---fto"><p>Lees meer &gt;</p></a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <!-- einde item nummer 5 -->
+
+                <!-- begin item nummer 6 -->
+                <div class="griditem">
+                    <div class="card">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                            <rect x="0" y="0" width="100" height="100" fill="none"/>
+                        </svg>
+                        <button class="gridButton">
+                            DITSMI: behandeling van patiënten met ernstige psychische aandoeningen
+                        </button>
+                        <div class="face front">
+                            <!-- url van svg plaatje -->
+                            <img src="svgs/Ditsmi.svg">
+                        </div>
+
+                        <div class="face back purple"><!-- paars -->
+                            <div class="cross">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                                    <path d="M 10 0 L 100 90 L 90 100 L 0 10"/>
+                                    <path d="M 90 0 L 100 10 L 10 100 L 0 90"/>
+                                </svg>
+                            </div>
+                            <h2 class="small">DITSMI: behandeling van patiënten met ernstige psychische aandoeningen</h2>
+                            <ul>
+                                <li>Randvoorwaarden voor succesvol implementeren van DITSMI geïnventariseerd bij GGNet</li>
+                                <li>DITSMI vanaf 2022 landelijk uitgerold als pilot bij vier GGZ-organisaties</li>
+                            </ul>
+                            <div class="itemButton">
+                                <a href="https://www.medicijngebruik.nl/over-ivm/informatiepagina/"><p>Lees meer &gt;</p></a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <!-- einde item nummer 6 -->
+
+                <!-- begin item nummer 7 -->
+                <div class="griditem">
+                    <div class="card">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                            <rect x="0" y="0" width="100" height="100" fill="none"/>
+                        </svg>
+                        <button class="gridButton">
+                            Geneesmiddelen en verkeer
+                        </button>
+                        <div class="face front">
+                            <!-- url van svg plaatje -->
+                            <img src="svgs/Geneesmiddelen-en-verkeer-IVM-Final.svg">
+                        </div>
+
+                        <div class="face back orange"><!-- oranje -->
+                            <div class="cross">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                                    <path d="M 10 0 L 100 90 L 90 100 L 0 10"/>
+                                    <path d="M 90 0 L 100 10 L 10 100 L 0 90"/>
+                                </svg>
+                            </div>
+                            <h2>Geneesmiddelen en verkeer</h2>
+                            <ul>
+                                <li>Rijveiligmetmedicijnen.nl opgenomen in de wet Regeling Eisen Geschiktheid 2000</li>
+                                <li>Gerichte communicatie-campagne over medicinale drugs in het verkeer</li>
+                                <li>Rijveiligmetmedicijnen.nl: 156.127 gebruikers in 2021</li>
+                            </ul>
+                            <div class="itemButton">
+                                <a href="https://www.medicijngebruik.nl/over-ivm/informatiepagina/4684/jaarbeeld-2020---geneesmiddelen-en-verkeer"><p>Lees meer &gt;</p></a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <!-- einde item nummer 7 -->
+
+                <!-- begin item nummer 8 -->
+                <div class="griditem">
+                    <div class="card">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                            <rect x="0" y="0" width="100" height="100" fill="none"/>
+                        </svg>
+                        <button class="gridButton">
+                            Medicatieveiligheid in instellingen
+                        </button>
+                        <div class="face front">
+                            <!-- url van svg plaatje -->
+                            <img src="svgs/Medicatieveiligheid.svg">
+                        </div>
+
+                        <div class="face back red"><!-- rood -->
+                            <div class="cross">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                                    <path d="M 10 0 L 100 90 L 90 100 L 0 10"/>
+                                    <path d="M 90 0 L 100 10 L 10 100 L 0 90"/>
+                                </svg>
+                            </div>
+                            <h2 class="small">Medicatieveiligheid in instellingen</h2>
+                            <ul>
+                                <li>Gratis Spreekuur Medicatieveiligheid van start</li>
+                                <li>Nieuwe e-learnings Basis Medicatiekennis en Basis Medicatieproces ontwikkeld</li>
+                                <li>Succesvolle online sessies medicatieveiligheid met Intrakoop</li>
+                                <li>Eerste klant gestart met herhaalabonnement</li>
+                                <li>Nieuwe online nascholingen Veilige principes, opioïden, zelfzorg en BEM</li>
+                            </ul>
+                            <div class="itemButton">
+                                <a href="https://www.medicijngebruik.nl/over-ivm/informatiepagina/4683/jaarbeeld-2020---medicatieproces"><p>Lees meer &gt;</p></a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <!-- einde item nummer 8 -->
+
+                <!-- begin item nummer 9 -->
+                <div class="griditem">
+                    <div class="card">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                            <rect x="0" y="0" width="100" height="100" fill="none"/>
+                        </svg>
+                        <button class="gridButton">
+                            Opioïdengebruik in Nederland
+                        </button>
+                        <div class="face front">
+                            <!-- url van svg plaatje -->
+                            <img src="svgs/Opioiden-Final.svg">
+                        </div>
+
+                        <div class="face back purple"><!-- paars -->
+                            <div class="cross">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                                    <path d="M 10 0 L 100 90 L 90 100 L 0 10"/>
+                                    <path d="M 90 0 L 100 10 L 10 100 L 0 90"/>
+                                </svg>
+                            </div>
+                            <h2>Opioïdengebruik in Nederland</h2>
+                            <ul>
+                                <li>Bevorderen van gepast gebruik van opioïden heeft geleid tot een daling van het gebruik met 10%</li>
+                                <li>Handleiding afbouwen van opioïdengebruik gepubliceerd</li>
+                                <li>Samen met partijen van voorschrijvers, apothekers en patiënten wordt het gepast gebruik verder geoptimaliseerd</li>
+                            </ul>
+                            <div class="itemButton">
+                                <a href="https://www.medicijngebruik.nl/over-ivm/informatiepagina/4685/jaarbeeld-2020---opioiden"><p>Lees meer &gt;</p></a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <!-- einde item nummer 9 -->
+
+                <!-- begin item nummer 10 -->
+                <div class="griditem">
+                    <div class="card">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                            <rect x="0" y="0" width="100" height="100" fill="none"/>
+                        </svg>
+                        <button class="gridButton">
+                            Oneigenlijk gebruik van ADHD-medicatie: Gezonde focus
+                        </button>
+                        <div class="face front">
+                            <!-- url van svg plaatje -->
+                            <img src="svgs/Gezonde-focus.svg">
+                        </div>
+
+                        <div class="face back blue"><!-- blauw -->
+                            <div class="cross">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                                    <path d="M 10 0 L 100 90 L 90 100 L 0 10"/>
+                                    <path d="M 90 0 L 100 10 L 10 100 L 0 90"/>
+                                </svg>
+                            </div>
+                            <h2 class="small">Oneigenlijk gebruik van ADHD-medicatie: Gezonde focus</h2>
+                            <ul>
+                                <li>Richtlijnanalyse</li>
+                                <li>Discussiebijeenkomsten</li>
+                                <li>Voorschrijfcijfers</li>
+                                <li>Spiegelbijeenkomsten</li>
+                            </ul>
+                            <div class="itemButton">
+                                <a href="https://www.medicijngebruik.nl/over-ivm/informatiepagina/"><p>Lees meer &gt;</p></a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <!-- einde item nummer 10 -->
                 
-            </footer>
+                <!-- begin item nummer 11 -->
+                <div class="griditem">
+                    <div class="card">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                            <rect x="0" y="0" width="100" height="100" fill="none"/>
+                        </svg>
+                        <button class="gridButton">
+                            Monitor Voorschrijven Huisartsen
+                        </button>
+                        <div class="face front">
+                            <!-- url van svg plaatje -->
+                            <img src="svgs/Monitor-voorschrijven.svg">
+                        </div>
+
+                        <div class="face back purple"><!-- paars -->
+                            <div class="cross">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                                    <path d="M 10 0 L 100 90 L 90 100 L 0 10"/>
+                                    <path d="M 90 0 L 100 10 L 10 100 L 0 90"/>
+                                </svg>
+                            </div>
+                            <h2 class="small">Monitor Voorschrijven Huisartsen</h2>
+                            <ul>
+                                <li>2 webrapportages beschikbaar: diabetes mellitus en opioïden</li>
+                                <li>2 webrapportages in ontwikkeling: medicatieveiligheid en minderen en stoppen</li>
+                            </ul>
+                            <div class="itemButton">
+                                <a href="https://www.medicijngebruik.nl/over-ivm/informatiepagina/4687/jaarbeeld-2020---monitor-voorschrijven"><p>Lees meer &gt;</p></a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <!-- einde item nummer 11 -->
+
+                <!-- begin item nummer 12 -->
+                <div class="griditem">
+                    <div class="card">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                            <rect x="0" y="0" width="100" height="100" fill="none"/>
+                        </svg>
+                        <button class="gridButton">
+                            Over de grens: NHS
+                        </button>
+                        <div class="face front">
+                            <!-- url van svg plaatje -->
+                            <img src="svgs/SVG-NHS.svg">
+                        </div>
+
+                        <div class="face back blue"><!-- blauw -->
+                            <div class="cross">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                                    <path d="M 10 0 L 100 90 L 90 100 L 0 10"/>
+                                    <path d="M 90 0 L 100 10 L 10 100 L 0 90"/>
+                                </svg>
+                            </div>
+                            <h2>Over de grens: NHS</h2>
+                            <ul>
+                                <li>Het gebruik van vijf geneesmiddelgroepen in elf landen vergeleken</li>
+                            </ul>
+                            <div class="itemButton">
+                                <a href="https://www.medicijngebruik.nl/over-ivm/informatiepagina/"><p>Lees meer &gt;</p></a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <!-- einde item nummer 12 -->
+
+                <!-- begin item nummer 13 -->
+                <div class="griditem">
+                    <div class="card">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                            <rect x="0" y="0" width="100" height="100" fill="none"/>
+                        </svg>
+                        <button class="gridButton">
+                            VMI: landelijk meldpunt medicatie-incidenten
+                        </button>
+                        <div class="face front">
+                            <!-- url van svg plaatje -->
+                            <img src="svgs/VMI-Final.svg">
+                        </div>
+
+                        <div class="face back purple"><!-- paars -->
+                            <div class="cross">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                                    <path d="M 10 0 L 100 90 L 90 100 L 0 10"/>
+                                    <path d="M 90 0 L 100 10 L 10 100 L 0 90"/>
+                                </svg>
+                            </div>
+                            <h2 class="small">VMI: landelijk meldpunt medicatie-incidenten</h2>
+                            <ul>
+                                <li>18.255 meldingen van medicatie-incidenten</li>
+                                <li>25 Praktijkprikkels</li>
+                                <li>3.673 abonnees op de Praktijkprikkels</li>
+                            </ul>
+                            <div class="itemButton">
+                                <a href="https://www.medicijngebruik.nl/over-ivm/informatiepagina/4682/jaarbeeld-2020---vmi"><p>Lees meer &gt;</p></a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <!-- einde item nummer 13 -->
+
+                <!-- begin item nummer 14 -->
+                <div class="griditem">
+                    <div class="card">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                            <rect x="0" y="0" width="100" height="100" fill="none"/>
+                        </svg>
+                        <button class="gridButton">
+                            Evaluatie Transparantieregister Zorg
+                        </button>
+                        <div class="face front">
+                            <!-- url van svg plaatje -->
+                            <img src="svgs/Transparantie.svg">
+                        </div>
+
+                        <div class="face back orange"><!-- oranje -->
+                            <div class="cross">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                                    <path d="M 10 0 L 100 90 L 90 100 L 0 10"/>
+                                    <path d="M 90 0 L 100 10 L 10 100 L 0 90"/>
+                                </svg>
+                            </div>
+                            <h2 class="small">Evaluatie Transparantieregister Zorg</h2>
+                            <ul>
+                                <li>Het IVM won de meerjarige aanbesteding om jaarlijks de compleetheid, effectiviteit en toegankelijkheid van het Transparantieregister Zorg te evalueren</li>
+                                <li>150 relaties onderzocht</li>
+                                <li>Effecten onderzocht bij 6 doelgroepen</li>
+                            </ul>
+                            <div class="itemButton">
+                                <a href="https://www.medicijngebruik.nl/over-ivm/informatiepagina/"><p>Lees meer &gt;</p></a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <!-- einde item nummer 14 -->
+
+                <!-- begin item nummer 15 -->
+                <div class="griditem">
+                    <div class="card">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                            <rect x="0" y="0" width="100" height="100" fill="none"/>
+                        </svg>
+                        <button class="gridButton">
+                            Drogisten als zorgverleners
+                        </button>
+                        <div class="face front">
+                            <!-- url van svg plaatje -->
+                            <img src="svgs/Drogisten.svg">
+                        </div>
+
+                        <div class="face back red"><!-- rood -->
+                            <div class="cross">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                                    <path d="M 10 0 L 100 90 L 90 100 L 0 10"/>
+                                    <path d="M 90 0 L 100 10 L 10 100 L 0 90"/>
+                                </svg>
+                            </div>
+                            <h2>Drogisten als zorgverleners</h2>
+                            <ul>
+                                <li>Expertmeeting minimale zorg bij de verkoop van UAD-medicatie</li>
+                                <li>Consensusdocument minimale zorg bij de verkoop van UAD-medicatie</li>
+                                <li>Overzichtslijst risicowaarschuwingen bij zelfzorgmiddelen vernieuwd</li>
+                            </ul>
+                            <div class="itemButton">
+                                <a href="https://www.medicijngebruik.nl/over-ivm/informatiepagina/"><p>Lees meer &gt;</p></a>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <!-- einde item nummer 15 -->
+
+            </div>
         </div>
+
+        <script>
+            let cards = document.getElementsByClassName("card");
+            let buttons = document.getElementsByClassName("gridButton");
+            let links = document.getElementsByClassName("itemButton");
+            let j = -1;
+
+            function turn(card) {
+                if (j == -1) {
+                    j = card;
+                }
+                else if (card == j) {
+                    j = -1;
+                }
+                else {
+                    cards[j].classList.toggle("flipped");
+                    j = card;
+                }
+                cards[card].classList.toggle("flipped");
+            }
+            for (let i = 0; i < cards.length; i++) {
+                
+                cards[i].addEventListener("click", function() {
+                    turn(i);
+                });
+                buttons[i].addEventListener("keydown", function() {
+                    if (e.key == 'Enter' || e.key == ' ') {
+                        turn(i);
+                    }
+                });
+                links[i].addEventListener("click", function(e) {
+                    e.stopPropagation();
+                });
+            }
+
+        </script>
     </body>
 </html>
